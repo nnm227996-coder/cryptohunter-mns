@@ -1,0 +1,33 @@
+name: CryptoHunter Startup Announcement
+
+on:
+  workflow_dispatch:  # manual one-time trigger after secrets are set
+
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install deps
+        run: pip install -r requirements.txt
+      - name: Send startup message
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+        run: |
+          python -c "
+          import os, asyncio, aiohttp
+          from signal_formatter import format_startup_message
+          from telegram_sender import send_signal
+          async def main():
+              async with aiohttp.ClientSession() as s:
+                  r = await send_signal(s, os.environ['BOT_TOKEN'], os.environ['CHANNEL_ID'], format_startup_message())
+                  print(r)
+          asyncio.run(main())
+          "
