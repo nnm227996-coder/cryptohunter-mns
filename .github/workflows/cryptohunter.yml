@@ -5,6 +5,9 @@ on:
     - cron: "*/5 * * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 concurrency:
   group: cryptohunter
   cancel-in-progress: false
@@ -13,35 +16,69 @@ jobs:
   scan:
     runs-on: ubuntu-latest
     timeout-minutes: 4
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Setup Python 3.11
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: pip
+
       - name: Install dependencies
         run: |
           pip install --upgrade pip
           pip install -r requirements.txt
+
       - name: Restore cooldown state
-        id: cache-restore
         uses: actions/cache/restore@v4
         with:
           path: cooldown_state.json
           key: cooldown-state-${{ github.run_id }}
           restore-keys: |
             cooldown-state-
+
       - name: Run scan
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
           MIN_SCORE: ${{ vars.MIN_SCORE || '70' }}
         run: python scan_once.py
+
       - name: Save cooldown state
         if: always()
         uses: actions/cache/save@v4
         with:
           path: cooldown_state.json
           key: cooldown-state-${{ github.run_id }}
+
+      - name: Commit dashboard state.json
+        if: always()
+        run: |
+          if [ ! -f docs/state.json ]; then
+            echo "No docs/state.json to commit — skipping."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/state.json
+          if git diff --cached --quiet; then
+            echo "No state changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(dashboard): update state.json [skip ci]"
+          # Rebase-pull to avoid conflicts with parallel runs, then push
+          for i in 1 2 3; do
+            if git pull --rebase origin main && git push origin main; then
+              echo "Pushed on attempt $i"
+              exit 0
+            fi
+            echo "Push attempt $i failed, retrying..."
+            sleep $((RANDOM % 5 + 2))
+          done
+          echo "All push attempts failed."
+          exit 1
