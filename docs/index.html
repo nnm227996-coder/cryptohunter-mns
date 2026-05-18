@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1220">
+<title>CryptoHunter v2 — Bot MNS Dashboard</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        bg: '#0b1220',
+        card: '#111a2e',
+        border: '#1f2a44',
+        accent: '#38bdf8',
+        good: '#22c55e',
+        warn: '#f59e0b',
+        bad: '#ef4444',
+        muted: '#64748b'
+      },
+      fontFamily: {
+        mono: ['ui-monospace','SFMono-Regular','Menlo','Monaco','Consolas','monospace'],
+        sans: ['Inter','system-ui','sans-serif']
+      },
+      animation: {
+        'pulse-slow': 'pulse 2s ease-in-out infinite',
+        'spin-slow': 'spin 2s linear infinite'
+      }
+    }
+  }
+}
+</script>
+<style>
+  html, body { background: #0b1220; }
+  body { font-family: Inter, system-ui, sans-serif; }
+  .num-mono { font-feature-settings: 'tnum' 1; font-variant-numeric: tabular-nums; }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: #0b1220; }
+  ::-webkit-scrollbar-thumb { background: #1f2a44; border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: #2a3a5e; }
+  .glow-good { box-shadow: 0 0 12px rgba(34,197,94,0.35); }
+  .glow-warn { box-shadow: 0 0 12px rgba(245,158,11,0.35); }
+  .glow-bad  { box-shadow: 0 0 12px rgba(239,68,68,0.35); }
+  /* live dot pulse */
+  .live-dot { position: relative; }
+  .live-dot::after {
+    content: ''; position: absolute; inset: -4px;
+    border-radius: 9999px; border: 2px solid currentColor;
+    opacity: 0.6; animation: pulse-ring 1.6s ease-out infinite;
+  }
+  @keyframes pulse-ring {
+    0% { transform: scale(0.6); opacity: 0.8; }
+    100% { transform: scale(1.6); opacity: 0; }
+  }
+</style>
+</head>
+<body class="dark text-slate-200 min-h-screen">
+
+<!-- ====== TOP BAR ====== -->
+<header class="border-b border-border bg-card/60 backdrop-blur sticky top-0 z-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center gap-3 flex-wrap">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-accent to-blue-700 flex items-center justify-center text-white text-lg font-black shadow-lg">🤖</div>
+      <div>
+        <h1 class="text-base sm:text-lg font-bold text-accent leading-tight">CryptoHunter v2</h1>
+        <p class="text-[11px] sm:text-xs text-muted">Bot MNS · 25 pairs · 5 engines</p>
+      </div>
+    </div>
+
+    <div class="grow"></div>
+
+    <div class="flex items-center gap-2 text-xs sm:text-sm">
+      <span id="liveDot" class="live-dot inline-block w-2 h-2 rounded-full bg-good text-good"></span>
+      <span id="liveStatus" class="text-good font-semibold">LIVE</span>
+      <span class="text-muted">·</span>
+      <span class="text-muted hidden sm:inline">Last update:</span>
+      <span id="lastUpdate" class="num-mono text-slate-300">—</span>
+    </div>
+
+    <button id="refreshBtn" class="ml-2 px-3 py-1.5 rounded-lg bg-accent/10 hover:bg-accent/20 text-accent border border-accent/30 text-xs sm:text-sm font-semibold transition flex items-center gap-1.5">
+      <svg id="refreshIcon" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+      <span>Refresh</span>
+    </button>
+  </div>
+</header>
+
+<!-- ====== HERO STATS ====== -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 mt-6">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+    <div class="bg-card border border-border rounded-2xl p-4 sm:p-5">
+      <p class="text-muted text-[11px] sm:text-xs uppercase tracking-wider">إشارات اليوم</p>
+      <p class="mt-2 text-2xl sm:text-3xl font-black text-good num-mono"><span id="signalsToday">0</span></p>
+      <p class="text-[11px] text-muted mt-1">من <span id="totalSignals" class="text-slate-300">0</span> إجمالاً</p>
+    </div>
+    <div class="bg-card border border-border rounded-2xl p-4 sm:p-5">
+      <p class="text-muted text-[11px] sm:text-xs uppercase tracking-wider">هذا الأسبوع</p>
+      <p class="mt-2 text-2xl sm:text-3xl font-black text-accent num-mono"><span id="signalsWeek">0</span></p>
+      <p class="text-[11px] text-muted mt-1">إشارات مرسلة</p>
+    </div>
+    <div class="bg-card border border-border rounded-2xl p-4 sm:p-5">
+      <p class="text-muted text-[11px] sm:text-xs uppercase tracking-wider">دورات المسح</p>
+      <p class="mt-2 text-2xl sm:text-3xl font-black text-slate-100 num-mono"><span id="totalScans">0</span></p>
+      <p class="text-[11px] text-muted mt-1">كل <span id="scanInterval">5</span> دقائق</p>
+    </div>
+    <div class="bg-card border border-border rounded-2xl p-4 sm:p-5">
+      <p class="text-muted text-[11px] sm:text-xs uppercase tracking-wider">آخر مسح</p>
+      <p class="mt-2 text-xl sm:text-2xl font-bold text-slate-100 num-mono" id="lastScanRel">—</p>
+      <p class="text-[11px] text-muted mt-1 num-mono" id="lastScanAbs">—</p>
+    </div>
+  </div>
+</section>
+
+<!-- ====== RECENT SIGNALS ====== -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 mt-8">
+  <div class="flex items-center justify-between mb-3">
+    <h2 class="text-base sm:text-lg font-bold text-accent">📡 آخر 20 إشارة | Recent Signals</h2>
+    <span id="signalsCount" class="text-xs text-muted num-mono">0 signals</span>
+  </div>
+  <div class="bg-card border border-border rounded-2xl overflow-hidden">
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead class="bg-border/40 text-muted text-[11px] uppercase tracking-wider">
+          <tr>
+            <th class="px-3 py-3 text-right">Pair</th>
+            <th class="px-3 py-3 text-right">Score</th>
+            <th class="px-3 py-3 text-right">Entry</th>
+            <th class="px-3 py-3 text-right hidden md:table-cell">SL</th>
+            <th class="px-3 py-3 text-right hidden lg:table-cell">TP1</th>
+            <th class="px-3 py-3 text-right hidden lg:table-cell">TP2</th>
+            <th class="px-3 py-3 text-right hidden xl:table-cell">TP3</th>
+            <th class="px-3 py-3 text-right">Time</th>
+          </tr>
+        </thead>
+        <tbody id="signalsTable" class="num-mono">
+          <tr><td colspan="8" class="px-3 py-10 text-center text-muted">جارٍ التحميل…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ====== TOP PAIRS + ENGINES (SIDE BY SIDE ON DESKTOP) ====== -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+  <!-- Top Scoring Pairs -->
+  <div class="bg-card border border-border rounded-2xl overflow-hidden">
+    <div class="px-4 py-3 border-b border-border flex items-center justify-between">
+      <h2 class="text-base sm:text-lg font-bold text-accent">🔥 Top Scoring Pairs</h2>
+      <span class="text-xs text-muted">عتبة الإشارة: ≥ <span id="thresholdLabel" class="text-good font-bold">70</span></span>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead class="bg-border/40 text-muted text-[11px] uppercase tracking-wider">
+          <tr>
+            <th class="px-3 py-3 text-right">#</th>
+            <th class="px-3 py-3 text-right">Pair</th>
+            <th class="px-3 py-3 text-right">Score</th>
+            <th class="px-3 py-3 text-right">Price</th>
+          </tr>
+        </thead>
+        <tbody id="topPairsTable" class="num-mono">
+          <tr><td colspan="4" class="px-3 py-10 text-center text-muted">—</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Engine Performance -->
+  <div class="bg-card border border-border rounded-2xl">
+    <div class="px-4 py-3 border-b border-border flex items-center justify-between">
+      <h2 class="text-base sm:text-lg font-bold text-accent">⚙️ Engine Performance</h2>
+      <span class="text-xs text-muted">مساهمات في إشارات</span>
+    </div>
+    <div id="enginesChart" class="px-4 py-4 space-y-3">
+      <!-- bars injected by JS -->
+    </div>
+  </div>
+
+</section>
+
+<!-- ====== FOOTER LINKS ====== -->
+<footer class="max-w-7xl mx-auto px-4 sm:px-6 mt-10 mb-8">
+  <div class="bg-card border border-border rounded-2xl p-4 flex flex-wrap items-center gap-4 text-sm">
+    <a href="https://github.com/nnm227996-coder/cryptohunter-mns" target="_blank" rel="noopener" class="text-accent hover:underline flex items-center gap-2">
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.1 0 4.6-2.8 5.6-5.5 5.9.5.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+      Repository
+    </a>
+    <span class="text-border">·</span>
+    <a href="https://github.com/nnm227996-coder/cryptohunter-mns/actions" target="_blank" rel="noopener" class="text-accent hover:underline flex items-center gap-2">
+      📜 Actions / Logs
+    </a>
+    <span class="text-border">·</span>
+    <a href="https://t.me/cryptohunter_mns_bot" target="_blank" rel="noopener" class="text-accent hover:underline flex items-center gap-2">
+      💬 Telegram Bot
+    </a>
+    <span class="grow"></span>
+    <span class="text-muted text-xs">⚠️ إشارات فقط — أنت تنفّذ الصفقات يدوياً.</span>
+  </div>
+  <p class="text-center text-muted text-[11px] mt-4">CryptoHunter v2 · Bot MNS · running on GitHub Actions · auto-refresh every 30s</p>
+</footer>
+
+<script>
+// =============== CONFIG ===============
+const STATE_URL = "state.json";
+const REFRESH_MS = 30_000;
+
+// =============== HELPERS ===============
+function fmtPrice(p) {
+  if (p == null || p === 0) return "—";
+  if (p < 0.001) return p.toFixed(8);
+  if (p < 1)     return p.toFixed(6);
+  if (p < 100)   return p.toFixed(4);
+  return p.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+}
+
+function scoreClass(score) {
+  if (score >= 80) return { bg: "bg-good/15", text: "text-good", border: "border-good/30", glow: "glow-good" };
+  if (score >= 70) return { bg: "bg-warn/15", text: "text-warn", border: "border-warn/30", glow: "glow-warn" };
+  if (score >= 50) return { bg: "bg-accent/10", text: "text-accent", border: "border-accent/30", glow: "" };
+  return { bg: "bg-muted/10", text: "text-muted", border: "border-border", glow: "" };
+}
+
+function relTime(iso) {
+  if (!iso) return "—";
+  const t = new Date(iso).getTime();
+  const diff = Math.max(0, Date.now() - t);
+  const s = Math.floor(diff / 1000);
+  if (s < 60) return s + "s ago";
+  const m = Math.floor(s / 60);
+  if (m < 60) return m + "m ago";
+  const h = Math.floor(m / 60);
+  if (h < 24) return h + "h ago";
+  return Math.floor(h / 24) + "d ago";
+}
+
+function fmtAbs(iso) {
+  if (!iso) return "—";
+  return new Date(iso).toLocaleString('en-GB', { hour12: false });
+}
+
+function $(sel) { return document.querySelector(sel); }
+
+// =============== STATE RENDER ===============
+function render(s) {
+  // Hero stats
+  $("#signalsToday").textContent  = s.signals_today ?? 0;
+  $("#signalsWeek").textContent   = s.signals_this_week ?? 0;
+  $("#totalSignals").textContent  = s.total_signals_sent ?? 0;
+  $("#totalScans").textContent    = s.total_scans ?? 0;
+  $("#scanInterval").textContent  = s.scan_interval_minutes ?? 5;
+  $("#thresholdLabel").textContent = s.min_score ?? 70;
+  $("#lastScanRel").textContent   = relTime(s.last_scan_time);
+  $("#lastScanAbs").textContent   = fmtAbs(s.last_scan_time);
+
+  // last error / live status
+  if (s.last_error) {
+    $("#liveDot").className = "live-dot inline-block w-2 h-2 rounded-full bg-bad text-bad";
+    $("#liveStatus").textContent = "ERROR";
+    $("#liveStatus").className = "text-bad font-semibold";
+  } else if (s.last_scan_time) {
+    const ageMs = Date.now() - new Date(s.last_scan_time).getTime();
+    if (ageMs > 15 * 60 * 1000) {
+      $("#liveDot").className = "live-dot inline-block w-2 h-2 rounded-full bg-warn text-warn";
+      $("#liveStatus").textContent = "STALE";
+      $("#liveStatus").className = "text-warn font-semibold";
+    } else {
+      $("#liveDot").className = "live-dot inline-block w-2 h-2 rounded-full bg-good text-good";
+      $("#liveStatus").textContent = "LIVE";
+      $("#liveStatus").className = "text-good font-semibold";
+    }
+  }
+
+  // Recent signals
+  const signals = (s.recent_signals || []).slice().reverse(); // newest first
+  $("#signalsCount").textContent = signals.length + " signals";
+  const tbody = $("#signalsTable");
+  if (signals.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="8" class="px-3 py-10 text-center text-muted">لم تُرسل أي إشارة بعد — البوت يفحص الأسواق…</td></tr>`;
+  } else {
+    tbody.innerHTML = signals.map(sig => {
+      const c = scoreClass(sig.score);
+      return `
+        <tr class="border-t border-border hover:bg-border/20">
+          <td class="px-3 py-3 font-bold text-slate-100">${sig.symbol}</td>
+          <td class="px-3 py-3"><span class="inline-block px-2 py-0.5 rounded-md text-xs font-bold border ${c.bg} ${c.text} ${c.border}">${sig.score}</span></td>
+          <td class="px-3 py-3 text-slate-100">$${fmtPrice(sig.entry)}</td>
+          <td class="px-3 py-3 text-bad hidden md:table-cell">$${fmtPrice(sig.sl)}</td>
+          <td class="px-3 py-3 text-good hidden lg:table-cell">$${fmtPrice(sig.tp1)}</td>
+          <td class="px-3 py-3 text-good hidden lg:table-cell">$${fmtPrice(sig.tp2)}</td>
+          <td class="px-3 py-3 text-good hidden xl:table-cell">$${fmtPrice(sig.tp3)}</td>
+          <td class="px-3 py-3 text-muted text-xs" title="${fmtAbs(sig.timestamp)}">${relTime(sig.timestamp)}</td>
+        </tr>`;
+    }).join("");
+  }
+
+  // Top scoring pairs (sorted by score desc)
+  const top = (s.top_scoring_pairs || []).slice().sort((a, b) => b.score - a.score);
+  const topTbody = $("#topPairsTable");
+  if (top.length === 0) {
+    topTbody.innerHTML = `<tr><td colspan="4" class="px-3 py-10 text-center text-muted">—</td></tr>`;
+  } else {
+    topTbody.innerHTML = top.slice(0, 10).map((p, i) => {
+      const c = scoreClass(p.score);
+      return `
+        <tr class="border-t border-border hover:bg-border/20">
+          <td class="px-3 py-2 text-muted">${i + 1}</td>
+          <td class="px-3 py-2 font-bold text-slate-100">${p.symbol}</td>
+          <td class="px-3 py-2"><span class="inline-block px-2 py-0.5 rounded-md text-xs font-bold border ${c.bg} ${c.text} ${c.border}">${p.score}</span></td>
+          <td class="px-3 py-2 text-slate-300">$${fmtPrice(p.price)}</td>
+        </tr>`;
+    }).join("");
+  }
+
+  // Engine performance bars
+  const eng = s.engine_performance || {};
+  const max = Math.max(1, ...Object.values(eng));
+  const engineLabels = {
+    volume:   { name: "Volume",    icon: "📊", color: "bg-accent" },
+    orderbook:{ name: "Orderbook", icon: "📖", color: "bg-good" },
+    whale:    { name: "Whale",     icon: "🐋", color: "bg-warn" },
+    momentum: { name: "Momentum",  icon: "📈", color: "bg-purple-500" },
+    breakout: { name: "Breakout",  icon: "🚀", color: "bg-pink-500" },
+  };
+  const enginesEl = $("#enginesChart");
+  enginesEl.innerHTML = Object.entries(engineLabels).map(([key, meta]) => {
+    const val = eng[key] || 0;
+    const pct = Math.max(2, Math.round((val / max) * 100));
+    return `
+      <div>
+        <div class="flex items-center justify-between text-xs mb-1.5">
+          <span class="text-slate-300">${meta.icon} ${meta.name}</span>
+          <span class="num-mono text-slate-200 font-bold">${val}</span>
+        </div>
+        <div class="h-2 bg-border/40 rounded-full overflow-hidden">
+          <div class="${meta.color} h-full rounded-full transition-all duration-500" style="width: ${pct}%"></div>
+        </div>
+      </div>`;
+  }).join("");
+
+  // last update
+  $("#lastUpdate").textContent = new Date().toLocaleTimeString('en-GB', { hour12: false });
+}
+
+// =============== LOADER ===============
+async function load() {
+  const icon = $("#refreshIcon");
+  icon.classList.add("animate-spin-slow");
+  try {
+    const r = await fetch(STATE_URL + "?t=" + Date.now(), { cache: "no-store" });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    const state = await r.json();
+    render(state);
+  } catch (e) {
+    console.error(e);
+    $("#liveDot").className = "live-dot inline-block w-2 h-2 rounded-full bg-bad text-bad";
+    $("#liveStatus").textContent = "OFFLINE";
+    $("#liveStatus").className = "text-bad font-semibold";
+    $("#lastUpdate").textContent = "fetch failed";
+  } finally {
+    setTimeout(() => icon.classList.remove("animate-spin-slow"), 500);
+  }
+}
+
+$("#refreshBtn").addEventListener("click", load);
+load();
+setInterval(load, REFRESH_MS);
+
+// also refresh relative times every 15s so "Xs ago" stays accurate even without new data
+setInterval(() => {
+  // call render again with cached state by re-fetching (cheap & keeps UI in sync)
+  load();
+}, REFRESH_MS);
+</script>
+
+</body>
+</html>
