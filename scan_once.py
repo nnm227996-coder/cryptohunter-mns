@@ -159,4 +159,120 @@ async def main():
 
     async with aiohttp.ClientSession(timeout=timeout, connector=connector) as session:
         # token check
-        me = await test_t
+        me = await test_token(session, BOT_TOKEN)
+        if not me.get("ok"):
+            last_error = f"invalid BOT_TOKEN: {me}"
+            log(f"FATAL: {last_error}")
+            dash["last_error"] = last_error
+            save_dash(dash)
+            sys.exit(1)
+        bot_username = me.get("result", {}).get("username", "?")
+        log(f"Bot: @{bot_username}")
+
+        # one full scan
+        start = time.time()
+        tasks = [scan_pair(session, sym, client) for sym in PAIRS]
+        results = await asyncio.gather(*tasks, return_exceptions=True)
+
+        # collect all scored pairs (for top-pairs chart)
+        scored = []          # [(symbol, score, price)]
+        signals_sent_now = 0
+
+        for res in results:
+            if not res or isinstance(res, Exception):
+                continue
+            symbol, score, details, price = res
+            if price > 0:
+                scored.append({
+                    "symbol": symbol,
+                    "score": int(score),
+                    "price": float(price),
+                    "time": datetime.now(timezone.utc).isoformat(),
+                })
+
+            # decide if a Telegram signal should be sent
+            if score >= MIN_SCORE and price > 0:
+                now_ts = time.time()
+                last = cooldown.get(symbol, 0)
+                if now_ts - last < COOLDOWN_SECONDS:
+                    log(f"  - {symbol} score={score} (cooldown, skip)")
+                    continue
+
+                msg = format_signal(symbol, price, score, details)
+                resp = await send_signal(session, BOT_TOKEN, CHANNEL_ID, msg)
+                if resp.get("ok"):
+                    cooldown[symbol] = now_ts
+                    signals_sent_now += 1
+
+                    # update engine performance for any engine that scored > 0
+                    for engine_name, _engine in ENGINES:
+                        if details.get(f"{engine_name}_pts", 0) > 0:
+                            dash["engine_performance"][engine_name] = \
+                                dash["engine_performance"].get(engine_name, 0) + 1
+
+                    # add to recent_signals (cap to RECENT_SIGNALS_KEEP)
+                    sig_entry = {
+                        "symbol": symbol,
+                        "entry": round(float(price), 8),
+                        "sl":  round(float(price) * 0.97, 8),
+                        "tp1": round(float(price) * 1.03, 8),
+                        "tp2": round(float(price) * 1.06, 8),
+                        "tp3": round(float(price) * 1.10, 8),
+                        "score": int(score),
+                        "timestamp": datetime.now(timezone.utc).isoformat(),
+                    }
+                    dash["recent_signals"].append(sig_entry)
+                    if len(dash["recent_signals"]) > RECENT_SIGNALS_KEEP:
+                        dash["recent_signals"] = dash["recent_signals"][-RECENT_SIGNALS_KEEP:]
+
+                    log(f"  ✓ SIGNAL SENT: {symbol} score={score}")
+                else:
+                    err = resp.get("description") or resp.get("error")
+                    last_error = f"telegram_send_failed: {symbol}: {err}"
+                    log(f"  ✗ {last_error}")
+
+        # ----- finalize dash state -----
+        dash["last_scan_time"] = datetime.now(timezone.utc).isoformat()
+        dash["last_scan_time_human"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
+        dash["total_scans"] = int(dash.get("total_scans", 0)) + 1
+        dash["total_signals_sent"] = int(dash.get("total_signals_sent", 0)) + signals_sent_now
+        dash["signals_today"] = recount_window(dash["recent_signals"], 24)
+        dash["signals_this_week"] = recount_window(dash["recent_signals"], 24 * 7)
+        # bot_uptime
+        if not dash.get("bot_uptime") or not dash["bot_uptime"].get("started_at"):
+            dash["bot_uptime"] = {"started_at": datetime.now(timezone.utc).isoformat(), "scans_total": 0}
+        dash["bot_uptime"]["scans_total"] = dash["total_scans"]
+        # top scoring pairs (current scan, sorted desc, top N)
+        scored.sort(key=lambda x: -x["score"])
+        dash["top_scoring_pairs"] = scored[:TOP_PAIRS_KEEP]
+        # config snapshot
+        dash["min_score"] = MIN_SCORE
+        dash["pairs_count"] = len(PAIRS)
+        dash["scan_interval_minutes"] = 5
+        # error
+        dash["last_error"] = last_error  # null if everything ok
+
+        elapsed = time.time() - start
+        log(f"DONE: scanned {len(PAIRS)}, signals_now {signals_sent_now}, "
+            f"total_signals {dash['total_signals_sent']}, elapsed {elapsed:.1f}s")
+
+    save_cooldown(cooldown)
+    save_dash(dash)
+    gc.collect()
+
+
+if __name__ == "__main__":
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        log("Stopped by user.")
+    except Exception as e:
+        log(f"FATAL unhandled: {e}")
+        # best-effort error trail
+        try:
+            d = load_dash()
+            d["last_error"] = f"unhandled: {e}"
+            save_dash(d)
+        except Exception:
+            pass
+        sys.exit(1)
