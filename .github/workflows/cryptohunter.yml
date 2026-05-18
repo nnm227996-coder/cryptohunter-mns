@@ -47,7 +47,20 @@ jobs:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
           MIN_SCORE: ${{ vars.MIN_SCORE || '70' }}
-        run: python scan_once.py
+        run: |
+          echo "=== before scan ==="
+          pwd
+          ls docs/ || true
+          head -5 docs/state.json || true
+          echo ""
+          echo "=== running scan_once.py ==="
+          python -u scan_once.py 2>&1
+          echo ""
+          echo "=== after scan ==="
+          head -5 docs/state.json || true
+          echo ""
+          echo "=== git status ==="
+          git status
 
       - name: Save cooldown state
         if: always()
