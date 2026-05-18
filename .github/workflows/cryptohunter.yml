@@ -1,0 +1,47 @@
+name: CryptoHunter v2
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: cryptohunter
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Restore cooldown state
+        id: cache-restore
+        uses: actions/cache/restore@v4
+        with:
+          path: cooldown_state.json
+          key: cooldown-state-${{ github.run_id }}
+          restore-keys: |
+            cooldown-state-
+      - name: Run scan
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+          MIN_SCORE: ${{ vars.MIN_SCORE || '70' }}
+        run: python scan_once.py
+      - name: Save cooldown state
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: cooldown_state.json
+          key: cooldown-state-${{ github.run_id }}
