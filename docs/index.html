@@ -111,6 +111,22 @@ tailwind.config = {
       <p class="text-[11px] text-muted mt-1 num-mono" id="lastScanAbs">—</p>
     </div>
   </div>
+
+  <!-- secondary stats row: avg score + active trades + closed trades -->
+  <div class="grid grid-cols-3 gap-3 sm:gap-4 mt-3 sm:mt-4">
+    <div class="bg-card border border-border rounded-2xl p-3 sm:p-4">
+      <p class="text-muted text-[10px] sm:text-xs uppercase tracking-wider">Avg Max Score (50 scans)</p>
+      <p class="mt-1 text-lg sm:text-xl font-bold text-warn num-mono" id="avgScore">—</p>
+    </div>
+    <div class="bg-card border border-border rounded-2xl p-3 sm:p-4">
+      <p class="text-muted text-[10px] sm:text-xs uppercase tracking-wider">Active Trades</p>
+      <p class="mt-1 text-lg sm:text-xl font-bold text-accent num-mono" id="activeTrades">0</p>
+    </div>
+    <div class="bg-card border border-border rounded-2xl p-3 sm:p-4">
+      <p class="text-muted text-[10px] sm:text-xs uppercase tracking-wider">Closed Trades</p>
+      <p class="mt-1 text-lg sm:text-xl font-bold text-good num-mono" id="closedTrades">0</p>
+    </div>
+  </div>
 </section>
 
 <!-- ====== RECENT SIGNALS ====== -->
@@ -193,6 +209,10 @@ tailwind.config = {
       📜 Actions / Logs
     </a>
     <span class="text-border">·</span>
+    <a href="performance.html" class="text-accent hover:underline flex items-center gap-2 font-bold">
+      📊 Performance
+    </a>
+    <span class="text-border">·</span>
     <a href="https://t.me/cryptohunter_mns_bot" target="_blank" rel="noopener" class="text-accent hover:underline flex items-center gap-2">
       💬 Telegram Bot
     </a>
@@ -254,6 +274,11 @@ function render(s) {
   $("#thresholdLabel").textContent = s.min_score ?? 70;
   $("#lastScanRel").textContent   = relTime(s.last_scan_time);
   $("#lastScanAbs").textContent   = fmtAbs(s.last_scan_time);
+
+  // secondary stats
+  if ($("#avgScore"))      $("#avgScore").textContent      = s.avg_score_last_50_scans ?? "—";
+  if ($("#activeTrades"))  $("#activeTrades").textContent  = s.active_trades_count ?? 0;
+  if ($("#closedTrades"))  $("#closedTrades").textContent  = s.closed_trades_count ?? 0;
 
   // last error / live status
   if (s.last_error) {

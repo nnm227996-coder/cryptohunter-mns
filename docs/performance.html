@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1220">
+<title>CryptoHunter v2 — Performance</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script>
+tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        bg: '#0b1220', card: '#111a2e', border: '#1f2a44',
+        accent: '#38bdf8', good: '#22c55e', warn: '#f59e0b',
+        bad: '#ef4444', muted: '#64748b'
+      }
+    }
+  }
+}
+</script>
+<style>
+  html, body { background: #0b1220; }
+  body { font-family: Inter, system-ui, sans-serif; }
+  .num-mono { font-feature-settings: 'tnum' 1; font-variant-numeric: tabular-nums; }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-track { background: #0b1220; }
+  ::-webkit-scrollbar-thumb { background: #1f2a44; border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: #2a3a5e; }
+</style>
+</head>
+<body class="dark text-slate-200 min-h-screen">
+
+<!-- TOP BAR -->
+<header class="border-b border-border bg-card/60 backdrop-blur sticky top-0 z-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center gap-3 flex-wrap">
+    <a href="index.html" class="flex items-center gap-3 hover:opacity-80">
+      <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-accent to-blue-700 flex items-center justify-center text-white text-lg font-black">📊</div>
+      <div>
+        <h1 class="text-base sm:text-lg font-bold text-accent leading-tight">Performance</h1>
+        <p class="text-[11px] sm:text-xs text-muted">CryptoHunter v2 · Trade Tracking</p>
+      </div>
+    </a>
+    <div class="grow"></div>
+    <a href="index.html" class="px-3 py-1.5 rounded-lg bg-border/40 hover:bg-border text-slate-300 text-xs sm:text-sm font-semibold">← Dashboard</a>
+    <button id="refreshBtn" class="px-3 py-1.5 rounded-lg bg-accent/10 hover:bg-accent/20 text-accent border border-accent/30 text-xs sm:text-sm font-semibold">⟳ Refresh</button>
+  </div>
+</header>
+
+<!-- STATS ROW -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 mt-6">
+  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3 sm:gap-4">
+    <div class="bg-card border border-border rounded-2xl p-3 sm:p-4">
+      <p class="text-muted text-[10px] uppercase tracking-wider">Total</p>
+      <p class="mt-1 text-xl font-black text-slate-100 num-mono" id="statTotal">0</p>
+    </div>
+    <div class="bg-card border border-border rounded-2xl p-3 sm:p-4">
+      <p class="text-muted text-[10px] uppercase tracking-wider">Win Rate</p>
+      <p class="mt-1 text-xl font-black text-good num-mono" id="statWinRate">0%</p>
+    </div>
+    <div class="bg-card border border-border rounded-2xl p-3 sm:p-4">
+      <p class="text-muted text-[10px] uppercase tracking-wider">Avg Win</p>
+      <p class="mt-1 text-xl font-black text-good num-mono" id="statAvgWin">+0%</p>
+    </div>
+    <div class="bg-card border border-border rounded-2xl p-3 sm:p-4">
+      <p class="text-muted text-[10px] uppercase tracking-wider">Avg Loss</p>
+      <p class="mt-1 text-xl font-black text-bad num-mono" id="statAvgLoss">-0%</p>
+    </div>
+    <div class="bg-card border border-border rounded-2xl p-3 sm:p-4">
+      <p class="text-muted text-[10px] uppercase tracking-wider">Profit Factor</p>
+      <p class="mt-1 text-xl font-black text-accent num-mono" id="statPF">—</p>
+    </div>
+    <div class="bg-card border border-border rounded-2xl p-3 sm:p-4">
+      <p class="text-muted text-[10px] uppercase tracking-wider">Best</p>
+      <p class="mt-1 text-xl font-black text-good num-mono" id="statBest">—</p>
+    </div>
+    <div class="bg-card border border-border rounded-2xl p-3 sm:p-4">
+      <p class="text-muted text-[10px] uppercase tracking-wider">Worst</p>
+      <p class="mt-1 text-xl font-black text-bad num-mono" id="statWorst">—</p>
+    </div>
+    <div class="bg-card border border-border rounded-2xl p-3 sm:p-4">
+      <p class="text-muted text-[10px] uppercase tracking-wider">Best Engine</p>
+      <p class="mt-1 text-base font-bold text-warn" id="statBestEngine">—</p>
+    </div>
+  </div>
+</section>
+
+<!-- EQUITY CURVE -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 mt-6">
+  <div class="bg-card border border-border rounded-2xl p-4">
+    <div class="flex items-center justify-between mb-3">
+      <h2 class="text-base sm:text-lg font-bold text-accent">📈 Equity Curve (cumulative %)</h2>
+      <span class="text-xs text-muted" id="equityCount">0 trades</span>
+    </div>
+    <div style="height: 240px;"><canvas id="equityChart"></canvas></div>
+  </div>
+</section>
+
+<!-- ACTIVE TRADES -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 mt-6">
+  <div class="flex items-center justify-between mb-3">
+    <h2 class="text-base sm:text-lg font-bold text-accent">⏱ Active Trades</h2>
+    <span id="activeCount" class="text-xs text-muted">0 active</span>
+  </div>
+  <div class="bg-card border border-border rounded-2xl overflow-hidden">
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead class="bg-border/40 text-muted text-[11px] uppercase tracking-wider">
+          <tr>
+            <th class="px-3 py-3 text-right">Pair</th>
+            <th class="px-3 py-3 text-right">Score</th>
+            <th class="px-3 py-3 text-right">Entry</th>
+            <th class="px-3 py-3 text-right hidden md:table-cell">SL</th>
+            <th class="px-3 py-3 text-right hidden md:table-cell">TP1/2/3</th>
+            <th class="px-3 py-3 text-right">Opened</th>
+            <th class="px-3 py-3 text-right">Status</th>
+          </tr>
+        </thead>
+        <tbody id="activeTable" class="num-mono">
+          <tr><td colspan="7" class="px-3 py-10 text-center text-muted">جارٍ التحميل…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSED TRADES -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 mt-6">
+  <div class="flex items-center justify-between mb-3">
+    <h2 class="text-base sm:text-lg font-bold text-accent">📋 Closed Trades</h2>
+    <span id="closedCount" class="text-xs text-muted">0 closed</span>
+  </div>
+  <div class="bg-card border border-border rounded-2xl overflow-hidden">
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead class="bg-border/40 text-muted text-[11px] uppercase tracking-wider">
+          <tr>
+            <th class="px-3 py-3 text-right">Pair</th>
+            <th class="px-3 py-3 text-right">Score</th>
+            <th class="px-3 py-3 text-right">Entry</th>
+            <th class="px-3 py-3 text-right">Exit</th>
+            <th class="px-3 py-3 text-right">Type</th>
+            <th class="px-3 py-3 text-right hidden md:table-cell">Duration</th>
+            <th class="px-3 py-3 text-right">P&L</th>
+          </tr>
+        </thead>
+        <tbody id="closedTable" class="num-mono">
+          <tr><td colspan="7" class="px-3 py-10 text-center text-muted">جارٍ التحميل…</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<footer class="max-w-7xl mx-auto px-4 sm:px-6 mt-10 mb-8">
+  <div class="bg-card border border-border rounded-2xl p-4 text-sm text-muted text-center">
+    <span class="text-warn">⚠️ هذه نتائج محاكاة بناءً على TP/SL fixed (-3%, +3/+6/+10%).</span>
+    <br>
+    آخر تحديث: <span id="lastUpdated" class="num-mono">—</span>
+  </div>
+</footer>
+
+<script>
+const TRADES_URL = "trades.json";
+const REFRESH_MS = 30000;
+
+function fmt(p) {
+  if (p == null || p === 0) return "—";
+  if (p < 0.001) return p.toFixed(8);
+  if (p < 1) return p.toFixed(6);
+  if (p < 100) return p.toFixed(4);
+  return p.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+}
+
+function scoreCls(s) {
+  if (s >= 80) return "text-good border-good/30 bg-good/15";
+  if (s >= 70) return "text-warn border-warn/30 bg-warn/15";
+  if (s >= 50) return "text-accent border-accent/30 bg-accent/10";
+  return "text-muted border-border bg-muted/10";
+}
+
+function exitTypeBadge(t) {
+  const map = {
+    tp3_hit:  {label:"TP3 🚀", cls:"text-good bg-good/20 border-good/40"},
+    tp2_hit:  {label:"TP2 ✅", cls:"text-good bg-good/15 border-good/30"},
+    tp1_hit:  {label:"TP1 ✓",  cls:"text-good bg-good/10 border-good/20"},
+    sl_hit:   {label:"SL ✗",   cls:"text-bad bg-bad/15 border-bad/30"},
+    timeout:  {label:"Timeout", cls:"text-muted bg-muted/10 border-border"},
+  };
+  const m = map[t] || {label:t, cls:"text-muted bg-muted/10 border-border"};
+  return `<span class="inline-block px-2 py-0.5 rounded-md text-xs font-bold border ${m.cls}">${m.label}</span>`;
+}
+
+function pnlBadge(pct) {
+  const sign = pct > 0 ? "+" : "";
+  const cls = pct > 0 ? "text-good" : (pct < 0 ? "text-bad" : "text-muted");
+  return `<span class="${cls} font-bold">${sign}${pct.toFixed(2)}%</span>`;
+}
+
+function relTime(iso) {
+  if (!iso) return "—";
+  const diff = Math.max(0, Date.now() - new Date(iso).getTime());
+  const m = Math.floor(diff / 60000);
+  if (m < 60) return m + "m ago";
+  const h = Math.floor(m / 60);
+  if (h < 24) return h + "h ago";
+  return Math.floor(h / 24) + "d ago";
+}
+
+let chartInstance = null;
+function drawEquityChart(closedTrades) {
+  const ctx = document.getElementById("equityChart");
+  if (!ctx) return;
+
+  // Sort closed by exit_time ascending
+  const sorted = closedTrades.slice().sort((a, b) =>
+    new Date(a.exit_time) - new Date(b.exit_time));
+  let cum = 0;
+  const labels = []; const data = [];
+  sorted.forEach((t, i) => {
+    cum += (t.pnl_pct || 0);
+    labels.push("#" + (i + 1));
+    data.push(parseFloat(cum.toFixed(2)));
+  });
+  if (!labels.length) { labels.push("Start"); data.push(0); }
+
+  if (chartInstance) chartInstance.destroy();
+  chartInstance = new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: labels,
+      datasets: [{
+        label: "Cumulative P&L %",
+        data: data,
+        borderColor: "#38bdf8",
+        backgroundColor: "rgba(56,189,248,0.12)",
+        fill: true,
+        tension: 0.25,
+        pointRadius: 2,
+      }],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { labels: { color: "#cbd5e1" } } },
+      scales: {
+        x: { ticks: { color: "#64748b" }, grid: { color: "rgba(100,116,139,0.1)" } },
+        y: { ticks: { color: "#64748b", callback: v => v + "%" },
+             grid: { color: "rgba(100,116,139,0.1)" } },
+      },
+    },
+  });
+}
+
+function computeStats(closed) {
+  const wins = closed.filter(t => (t.pnl_pct || 0) > 0);
+  const losses = closed.filter(t => (t.pnl_pct || 0) < 0);
+  const winRate = closed.length ? (wins.length / closed.length * 100) : 0;
+  const avgWin = wins.length ? wins.reduce((a, t) => a + t.pnl_pct, 0) / wins.length : 0;
+  const avgLoss = losses.length ? losses.reduce((a, t) => a + t.pnl_pct, 0) / losses.length : 0;
+  const totalProfit = wins.reduce((a, t) => a + t.pnl_pct, 0);
+  const totalLoss = Math.abs(losses.reduce((a, t) => a + t.pnl_pct, 0));
+  const pf = totalLoss > 0 ? totalProfit / totalLoss : (totalProfit > 0 ? Infinity : 0);
+  const best = closed.length ? Math.max(...closed.map(t => t.pnl_pct || 0)) : 0;
+  const worst = closed.length ? Math.min(...closed.map(t => t.pnl_pct || 0)) : 0;
+
+  // Best engine = engine that contributed to most positive-PnL trades
+  const engineWins = {};
+  wins.forEach(t => {
+    if (t.engines) {
+      Object.entries(t.engines).forEach(([k, v]) => {
+        if (v > 0) engineWins[k] = (engineWins[k] || 0) + 1;
+      });
+    }
+  });
+  let bestEngine = "—";
+  let bestCount = 0;
+  Object.entries(engineWins).forEach(([k, v]) => {
+    if (v > bestCount) { bestEngine = k; bestCount = v; }
+  });
+
+  return { total: closed.length, winRate, avgWin, avgLoss, pf, best, worst, bestEngine, bestCount };
+}
+
+function render(data) {
+  const active = data.active || [];
+  const closed = data.closed || [];
+  const $ = (id) => document.getElementById(id);
+
+  // Stats
+  const s = computeStats(closed);
+  $("statTotal").textContent = s.total;
+  $("statWinRate").textContent = s.winRate.toFixed(1) + "%";
+  $("statAvgWin").textContent = "+" + s.avgWin.toFixed(2) + "%";
+  $("statAvgLoss").textContent = s.avgLoss.toFixed(2) + "%";
+  $("statPF").textContent = s.pf === Infinity ? "∞" : s.pf.toFixed(2);
+  $("statBest").textContent = (s.best > 0 ? "+" : "") + s.best.toFixed(2) + "%";
+  $("statWorst").textContent = s.worst.toFixed(2) + "%";
+  $("statBestEngine").textContent = s.bestEngine + (s.bestCount > 0 ? ` (${s.bestCount})` : "");
+  $("equityCount").textContent = s.total + " trades";
+
+  // Active trades table
+  $("activeCount").textContent = active.length + " active";
+  const activeBody = $("activeTable");
+  if (!active.length) {
+    activeBody.innerHTML = `<tr><td colspan="7" class="px-3 py-10 text-center text-muted">لا توجد صفقات نشطة حالياً.</td></tr>`;
+  } else {
+    activeBody.innerHTML = active.slice().reverse().map(t => {
+      return `
+        <tr class="border-t border-border hover:bg-border/20">
+          <td class="px-3 py-3 font-bold text-slate-100">${t.symbol}</td>
+          <td class="px-3 py-3"><span class="inline-block px-2 py-0.5 rounded-md text-xs font-bold border ${scoreCls(t.score)}">${t.score}</span></td>
+          <td class="px-3 py-3 text-slate-100">$${fmt(t.entry_price)}</td>
+          <td class="px-3 py-3 text-bad hidden md:table-cell">$${fmt(t.sl)}</td>
+          <td class="px-3 py-3 text-good text-xs hidden md:table-cell">$${fmt(t.tp1)} / $${fmt(t.tp2)} / $${fmt(t.tp3)}</td>
+          <td class="px-3 py-3 text-muted text-xs">${relTime(t.entry_time)}</td>
+          <td class="px-3 py-3"><span class="inline-block px-2 py-0.5 rounded-md text-xs font-bold border text-accent bg-accent/10 border-accent/30">active</span></td>
+        </tr>`;
+    }).join("");
+  }
+
+  // Closed trades table
+  $("closedCount").textContent = closed.length + " closed";
+  const closedBody = $("closedTable");
+  if (!closed.length) {
+    closedBody.innerHTML = `<tr><td colspan="7" class="px-3 py-10 text-center text-muted">لا توجد صفقات منتهية بعد.</td></tr>`;
+  } else {
+    closedBody.innerHTML = closed.slice().reverse().map(t => {
+      const pnl = t.pnl_pct || 0;
+      const rowCls = pnl > 0 ? "bg-good/[0.03]" : (pnl < 0 ? "bg-bad/[0.03]" : "");
+      const dur = t.duration_minutes
+        ? (t.duration_minutes < 60 ? `${t.duration_minutes}m`
+            : t.duration_minutes < 1440 ? `${Math.round(t.duration_minutes / 60)}h`
+            : `${Math.round(t.duration_minutes / 1440)}d`)
+        : "—";
+      return `
+        <tr class="border-t border-border hover:bg-border/20 ${rowCls}">
+          <td class="px-3 py-3 font-bold text-slate-100">${t.symbol}</td>
+          <td class="px-3 py-3"><span class="inline-block px-2 py-0.5 rounded-md text-xs font-bold border ${scoreCls(t.score)}">${t.score}</span></td>
+          <td class="px-3 py-3 text-slate-100">$${fmt(t.entry_price)}</td>
+          <td class="px-3 py-3 text-slate-100">$${fmt(t.exit_price)}</td>
+          <td class="px-3 py-3">${exitTypeBadge(t.exit_type)}</td>
+          <td class="px-3 py-3 text-muted text-xs hidden md:table-cell">${dur}</td>
+          <td class="px-3 py-3">${pnlBadge(pnl)}</td>
+        </tr>`;
+    }).join("");
+  }
+
+  // Equity curve
+  drawEquityChart(closed);
+
+  $("lastUpdated").textContent = new Date().toLocaleString('en-GB', { hour12: false });
+}
+
+async function load() {
+  try {
+    const r = await fetch(TRADES_URL + "?t=" + Date.now(), { cache: "no-store" });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    const data = await r.json();
+    render(data);
+  } catch (e) {
+    console.error(e);
+    document.getElementById("activeTable").innerHTML =
+      `<tr><td colspan="7" class="px-3 py-10 text-center text-bad">فشل التحميل: ${e.message}</td></tr>`;
+  }
+}
+
+document.getElementById("refreshBtn").addEventListener("click", load);
+load();
+setInterval(load, REFRESH_MS);
+</script>
+
+</body>
+</html>
