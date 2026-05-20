@@ -2,8 +2,18 @@ name: CryptoHunter v2
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    # Two offset schedules to avoid the top-of-hour spike on GitHub Actions.
+    # The concurrency group below ensures we never run twice in parallel.
+    - cron: "2-59/5 * * * *"    # primary: every 5 min, offset +2  (00:02, 00:07, 00:12 ...)
+    - cron: "7-59/10 * * * *"   # backup:  every 10 min, offset +7 (00:07, 00:17, 00:27 ...)
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scan_once.py'
+      - 'config.py'
+      - 'engines/**'
+      - '.github/workflows/cryptohunter.yml'
 
 permissions:
   contents: write
@@ -69,22 +79,18 @@ jobs:
           path: cooldown_state.json
           key: cooldown-state-${{ github.run_id }}
 
-      - name: Commit dashboard state.json
+      - name: Commit dashboard + trades
         if: always()
         run: |
-          if [ ! -f docs/state.json ]; then
-            echo "No docs/state.json to commit — skipping."
-            exit 0
-          fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/state.json
+          [ -f docs/state.json ] && git add docs/state.json
+          [ -f docs/trades.json ] && git add docs/trades.json
           if git diff --cached --quiet; then
-            echo "No state changes to commit."
+            echo "No state/trades changes to commit."
             exit 0
           fi
-          git commit -m "chore(dashboard): update state.json [skip ci]"
-          # Rebase-pull to avoid conflicts with parallel runs, then push
+          git commit -m "chore(dashboard): update state + trades [skip ci]"
           for i in 1 2 3; do
             if git pull --rebase origin main && git push origin main; then
               echo "Pushed on attempt $i"
