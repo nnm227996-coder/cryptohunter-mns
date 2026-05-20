@@ -7,7 +7,7 @@ import asyncio
 import aiohttp
 from config import HTTP_TIMEOUT
 
-BASE_URL = "https://api.binance.com/api/v3"
+BASE_URL = "https://data-api.binance.vision/api/v3"
 
 
 class BinanceClient:
