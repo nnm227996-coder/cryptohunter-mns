@@ -18,7 +18,9 @@
         "momentum": 20,
         "breakout": 10
       }
-    },
+    }
+  ],
+  "closed": [
     {
       "id": "INJUSDT-2026-05-25T12:47:12.460126+00:00",
       "symbol": "INJUSDT",
@@ -29,20 +31,24 @@
       "tp3": 6.1996,
       "score": 50,
       "entry_time": "2026-05-25T12:47:12.460126+00:00",
-      "status": "active",
+      "status": "closed",
       "engines": {
         "volume": 0,
         "orderbook": 20,
         "whale": 20,
         "momentum": 0,
         "breakout": 10
-      }
+      },
+      "exit_type": "tp1_hit",
+      "exit_price": 5.80508,
+      "exit_time": "2026-05-25T18:00:00+00:00",
+      "pnl_pct": 3.0,
+      "duration_minutes": 312
     }
   ],
-  "closed": [],
   "meta": {
-    "total_active": 2,
-    "total_closed": 0,
-    "last_updated": "2026-05-25T22:17:24.242665+00:00"
+    "total_active": 1,
+    "total_closed": 1,
+    "last_updated": "2026-05-26T19:29:18.844510+00:00"
   }
 }
