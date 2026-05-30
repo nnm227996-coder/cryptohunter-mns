@@ -1,5 +1,25 @@
 {
-  "active": [],
+  "active": [
+    {
+      "id": "DOTUSDT-2026-05-30T09:04:53.519129+00:00",
+      "symbol": "DOTUSDT",
+      "entry_price": 1.194,
+      "sl": 1.15818,
+      "tp1": 1.22982,
+      "tp2": 1.26564,
+      "tp3": 1.3134,
+      "score": 52,
+      "entry_time": "2026-05-30T09:04:53.519129+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 20,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 0
+      }
+    }
+  ],
   "closed": [
     {
       "id": "INJUSDT-2026-05-25T12:47:12.460126+00:00",
@@ -51,8 +71,8 @@
     }
   ],
   "meta": {
-    "total_active": 0,
+    "total_active": 1,
     "total_closed": 2,
-    "last_updated": "2026-05-30T08:43:31.264235+00:00"
+    "last_updated": "2026-05-30T09:04:53.520795+00:00"
   }
 }
