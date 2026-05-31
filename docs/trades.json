@@ -18,25 +18,6 @@
         "momentum": 12,
         "breakout": 0
       }
-    },
-    {
-      "id": "PEPEUSDT-2026-05-31T09:50:34.068103+00:00",
-      "symbol": "PEPEUSDT",
-      "entry_price": 3.45e-06,
-      "sl": 3.35e-06,
-      "tp1": 3.55e-06,
-      "tp2": 3.66e-06,
-      "tp3": 3.8e-06,
-      "score": 50,
-      "entry_time": "2026-05-31T09:50:34.068103+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
     }
   ],
   "closed": [
@@ -87,11 +68,35 @@
       "exit_time": "2026-05-26T23:43:40.866505+00:00",
       "pnl_pct": -1.39,
       "duration_minutes": 2883
+    },
+    {
+      "id": "PEPEUSDT-2026-05-31T09:50:34.068103+00:00",
+      "symbol": "PEPEUSDT",
+      "entry_price": 3.45e-06,
+      "sl": 3.35e-06,
+      "tp1": 3.55e-06,
+      "tp2": 3.66e-06,
+      "tp3": 3.8e-06,
+      "score": 50,
+      "entry_time": "2026-05-31T09:50:34.068103+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 3.35e-06,
+      "exit_time": "2026-05-31T16:30:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 399
     }
   ],
   "meta": {
-    "total_active": 2,
-    "total_closed": 2,
-    "last_updated": "2026-05-31T15:03:44.852908+00:00"
+    "total_active": 1,
+    "total_closed": 3,
+    "last_updated": "2026-05-31T18:56:44.220467+00:00"
   }
 }
