@@ -1,70 +1,70 @@
 {
-  "last_scan_time": "2026-05-30T23:44:36.694979+00:00",
-  "last_scan_time_human": "2026-05-30 23:44:36 UTC",
-  "total_scans": 60,
-  "total_signals_sent": 3,
+  "last_scan_time": "2026-05-31T09:50:34.068199+00:00",
+  "last_scan_time_human": "2026-05-31 09:50:34 UTC",
+  "total_scans": 61,
+  "total_signals_sent": 4,
   "signals_today": 1,
-  "signals_this_week": 3,
+  "signals_this_week": 4,
   "top_scoring_pairs": [
     {
-      "symbol": "MATICUSDT",
-      "score": 22,
-      "price": 0.3794,
-      "time": "2026-05-30T23:44:36.694936+00:00"
-    },
-    {
       "symbol": "PEPEUSDT",
-      "score": 22,
-      "price": 3.39e-06,
-      "time": "2026-05-30T23:44:36.694974+00:00"
+      "score": 50,
+      "price": 3.45e-06,
+      "time": "2026-05-31T09:50:33.893071+00:00"
     },
     {
       "symbol": "DOTUSDT",
-      "score": 20,
-      "price": 1.186,
-      "time": "2026-05-30T23:44:36.694933+00:00"
-    },
-    {
-      "symbol": "ARBUSDT",
-      "score": 20,
-      "price": 0.1031,
-      "time": "2026-05-30T23:44:36.694957+00:00"
-    },
-    {
-      "symbol": "OPUSDT",
-      "score": 20,
-      "price": 0.12,
-      "time": "2026-05-30T23:44:36.694960+00:00"
+      "score": 34,
+      "price": 1.196,
+      "time": "2026-05-31T09:50:33.893035+00:00"
     },
     {
       "symbol": "INJUSDT",
-      "score": 20,
-      "price": 6.54,
-      "time": "2026-05-30T23:44:36.694962+00:00"
+      "score": 32,
+      "price": 6.561,
+      "time": "2026-05-31T09:50:33.893059+00:00"
     },
     {
-      "symbol": "ORDIUSDT",
-      "score": 18,
-      "price": 3.425,
-      "time": "2026-05-30T23:44:36.694972+00:00"
-    },
-    {
-      "symbol": "ADAUSDT",
-      "score": 16,
-      "price": 0.2355,
-      "time": "2026-05-30T23:44:36.694925+00:00"
-    },
-    {
-      "symbol": "DOGEUSDT",
-      "score": 16,
-      "price": 0.10042,
-      "time": "2026-05-30T23:44:36.694930+00:00"
+      "symbol": "SOLUSDT",
+      "score": 30,
+      "price": 83.01,
+      "time": "2026-05-31T09:50:33.893023+00:00"
     },
     {
       "symbol": "LINKUSDT",
-      "score": 16,
-      "price": 9.162,
-      "time": "2026-05-30T23:44:36.694939+00:00"
+      "score": 30,
+      "price": 9.269,
+      "time": "2026-05-31T09:50:33.893040+00:00"
+    },
+    {
+      "symbol": "LTCUSDT",
+      "score": 30,
+      "price": 52.52,
+      "time": "2026-05-31T09:50:33.893048+00:00"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "score": 22,
+      "price": 1.3414,
+      "time": "2026-05-31T09:50:33.893026+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
+      "score": 22,
+      "price": 0.2379,
+      "time": "2026-05-31T09:50:33.893028+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "score": 22,
+      "price": 9.03,
+      "time": "2026-05-31T09:50:33.893030+00:00"
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "score": 22,
+      "price": 0.10077,
+      "time": "2026-05-31T09:50:33.893032+00:00"
     }
   ],
   "recent_signals": [
@@ -97,25 +97,34 @@
       "tp3": 1.3134,
       "score": 52,
       "timestamp": "2026-05-30T09:04:53.519129+00:00"
+    },
+    {
+      "symbol": "PEPEUSDT",
+      "entry": 3.45e-06,
+      "sl": 3.35e-06,
+      "tp1": 3.55e-06,
+      "tp2": 3.66e-06,
+      "tp3": 3.8e-06,
+      "score": 50,
+      "timestamp": "2026-05-31T09:50:34.068103+00:00"
     }
   ],
   "engine_performance": {
     "volume": 1,
-    "orderbook": 3,
+    "orderbook": 4,
     "whale": 1,
-    "momentum": 2,
-    "breakout": 2
+    "momentum": 3,
+    "breakout": 3
   },
   "bot_uptime": {
     "started_at": "2026-05-18T20:09:55.535316+00:00",
-    "scans_total": 60
+    "scans_total": 61
   },
   "last_error": null,
   "min_score": 50,
   "pairs_count": 25,
   "scan_interval_minutes": 5,
   "recent_max_scores": [
-    34,
     42,
     54,
     36,
@@ -164,9 +173,10 @@
     48,
     48,
     36,
-    22
+    22,
+    50
   ],
-  "avg_score_last_50_scans": 36.4,
-  "active_trades_count": 1,
+  "avg_score_last_50_scans": 36.7,
+  "active_trades_count": 2,
   "closed_trades_count": 2
 }
