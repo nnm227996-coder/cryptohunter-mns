@@ -1,44 +1,5 @@
 {
-  "active": [
-    {
-      "id": "ETHUSDT-2026-06-01T23:58:35.269678+00:00",
-      "symbol": "ETHUSDT",
-      "entry_price": 2006.13,
-      "sl": 1945.9461,
-      "tp1": 2066.3139,
-      "tp2": 2126.4978,
-      "tp3": 2206.743,
-      "score": 50,
-      "entry_time": "2026-06-01T23:58:35.269678+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "DOGEUSDT-2026-06-01T23:58:35.397549+00:00",
-      "symbol": "DOGEUSDT",
-      "entry_price": 0.101,
-      "sl": 0.09797,
-      "tp1": 0.10403,
-      "tp2": 0.10706,
-      "tp3": 0.1111,
-      "score": 70,
-      "entry_time": "2026-06-01T23:58:35.397549+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    }
-  ],
+  "active": [],
   "closed": [
     {
       "id": "INJUSDT-2026-05-25T12:47:12.460126+00:00",
@@ -159,11 +120,59 @@
       "exit_time": "2026-06-02T06:45:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 681
+    },
+    {
+      "id": "ETHUSDT-2026-06-01T23:58:35.269678+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 2006.13,
+      "sl": 1945.9461,
+      "tp1": 2066.3139,
+      "tp2": 2126.4978,
+      "tp3": 2206.743,
+      "score": 50,
+      "entry_time": "2026-06-01T23:58:35.269678+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 1945.9461,
+      "exit_time": "2026-06-02T14:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 856
+    },
+    {
+      "id": "DOGEUSDT-2026-06-01T23:58:35.397549+00:00",
+      "symbol": "DOGEUSDT",
+      "entry_price": 0.101,
+      "sl": 0.09797,
+      "tp1": 0.10403,
+      "tp2": 0.10706,
+      "tp3": 0.1111,
+      "score": 70,
+      "entry_time": "2026-06-01T23:58:35.397549+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.09797,
+      "exit_time": "2026-06-02T14:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 841
     }
   ],
   "meta": {
-    "total_active": 2,
-    "total_closed": 5,
-    "last_updated": "2026-06-02T13:00:10.939742+00:00"
+    "total_active": 0,
+    "total_closed": 7,
+    "last_updated": "2026-06-02T22:12:52.835858+00:00"
   }
 }
