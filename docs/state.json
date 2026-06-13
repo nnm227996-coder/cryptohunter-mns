@@ -1,70 +1,70 @@
 {
-  "last_scan_time": "2026-06-12T23:04:20.827949+00:00",
-  "last_scan_time_human": "2026-06-12 23:04:20 UTC",
-  "total_scans": 106,
-  "total_signals_sent": 12,
-  "signals_today": 1,
-  "signals_this_week": 5,
+  "last_scan_time": "2026-06-13T10:08:33.146871+00:00",
+  "last_scan_time_human": "2026-06-13 10:08:33 UTC",
+  "total_scans": 107,
+  "total_signals_sent": 13,
+  "signals_today": 2,
+  "signals_this_week": 6,
   "top_scoring_pairs": [
     {
-      "symbol": "MATICUSDT",
-      "score": 22,
-      "price": 0.3794,
-      "time": "2026-06-12T23:04:20.827915+00:00"
-    },
-    {
-      "symbol": "DOTUSDT",
-      "score": 12,
-      "price": 0.954,
-      "time": "2026-06-12T23:04:20.827913+00:00"
-    },
-    {
-      "symbol": "ATOMUSDT",
-      "score": 12,
-      "price": 1.967,
-      "time": "2026-06-12T23:04:20.827921+00:00"
-    },
-    {
-      "symbol": "SEIUSDT",
-      "score": 12,
-      "price": 0.05103,
-      "time": "2026-06-12T23:04:20.827940+00:00"
-    },
-    {
-      "symbol": "ORDIUSDT",
-      "score": 12,
-      "price": 3.35,
-      "time": "2026-06-12T23:04:20.827942+00:00"
-    },
-    {
-      "symbol": "WIFUSDT",
-      "score": 12,
-      "price": 0.157,
-      "time": "2026-06-12T23:04:20.827946+00:00"
+      "symbol": "ETHUSDT",
+      "score": 50,
+      "price": 1674.57,
+      "time": "2026-06-13T10:08:32.936492+00:00"
     },
     {
       "symbol": "BTCUSDT",
-      "score": 10,
-      "price": 63462.0,
-      "time": "2026-06-12T23:04:20.827883+00:00"
+      "score": 42,
+      "price": 63776.29,
+      "time": "2026-06-13T10:08:32.936476+00:00"
     },
     {
-      "symbol": "ETHUSDT",
-      "score": 10,
-      "price": 1660.56,
-      "time": "2026-06-12T23:04:20.827896+00:00"
+      "symbol": "ADAUSDT",
+      "score": 36,
+      "price": 0.1729,
+      "time": "2026-06-13T10:08:33.146812+00:00"
     },
     {
-      "symbol": "BNBUSDT",
-      "score": 10,
-      "price": 602.3,
-      "time": "2026-06-12T23:04:20.827900+00:00"
+      "symbol": "UNIUSDT",
+      "score": 36,
+      "price": 2.524,
+      "time": "2026-06-13T10:08:33.146826+00:00"
     },
     {
-      "symbol": "LTCUSDT",
-      "score": 10,
-      "price": 42.95,
-      "time": "2026-06-12T23:04:20.827923+00:00"
+      "symbol": "TIAUSDT",
+      "score": 30,
+      "price": 0.3349,
+      "time": "2026-06-13T10:08:33.146848+00:00"
+    },
+    {
+      "symbol": "PEPEUSDT",
+      "score": 30,
+      "price": 2.84e-06,
+      "time": "2026-06-13T10:08:33.146863+00:00"
+    },
+    {
+      "symbol": "WIFUSDT",
+      "score": 30,
+      "price": 0.1619,
+      "time": "2026-06-13T10:08:33.146867+00:00"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "score": 28,
+      "price": 67.47,
+      "time": "2026-06-13T10:08:33.146806+00:00"
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "score": 28,
+      "price": 6.655,
+      "time": "2026-06-13T10:08:33.146814+00:00"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "score": 28,
+      "price": 0.984,
+      "time": "2026-06-13T10:08:33.146819+00:00"
     }
   ],
   "recent_signals": [
@@ -187,25 +187,34 @@
       "tp3": 70184.103,
       "score": 50,
       "timestamp": "2026-06-12T11:51:43.930418+00:00"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "entry": 1674.57,
+      "sl": 1624.3329,
+      "tp1": 1724.8071,
+      "tp2": 1775.0442,
+      "tp3": 1842.027,
+      "score": 50,
+      "timestamp": "2026-06-13T10:08:33.146721+00:00"
     }
   ],
   "engine_performance": {
     "volume": 3,
-    "orderbook": 12,
+    "orderbook": 13,
     "whale": 3,
-    "momentum": 10,
-    "breakout": 11
+    "momentum": 11,
+    "breakout": 12
   },
   "bot_uptime": {
     "started_at": "2026-05-18T20:09:55.535316+00:00",
-    "scans_total": 106
+    "scans_total": 107
   },
   "last_error": null,
   "min_score": 50,
   "pairs_count": 25,
   "scan_interval_minutes": 5,
   "recent_max_scores": [
-    48,
     48,
     36,
     22,
@@ -254,9 +263,10 @@
     42,
     50,
     40,
-    22
+    22,
+    50
   ],
   "avg_score_last_50_scans": 34.6,
-  "active_trades_count": 3,
+  "active_trades_count": 4,
   "closed_trades_count": 9
 }
