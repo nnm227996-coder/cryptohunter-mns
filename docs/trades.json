@@ -56,6 +56,44 @@
         "momentum": 20,
         "breakout": 0
       }
+    },
+    {
+      "id": "ETHUSDT-2026-06-20T05:56:10.150866+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 1725.39,
+      "sl": 1673.6283,
+      "tp1": 1777.1517,
+      "tp2": 1828.9134,
+      "tp3": 1897.929,
+      "score": 54,
+      "entry_time": "2026-06-20T05:56:10.150866+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 12,
+        "momentum": 12,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "DOGEUSDT-2026-06-20T05:56:10.323815+00:00",
+      "symbol": "DOGEUSDT",
+      "entry_price": 0.08394,
+      "sl": 0.0814218,
+      "tp1": 0.0864582,
+      "tp2": 0.0889764,
+      "tp3": 0.092334,
+      "score": 54,
+      "entry_time": "2026-06-20T05:56:10.323815+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 12,
+        "momentum": 20,
+        "breakout": 10
+      }
     }
   ],
   "closed": [
@@ -517,8 +555,8 @@
     }
   ],
   "meta": {
-    "total_active": 3,
+    "total_active": 5,
     "total_closed": 19,
-    "last_updated": "2026-06-20T01:30:25.997844+00:00"
+    "last_updated": "2026-06-20T05:56:10.325593+00:00"
   }
 }
