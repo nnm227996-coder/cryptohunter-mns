@@ -246,25 +246,6 @@
         "momentum": 20,
         "breakout": 10
       }
-    },
-    {
-      "id": "ADAUSDT-2026-06-21T20:01:02.437544+00:00",
-      "symbol": "ADAUSDT",
-      "entry_price": 0.1621,
-      "sl": 0.157237,
-      "tp1": 0.166963,
-      "tp2": 0.171826,
-      "tp3": 0.17831,
-      "score": 50,
-      "entry_time": "2026-06-21T20:01:02.437544+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 0,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
     }
   ],
   "closed": [
@@ -915,11 +896,35 @@
       "exit_time": "2026-06-21T21:00:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 91
+    },
+    {
+      "id": "ADAUSDT-2026-06-21T20:01:02.437544+00:00",
+      "symbol": "ADAUSDT",
+      "entry_price": 0.1621,
+      "sl": 0.157237,
+      "tp1": 0.166963,
+      "tp2": 0.171826,
+      "tp3": 0.17831,
+      "score": 50,
+      "entry_time": "2026-06-21T20:01:02.437544+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.157237,
+      "exit_time": "2026-06-21T23:30:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 208
     }
   ],
   "meta": {
-    "total_active": 14,
-    "total_closed": 27,
-    "last_updated": "2026-06-21T22:37:44.010870+00:00"
+    "total_active": 13,
+    "total_closed": 28,
+    "last_updated": "2026-06-21T23:39:06.101815+00:00"
   }
 }
