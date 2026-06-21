@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "ETHUSDT-2026-06-19T21:18:55.449620+00:00",
-      "symbol": "ETHUSDT",
-      "entry_price": 1707.75,
-      "sl": 1656.5175,
-      "tp1": 1758.9825,
-      "tp2": 1810.215,
-      "tp3": 1878.525,
-      "score": 50,
-      "entry_time": "2026-06-19T21:18:55.449620+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "ETHUSDT-2026-06-20T05:56:10.150866+00:00",
       "symbol": "ETHUSDT",
       "entry_price": 1725.39,
@@ -131,25 +112,6 @@
         "whale": 20,
         "momentum": 12,
         "breakout": 10
-      }
-    },
-    {
-      "id": "ORDIUSDT-2026-06-20T15:00:45.100751+00:00",
-      "symbol": "ORDIUSDT",
-      "entry_price": 3.359,
-      "sl": 3.25823,
-      "tp1": 3.45977,
-      "tp2": 3.56054,
-      "tp3": 3.6949,
-      "score": 52,
-      "entry_time": "2026-06-20T15:00:45.100751+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 20,
-        "momentum": 12,
-        "breakout": 0
       }
     },
     {
@@ -267,25 +229,6 @@
       }
     },
     {
-      "id": "TIAUSDT-2026-06-21T12:29:21.622449+00:00",
-      "symbol": "TIAUSDT",
-      "entry_price": 0.3762,
-      "sl": 0.364914,
-      "tp1": 0.387486,
-      "tp2": 0.398772,
-      "tp3": 0.41382,
-      "score": 50,
-      "entry_time": "2026-06-21T12:29:21.622449+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "SOLUSDT-2026-06-21T14:40:49.025611+00:00",
       "symbol": "SOLUSDT",
       "entry_price": 74.01,
@@ -301,44 +244,6 @@
         "orderbook": 0,
         "whale": 0,
         "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "AVAXUSDT-2026-06-21T14:40:49.195852+00:00",
-      "symbol": "AVAXUSDT",
-      "entry_price": 6.326,
-      "sl": 6.13622,
-      "tp1": 6.51578,
-      "tp2": 6.70556,
-      "tp3": 6.9586,
-      "score": 50,
-      "entry_time": "2026-06-21T14:40:49.195852+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "WIFUSDT-2026-06-21T19:28:15.628862+00:00",
-      "symbol": "WIFUSDT",
-      "entry_price": 0.1659,
-      "sl": 0.160923,
-      "tp1": 0.170877,
-      "tp2": 0.175854,
-      "tp3": 0.18249,
-      "score": 62,
-      "entry_time": "2026-06-21T19:28:15.628862+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 12,
         "breakout": 10
       }
     },
@@ -890,11 +795,131 @@
       "exit_time": "2026-06-21T16:50:33.596949+00:00",
       "pnl_pct": 1.44,
       "duration_minutes": 2888
+    },
+    {
+      "id": "ETHUSDT-2026-06-19T21:18:55.449620+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 1707.75,
+      "sl": 1656.5175,
+      "tp1": 1758.9825,
+      "tp2": 1810.215,
+      "tp3": 1878.525,
+      "score": 50,
+      "entry_time": "2026-06-19T21:18:55.449620+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 1714.51,
+      "exit_time": "2026-06-21T21:22:58.692912+00:00",
+      "pnl_pct": 0.4,
+      "duration_minutes": 2884
+    },
+    {
+      "id": "ORDIUSDT-2026-06-20T15:00:45.100751+00:00",
+      "symbol": "ORDIUSDT",
+      "entry_price": 3.359,
+      "sl": 3.25823,
+      "tp1": 3.45977,
+      "tp2": 3.56054,
+      "tp3": 3.6949,
+      "score": 52,
+      "entry_time": "2026-06-20T15:00:45.100751+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 0
+      },
+      "exit_type": "tp1_hit",
+      "exit_price": 3.45977,
+      "exit_time": "2026-06-20T16:00:00+00:00",
+      "pnl_pct": 3.0,
+      "duration_minutes": 59
+    },
+    {
+      "id": "TIAUSDT-2026-06-21T12:29:21.622449+00:00",
+      "symbol": "TIAUSDT",
+      "entry_price": 0.3762,
+      "sl": 0.364914,
+      "tp1": 0.387486,
+      "tp2": 0.398772,
+      "tp3": 0.41382,
+      "score": 50,
+      "entry_time": "2026-06-21T12:29:21.622449+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.364914,
+      "exit_time": "2026-06-21T21:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 510
+    },
+    {
+      "id": "AVAXUSDT-2026-06-21T14:40:49.195852+00:00",
+      "symbol": "AVAXUSDT",
+      "entry_price": 6.326,
+      "sl": 6.13622,
+      "tp1": 6.51578,
+      "tp2": 6.70556,
+      "tp3": 6.9586,
+      "score": 50,
+      "entry_time": "2026-06-21T14:40:49.195852+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 6.13622,
+      "exit_time": "2026-06-21T21:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 379
+    },
+    {
+      "id": "WIFUSDT-2026-06-21T19:28:15.628862+00:00",
+      "symbol": "WIFUSDT",
+      "entry_price": 0.1659,
+      "sl": 0.160923,
+      "tp1": 0.170877,
+      "tp2": 0.175854,
+      "tp3": 0.18249,
+      "score": 62,
+      "entry_time": "2026-06-21T19:28:15.628862+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.160923,
+      "exit_time": "2026-06-21T21:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 91
     }
   ],
   "meta": {
-    "total_active": 19,
-    "total_closed": 22,
-    "last_updated": "2026-06-21T20:52:15.033184+00:00"
+    "total_active": 14,
+    "total_closed": 27,
+    "last_updated": "2026-06-21T21:23:06.603382+00:00"
   }
 }
