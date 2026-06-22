@@ -77,25 +77,6 @@
       }
     },
     {
-      "id": "SOLUSDT-2026-06-21T14:40:49.025611+00:00",
-      "symbol": "SOLUSDT",
-      "entry_price": 74.01,
-      "sl": 71.7897,
-      "tp1": 76.2303,
-      "tp2": 78.4506,
-      "tp3": 81.411,
-      "score": 50,
-      "entry_time": "2026-06-21T14:40:49.025611+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 0,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "APTUSDT-2026-06-22T02:07:01.494434+00:00",
       "symbol": "APTUSDT",
       "entry_price": 0.669,
@@ -185,25 +166,6 @@
       "engines": {
         "volume": 0,
         "orderbook": 20,
-        "whale": 12,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "AVAXUSDT-2026-06-22T14:18:35.456344+00:00",
-      "symbol": "AVAXUSDT",
-      "entry_price": 6.386,
-      "sl": 6.19442,
-      "tp1": 6.57758,
-      "tp2": 6.76916,
-      "tp3": 7.0246,
-      "score": 54,
-      "entry_time": "2026-06-22T14:18:35.456344+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 12,
         "whale": 12,
         "momentum": 20,
         "breakout": 10
@@ -1117,11 +1079,59 @@
       "exit_time": "2026-06-22T21:30:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 431
+    },
+    {
+      "id": "SOLUSDT-2026-06-21T14:40:49.025611+00:00",
+      "symbol": "SOLUSDT",
+      "entry_price": 74.01,
+      "sl": 71.7897,
+      "tp1": 76.2303,
+      "tp2": 78.4506,
+      "tp3": 81.411,
+      "score": 50,
+      "entry_time": "2026-06-21T14:40:49.025611+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 71.7897,
+      "exit_time": "2026-06-22T22:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1894
+    },
+    {
+      "id": "AVAXUSDT-2026-06-22T14:18:35.456344+00:00",
+      "symbol": "AVAXUSDT",
+      "entry_price": 6.386,
+      "sl": 6.19442,
+      "tp1": 6.57758,
+      "tp2": 6.76916,
+      "tp3": 7.0246,
+      "score": 54,
+      "entry_time": "2026-06-22T14:18:35.456344+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 12,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 6.19442,
+      "exit_time": "2026-06-22T22:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 476
     }
   ],
   "meta": {
-    "total_active": 12,
-    "total_closed": 37,
-    "last_updated": "2026-06-22T22:19:29.667529+00:00"
+    "total_active": 10,
+    "total_closed": 39,
+    "last_updated": "2026-06-22T22:57:46.974001+00:00"
   }
 }
