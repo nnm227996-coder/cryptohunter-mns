@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "SEIUSDT-2026-06-20T23:39:00.191604+00:00",
-      "symbol": "SEIUSDT",
-      "entry_price": 0.05465,
-      "sl": 0.0530105,
-      "tp1": 0.0562895,
-      "tp2": 0.057929,
-      "tp3": 0.060115,
-      "score": 54,
-      "entry_time": "2026-06-20T23:39:00.191604+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 12,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BNBUSDT-2026-06-21T02:08:43.368416+00:00",
       "symbol": "BNBUSDT",
       "entry_price": 589.08,
@@ -1127,11 +1108,35 @@
       "exit_time": "2026-06-22T22:15:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 476
+    },
+    {
+      "id": "SEIUSDT-2026-06-20T23:39:00.191604+00:00",
+      "symbol": "SEIUSDT",
+      "entry_price": 0.05465,
+      "sl": 0.0530105,
+      "tp1": 0.0562895,
+      "tp2": 0.057929,
+      "tp3": 0.060115,
+      "score": 54,
+      "entry_time": "2026-06-20T23:39:00.191604+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 12,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 0.05454,
+      "exit_time": "2026-06-22T23:45:46.094011+00:00",
+      "pnl_pct": -0.2,
+      "duration_minutes": 2886
     }
   ],
   "meta": {
-    "total_active": 10,
-    "total_closed": 39,
-    "last_updated": "2026-06-22T22:57:46.974001+00:00"
+    "total_active": 9,
+    "total_closed": 40,
+    "last_updated": "2026-06-22T23:45:52.525032+00:00"
   }
 }
