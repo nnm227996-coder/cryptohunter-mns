@@ -1,5 +1,25 @@
 {
-  "active": [],
+  "active": [
+    {
+      "id": "OPUSDT-2026-06-24T23:37:40.535552+00:00",
+      "symbol": "OPUSDT",
+      "entry_price": 0.1055,
+      "sl": 0.102335,
+      "tp1": 0.108665,
+      "tp2": 0.11183,
+      "tp3": 0.11605,
+      "score": 62,
+      "entry_time": "2026-06-24T23:37:40.535552+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
+      }
+    }
+  ],
   "closed": [
     {
       "id": "INJUSDT-2026-05-25T12:47:12.460126+00:00",
@@ -1227,8 +1247,8 @@
     }
   ],
   "meta": {
-    "total_active": 0,
+    "total_active": 1,
     "total_closed": 51,
-    "last_updated": "2026-06-24T23:20:42.785056+00:00"
+    "last_updated": "2026-06-24T23:37:40.537186+00:00"
   }
 }
