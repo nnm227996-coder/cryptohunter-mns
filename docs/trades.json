@@ -1,25 +1,5 @@
 {
-  "active": [
-    {
-      "id": "SEIUSDT-2026-06-24T00:09:36.202317+00:00",
-      "symbol": "SEIUSDT",
-      "entry_price": 0.05298,
-      "sl": 0.0513906,
-      "tp1": 0.0545694,
-      "tp2": 0.0561588,
-      "tp3": 0.058278,
-      "score": 52,
-      "entry_time": "2026-06-24T00:09:36.202317+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 12,
-        "breakout": 0
-      }
-    }
-  ],
+  "active": [],
   "closed": [
     {
       "id": "INJUSDT-2026-05-25T12:47:12.460126+00:00",
@@ -1220,11 +1200,35 @@
       "exit_time": "2026-06-24T11:15:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 665
+    },
+    {
+      "id": "SEIUSDT-2026-06-24T00:09:36.202317+00:00",
+      "symbol": "SEIUSDT",
+      "entry_price": 0.05298,
+      "sl": 0.0513906,
+      "tp1": 0.0545694,
+      "tp2": 0.0561588,
+      "tp3": 0.058278,
+      "score": 52,
+      "entry_time": "2026-06-24T00:09:36.202317+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 0
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.0513906,
+      "exit_time": "2026-06-24T17:30:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1040
     }
   ],
   "meta": {
-    "total_active": 1,
-    "total_closed": 50,
-    "last_updated": "2026-06-24T17:30:05.758229+00:00"
+    "total_active": 0,
+    "total_closed": 51,
+    "last_updated": "2026-06-24T17:44:44.969526+00:00"
   }
 }
