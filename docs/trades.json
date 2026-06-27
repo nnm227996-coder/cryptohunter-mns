@@ -94,6 +94,44 @@
         "momentum": 20,
         "breakout": 10
       }
+    },
+    {
+      "id": "INJUSDT-2026-06-27T07:55:38.216708+00:00",
+      "symbol": "INJUSDT",
+      "entry_price": 5.035,
+      "sl": 4.88395,
+      "tp1": 5.18605,
+      "tp2": 5.3371,
+      "tp3": 5.5385,
+      "score": 58,
+      "entry_time": "2026-06-27T07:55:38.216708+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 6,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 20
+      }
+    },
+    {
+      "id": "WIFUSDT-2026-06-27T07:55:38.364036+00:00",
+      "symbol": "WIFUSDT",
+      "entry_price": 0.168,
+      "sl": 0.16296,
+      "tp1": 0.17304,
+      "tp2": 0.17808,
+      "tp3": 0.1848,
+      "score": 54,
+      "entry_time": "2026-06-27T07:55:38.364036+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
+      }
     }
   ],
   "closed": [
@@ -1443,8 +1481,8 @@
     }
   ],
   "meta": {
-    "total_active": 5,
+    "total_active": 7,
     "total_closed": 56,
-    "last_updated": "2026-06-27T05:07:17.449847+00:00"
+    "last_updated": "2026-06-27T07:55:38.365795+00:00"
   }
 }
