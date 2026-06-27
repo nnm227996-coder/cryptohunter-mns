@@ -115,25 +115,6 @@
       }
     },
     {
-      "id": "ORDIUSDT-2026-06-27T08:03:50.682400+00:00",
-      "symbol": "ORDIUSDT",
-      "entry_price": 3.176,
-      "sl": 3.08072,
-      "tp1": 3.27128,
-      "tp2": 3.36656,
-      "tp3": 3.4936,
-      "score": 52,
-      "entry_time": "2026-06-27T08:03:50.682400+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 12,
-        "breakout": 0
-      }
-    },
-    {
       "id": "ETHUSDT-2026-06-27T11:48:04.126398+00:00",
       "symbol": "ETHUSDT",
       "entry_price": 1584.51,
@@ -257,25 +238,6 @@
       "tp3": 2.66e-06,
       "score": 50,
       "entry_time": "2026-06-27T14:17:48.894296+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "PEPEUSDT-2026-06-27T15:42:31.273066+00:00",
-      "symbol": "PEPEUSDT",
-      "entry_price": 2.45e-06,
-      "sl": 2.38e-06,
-      "tp1": 2.52e-06,
-      "tp2": 2.6e-06,
-      "tp3": 2.7e-06,
-      "score": 50,
-      "entry_time": "2026-06-27T15:42:31.273066+00:00",
       "status": "active",
       "engines": {
         "volume": 0,
@@ -1692,11 +1654,59 @@
       "exit_time": "2026-06-27T11:15:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 199
+    },
+    {
+      "id": "ORDIUSDT-2026-06-27T08:03:50.682400+00:00",
+      "symbol": "ORDIUSDT",
+      "entry_price": 3.176,
+      "sl": 3.08072,
+      "tp1": 3.27128,
+      "tp2": 3.36656,
+      "tp3": 3.4936,
+      "score": 52,
+      "entry_time": "2026-06-27T08:03:50.682400+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 0
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 3.08072,
+      "exit_time": "2026-06-27T19:30:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 686
+    },
+    {
+      "id": "PEPEUSDT-2026-06-27T15:42:31.273066+00:00",
+      "symbol": "PEPEUSDT",
+      "entry_price": 2.45e-06,
+      "sl": 2.38e-06,
+      "tp1": 2.52e-06,
+      "tp2": 2.6e-06,
+      "tp3": 2.7e-06,
+      "score": 50,
+      "entry_time": "2026-06-27T15:42:31.273066+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 2.38e-06,
+      "exit_time": "2026-06-27T19:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 212
     }
   ],
   "meta": {
-    "total_active": 17,
-    "total_closed": 57,
-    "last_updated": "2026-06-27T18:56:00.419869+00:00"
+    "total_active": 15,
+    "total_closed": 59,
+    "last_updated": "2026-06-27T20:00:58.918181+00:00"
   }
 }
