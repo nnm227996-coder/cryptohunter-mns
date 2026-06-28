@@ -1,63 +1,6 @@
 {
   "active": [
     {
-      "id": "ETHUSDT-2026-06-26T17:22:57.543901+00:00",
-      "symbol": "ETHUSDT",
-      "entry_price": 1586.41,
-      "sl": 1538.8177,
-      "tp1": 1634.0023,
-      "tp2": 1681.5946,
-      "tp3": 1745.051,
-      "score": 50,
-      "entry_time": "2026-06-26T17:22:57.543901+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "ARBUSDT-2026-06-26T17:22:57.682505+00:00",
-      "symbol": "ARBUSDT",
-      "entry_price": 0.0745,
-      "sl": 0.072265,
-      "tp1": 0.076735,
-      "tp2": 0.07897,
-      "tp3": 0.08195,
-      "score": 50,
-      "entry_time": "2026-06-26T17:22:57.682505+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 8,
-        "orderbook": 12,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "BNBUSDT-2026-06-26T19:11:47.614302+00:00",
-      "symbol": "BNBUSDT",
-      "entry_price": 568.4,
-      "sl": 551.348,
-      "tp1": 585.452,
-      "tp2": 602.504,
-      "tp3": 625.24,
-      "score": 50,
-      "entry_time": "2026-06-26T19:11:47.614302+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "WIFUSDT-2026-06-27T07:55:38.364036+00:00",
       "symbol": "WIFUSDT",
       "entry_price": 0.168,
@@ -148,25 +91,6 @@
         "volume": 0,
         "orderbook": 20,
         "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "ARBUSDT-2026-06-27T12:58:29.634574+00:00",
-      "symbol": "ARBUSDT",
-      "entry_price": 0.0751,
-      "sl": 0.072847,
-      "tp1": 0.077353,
-      "tp2": 0.079606,
-      "tp3": 0.08261,
-      "score": 56,
-      "entry_time": "2026-06-27T12:58:29.634574+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 6,
-        "whale": 20,
         "momentum": 20,
         "breakout": 10
       }
@@ -1836,11 +1760,107 @@
       "exit_time": "2026-06-28T16:47:10.948588+00:00",
       "pnl_pct": -2.2,
       "duration_minutes": 2933
+    },
+    {
+      "id": "ETHUSDT-2026-06-26T17:22:57.543901+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 1586.41,
+      "sl": 1538.8177,
+      "tp1": 1634.0023,
+      "tp2": 1681.5946,
+      "tp3": 1745.051,
+      "score": 50,
+      "entry_time": "2026-06-26T17:22:57.543901+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 1570.84,
+      "exit_time": "2026-06-28T17:52:07.915770+00:00",
+      "pnl_pct": -0.98,
+      "duration_minutes": 2909
+    },
+    {
+      "id": "ARBUSDT-2026-06-26T17:22:57.682505+00:00",
+      "symbol": "ARBUSDT",
+      "entry_price": 0.0745,
+      "sl": 0.072265,
+      "tp1": 0.076735,
+      "tp2": 0.07897,
+      "tp3": 0.08195,
+      "score": 50,
+      "entry_time": "2026-06-26T17:22:57.682505+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 8,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 0.0732,
+      "exit_time": "2026-06-28T17:52:08.639093+00:00",
+      "pnl_pct": -1.74,
+      "duration_minutes": 2909
+    },
+    {
+      "id": "BNBUSDT-2026-06-26T19:11:47.614302+00:00",
+      "symbol": "BNBUSDT",
+      "entry_price": 568.4,
+      "sl": 551.348,
+      "tp1": 585.452,
+      "tp2": 602.504,
+      "tp3": 625.24,
+      "score": 50,
+      "entry_time": "2026-06-26T19:11:47.614302+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 551.348,
+      "exit_time": "2026-06-28T17:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 2748
+    },
+    {
+      "id": "ARBUSDT-2026-06-27T12:58:29.634574+00:00",
+      "symbol": "ARBUSDT",
+      "entry_price": 0.0751,
+      "sl": 0.072847,
+      "tp1": 0.077353,
+      "tp2": 0.079606,
+      "tp3": 0.08261,
+      "score": 56,
+      "entry_time": "2026-06-27T12:58:29.634574+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 6,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.072847,
+      "exit_time": "2026-06-28T17:30:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1711
     }
   ],
   "meta": {
-    "total_active": 17,
-    "total_closed": 63,
-    "last_updated": "2026-06-28T16:52:15.724883+00:00"
+    "total_active": 13,
+    "total_closed": 67,
+    "last_updated": "2026-06-28T17:52:12.997754+00:00"
   }
 }
