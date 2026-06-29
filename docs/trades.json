@@ -1,82 +1,6 @@
 {
   "active": [
     {
-      "id": "ETHUSDT-2026-06-27T11:48:04.126398+00:00",
-      "symbol": "ETHUSDT",
-      "entry_price": 1584.51,
-      "sl": 1536.9747,
-      "tp1": 1632.0453,
-      "tp2": 1679.5806,
-      "tp3": 1742.961,
-      "score": 50,
-      "entry_time": "2026-06-27T11:48:04.126398+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "ETHUSDT-2026-06-27T12:46:56.299013+00:00",
-      "symbol": "ETHUSDT",
-      "entry_price": 1583.69,
-      "sl": 1536.1793,
-      "tp1": 1631.2007,
-      "tp2": 1678.7114,
-      "tp3": 1742.059,
-      "score": 50,
-      "entry_time": "2026-06-27T12:46:56.299013+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "BTCUSDT-2026-06-27T12:58:29.476313+00:00",
-      "symbol": "BTCUSDT",
-      "entry_price": 60410.01,
-      "sl": 58597.7097,
-      "tp1": 62222.3103,
-      "tp2": 64034.6106,
-      "tp3": 66451.011,
-      "score": 50,
-      "entry_time": "2026-06-27T12:58:29.476313+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "ATOMUSDT-2026-06-27T14:17:48.711732+00:00",
-      "symbol": "ATOMUSDT",
-      "entry_price": 1.602,
-      "sl": 1.55394,
-      "tp1": 1.65006,
-      "tp2": 1.69812,
-      "tp3": 1.7622,
-      "score": 50,
-      "entry_time": "2026-06-27T14:17:48.711732+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-06-27T17:50:04.532544+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 60600.0,
@@ -169,6 +93,44 @@
         "whale": 12,
         "momentum": 12,
         "breakout": 10
+      }
+    },
+    {
+      "id": "UNIUSDT-2026-06-29T14:57:42.893710+00:00",
+      "symbol": "UNIUSDT",
+      "entry_price": 2.958,
+      "sl": 2.86926,
+      "tp1": 3.04674,
+      "tp2": 3.13548,
+      "tp3": 3.2538,
+      "score": 56,
+      "entry_time": "2026-06-29T14:57:42.893710+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 20,
+        "orderbook": 6,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "ORDIUSDT-2026-06-29T14:57:43.050681+00:00",
+      "symbol": "ORDIUSDT",
+      "entry_price": 3.72,
+      "sl": 3.6084,
+      "tp1": 3.8316,
+      "tp2": 3.9432,
+      "tp3": 4.092,
+      "score": 80,
+      "entry_time": "2026-06-29T14:57:43.050681+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 20,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 20
       }
     }
   ],
@@ -1900,11 +1862,107 @@
       "exit_time": "2026-06-29T11:27:26.617177+00:00",
       "pnl_pct": 6.85,
       "duration_minutes": 3091
+    },
+    {
+      "id": "ETHUSDT-2026-06-27T11:48:04.126398+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 1584.51,
+      "sl": 1536.9747,
+      "tp1": 1632.0453,
+      "tp2": 1679.5806,
+      "tp3": 1742.961,
+      "score": 50,
+      "entry_time": "2026-06-27T11:48:04.126398+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 1572.0,
+      "exit_time": "2026-06-29T14:57:36.965506+00:00",
+      "pnl_pct": -0.79,
+      "duration_minutes": 3069
+    },
+    {
+      "id": "ETHUSDT-2026-06-27T12:46:56.299013+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 1583.69,
+      "sl": 1536.1793,
+      "tp1": 1631.2007,
+      "tp2": 1678.7114,
+      "tp3": 1742.059,
+      "score": 50,
+      "entry_time": "2026-06-27T12:46:56.299013+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 1572.0,
+      "exit_time": "2026-06-29T14:57:37.821860+00:00",
+      "pnl_pct": -0.74,
+      "duration_minutes": 3010
+    },
+    {
+      "id": "BTCUSDT-2026-06-27T12:58:29.476313+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 60410.01,
+      "sl": 58597.7097,
+      "tp1": 62222.3103,
+      "tp2": 64034.6106,
+      "tp3": 66451.011,
+      "score": 50,
+      "entry_time": "2026-06-27T12:58:29.476313+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 59453.18,
+      "exit_time": "2026-06-29T14:57:38.119839+00:00",
+      "pnl_pct": -1.58,
+      "duration_minutes": 2999
+    },
+    {
+      "id": "ATOMUSDT-2026-06-27T14:17:48.711732+00:00",
+      "symbol": "ATOMUSDT",
+      "entry_price": 1.602,
+      "sl": 1.55394,
+      "tp1": 1.65006,
+      "tp2": 1.69812,
+      "tp3": 1.7622,
+      "score": 50,
+      "entry_time": "2026-06-27T14:17:48.711732+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 1.55394,
+      "exit_time": "2026-06-29T13:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 2817
     }
   ],
   "meta": {
-    "total_active": 9,
-    "total_closed": 72,
-    "last_updated": "2026-06-29T11:28:33.225414+00:00"
+    "total_active": 7,
+    "total_closed": 76,
+    "last_updated": "2026-06-29T14:57:43.052401+00:00"
   }
 }
