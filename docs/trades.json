@@ -248,25 +248,6 @@
       }
     },
     {
-      "id": "UNIUSDT-2026-07-02T11:13:37.853083+00:00",
-      "symbol": "UNIUSDT",
-      "entry_price": 2.96,
-      "sl": 2.8712,
-      "tp1": 3.0488,
-      "tp2": 3.1376,
-      "tp3": 3.256,
-      "score": 52,
-      "entry_time": "2026-07-02T11:13:37.853083+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 12,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 0,
-        "breakout": 20
-      }
-    },
-    {
       "id": "ARBUSDT-2026-07-02T13:06:46.339258+00:00",
       "symbol": "ARBUSDT",
       "entry_price": 0.0783,
@@ -2350,11 +2331,35 @@
       "exit_time": "2026-07-02T10:20:20.205705+00:00",
       "pnl_pct": 5.02,
       "duration_minutes": 2975
+    },
+    {
+      "id": "UNIUSDT-2026-07-02T11:13:37.853083+00:00",
+      "symbol": "UNIUSDT",
+      "entry_price": 2.96,
+      "sl": 2.8712,
+      "tp1": 3.0488,
+      "tp2": 3.1376,
+      "tp3": 3.256,
+      "score": 52,
+      "entry_time": "2026-07-02T11:13:37.853083+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 12,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 20
+      },
+      "exit_type": "tp3_hit",
+      "exit_price": 3.256,
+      "exit_time": "2026-07-02T16:45:00+00:00",
+      "pnl_pct": 10.0,
+      "duration_minutes": 331
     }
   ],
   "meta": {
-    "total_active": 15,
-    "total_closed": 86,
-    "last_updated": "2026-07-02T16:21:18.950655+00:00"
+    "total_active": 14,
+    "total_closed": 87,
+    "last_updated": "2026-07-02T17:10:27.833567+00:00"
   }
 }
