@@ -1,44 +1,6 @@
 {
   "active": [
     {
-      "id": "BTCUSDT-2026-07-02T18:06:41.107615+00:00",
-      "symbol": "BTCUSDT",
-      "entry_price": 61804.0,
-      "sl": 59949.88,
-      "tp1": 63658.12,
-      "tp2": 65512.24,
-      "tp3": 67984.4,
-      "score": 50,
-      "entry_time": "2026-07-02T18:06:41.107615+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "LTCUSDT-2026-07-02T18:06:41.312925+00:00",
-      "symbol": "LTCUSDT",
-      "entry_price": 43.65,
-      "sl": 42.3405,
-      "tp1": 44.9595,
-      "tp2": 46.269,
-      "tp3": 48.015,
-      "score": 56,
-      "entry_time": "2026-07-02T18:06:41.312925+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 6,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "DOTUSDT-2026-07-02T19:45:48.799350+00:00",
       "symbol": "DOTUSDT",
       "entry_price": 0.846,
@@ -699,6 +661,63 @@
         "volume": 0,
         "orderbook": 20,
         "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "APTUSDT-2026-07-04T18:16:27.144845+00:00",
+      "symbol": "APTUSDT",
+      "entry_price": 0.642,
+      "sl": 0.62274,
+      "tp1": 0.66126,
+      "tp2": 0.68052,
+      "tp3": 0.7062,
+      "score": 50,
+      "entry_time": "2026-07-04T18:16:27.144845+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "OPUSDT-2026-07-04T18:16:27.396908+00:00",
+      "symbol": "OPUSDT",
+      "entry_price": 0.1094,
+      "sl": 0.106118,
+      "tp1": 0.112682,
+      "tp2": 0.115964,
+      "tp3": 0.12034,
+      "score": 62,
+      "entry_time": "2026-07-04T18:16:27.396908+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 20,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "SEIUSDT-2026-07-04T18:16:27.633612+00:00",
+      "symbol": "SEIUSDT",
+      "entry_price": 0.05045,
+      "sl": 0.0489365,
+      "tp1": 0.0519635,
+      "tp2": 0.053477,
+      "tp3": 0.055495,
+      "score": 62,
+      "entry_time": "2026-07-04T18:16:27.633612+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 20,
         "momentum": 20,
         "breakout": 10
       }
@@ -3248,11 +3267,59 @@
       "exit_time": "2026-07-04T14:00:30.340435+00:00",
       "pnl_pct": 1.79,
       "duration_minutes": 2933
+    },
+    {
+      "id": "BTCUSDT-2026-07-02T18:06:41.107615+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 61804.0,
+      "sl": 59949.88,
+      "tp1": 63658.12,
+      "tp2": 65512.24,
+      "tp3": 67984.4,
+      "score": 50,
+      "entry_time": "2026-07-02T18:06:41.107615+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 63292.0,
+      "exit_time": "2026-07-04T18:16:19.769329+00:00",
+      "pnl_pct": 2.41,
+      "duration_minutes": 2889
+    },
+    {
+      "id": "LTCUSDT-2026-07-02T18:06:41.312925+00:00",
+      "symbol": "LTCUSDT",
+      "entry_price": 43.65,
+      "sl": 42.3405,
+      "tp1": 44.9595,
+      "tp2": 46.269,
+      "tp3": 48.015,
+      "score": 56,
+      "entry_time": "2026-07-02T18:06:41.312925+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 6,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 45.53,
+      "exit_time": "2026-07-04T18:16:20.317508+00:00",
+      "pnl_pct": 4.31,
+      "duration_minutes": 2889
     }
   ],
   "meta": {
-    "total_active": 37,
-    "total_closed": 106,
-    "last_updated": "2026-07-04T17:20:06.892626+00:00"
+    "total_active": 38,
+    "total_closed": 108,
+    "last_updated": "2026-07-04T18:16:27.635362+00:00"
   }
 }
