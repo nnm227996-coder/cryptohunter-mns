@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "DOGEUSDT-2026-07-02T04:13:55.866624+00:00",
-      "symbol": "DOGEUSDT",
-      "entry_price": 0.07328,
-      "sl": 0.0710816,
-      "tp1": 0.0754784,
-      "tp2": 0.0776768,
-      "tp3": 0.080608,
-      "score": 54,
-      "entry_time": "2026-07-02T04:13:55.866624+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 12,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "ARBUSDT-2026-07-02T13:06:46.339258+00:00",
       "symbol": "ARBUSDT",
       "entry_price": 0.0783,
@@ -547,6 +528,25 @@
         "volume": 0,
         "orderbook": 20,
         "whale": 20,
+        "momentum": 0,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "INJUSDT-2026-07-04T04:49:59.426943+00:00",
+      "symbol": "INJUSDT",
+      "entry_price": 4.921,
+      "sl": 4.77337,
+      "tp1": 5.06863,
+      "tp2": 5.21626,
+      "tp3": 5.4131,
+      "score": 50,
+      "entry_time": "2026-07-04T04:49:59.426943+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 20,
+        "orderbook": 20,
+        "whale": 0,
         "momentum": 0,
         "breakout": 10
       }
@@ -3000,11 +3000,35 @@
       "exit_time": "2026-07-03T23:35:21.673070+00:00",
       "pnl_pct": 8.51,
       "duration_minutes": 2921
+    },
+    {
+      "id": "DOGEUSDT-2026-07-02T04:13:55.866624+00:00",
+      "symbol": "DOGEUSDT",
+      "entry_price": 0.07328,
+      "sl": 0.0710816,
+      "tp1": 0.0754784,
+      "tp2": 0.0776768,
+      "tp3": 0.080608,
+      "score": 54,
+      "entry_time": "2026-07-02T04:13:55.866624+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 12,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 0.07784,
+      "exit_time": "2026-07-04T04:49:52.834588+00:00",
+      "pnl_pct": 6.22,
+      "duration_minutes": 2915
     }
   ],
   "meta": {
     "total_active": 29,
-    "total_closed": 102,
-    "last_updated": "2026-07-04T01:15:20.773493+00:00"
+    "total_closed": 103,
+    "last_updated": "2026-07-04T04:49:59.428679+00:00"
   }
 }
