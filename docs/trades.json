@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "BTCUSDT-2026-07-04T01:11:56.624354+00:00",
-      "symbol": "BTCUSDT",
-      "entry_price": 62538.0,
-      "sl": 60661.86,
-      "tp1": 64414.14,
-      "tp2": 66290.28,
-      "tp3": 68791.8,
-      "score": 50,
-      "entry_time": "2026-07-04T01:11:56.624354+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 20,
-        "momentum": 0,
-        "breakout": 10
-      }
-    },
-    {
       "id": "OPUSDT-2026-07-04T04:52:18.188404+00:00",
       "symbol": "OPUSDT",
       "entry_price": 0.1074,
@@ -3631,11 +3612,35 @@
       "exit_time": "2026-07-05T20:42:47.386483+00:00",
       "pnl_pct": -0.37,
       "duration_minutes": 2880
+    },
+    {
+      "id": "BTCUSDT-2026-07-04T01:11:56.624354+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 62538.0,
+      "sl": 60661.86,
+      "tp1": 64414.14,
+      "tp2": 66290.28,
+      "tp3": 68791.8,
+      "score": 50,
+      "entry_time": "2026-07-04T01:11:56.624354+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 63766.8,
+      "exit_time": "2026-07-06T01:22:21.441890+00:00",
+      "pnl_pct": 1.96,
+      "duration_minutes": 2890
     }
   ],
   "meta": {
-    "total_active": 18,
-    "total_closed": 137,
-    "last_updated": "2026-07-06T01:10:48.872107+00:00"
+    "total_active": 17,
+    "total_closed": 138,
+    "last_updated": "2026-07-06T01:22:29.289393+00:00"
   }
 }
