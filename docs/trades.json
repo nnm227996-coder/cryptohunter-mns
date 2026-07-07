@@ -115,44 +115,6 @@
       }
     },
     {
-      "id": "AVAXUSDT-2026-07-06T21:50:26.324959+00:00",
-      "symbol": "AVAXUSDT",
-      "entry_price": 6.995,
-      "sl": 6.78515,
-      "tp1": 7.20485,
-      "tp2": 7.4147,
-      "tp3": 7.6945,
-      "score": 62,
-      "entry_time": "2026-07-06T21:50:26.324959+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 0,
-        "whale": 12,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "NEARUSDT-2026-07-06T21:57:20.568911+00:00",
-      "symbol": "NEARUSDT",
-      "entry_price": 2.079,
-      "sl": 2.01663,
-      "tp1": 2.14137,
-      "tp2": 2.20374,
-      "tp3": 2.2869,
-      "score": 54,
-      "entry_time": "2026-07-06T21:57:20.568911+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 12,
-        "whale": 12,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-07-06T22:50:53.149534+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 64293.63,
@@ -168,44 +130,6 @@
         "orderbook": 20,
         "whale": 0,
         "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "OPUSDT-2026-07-06T23:15:19.664947+00:00",
-      "symbol": "OPUSDT",
-      "entry_price": 0.1084,
-      "sl": 0.105148,
-      "tp1": 0.111652,
-      "tp2": 0.114904,
-      "tp3": 0.11924,
-      "score": 50,
-      "entry_time": "2026-07-06T23:15:19.664947+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 0,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "ORDIUSDT-2026-07-07T01:07:53.011266+00:00",
-      "symbol": "ORDIUSDT",
-      "entry_price": 3.533,
-      "sl": 3.42701,
-      "tp1": 3.63899,
-      "tp2": 3.74498,
-      "tp3": 3.8863,
-      "score": 50,
-      "entry_time": "2026-07-07T01:07:53.011266+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 8,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 12,
         "breakout": 10
       }
     }
@@ -3810,11 +3734,107 @@
       "exit_time": "2026-07-06T18:22:40.384750+00:00",
       "pnl_pct": 1.45,
       "duration_minutes": 2942
+    },
+    {
+      "id": "AVAXUSDT-2026-07-06T21:50:26.324959+00:00",
+      "symbol": "AVAXUSDT",
+      "entry_price": 6.995,
+      "sl": 6.78515,
+      "tp1": 7.20485,
+      "tp2": 7.4147,
+      "tp3": 7.6945,
+      "score": 62,
+      "entry_time": "2026-07-06T21:50:26.324959+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 12,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 6.78515,
+      "exit_time": "2026-07-07T03:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 324
+    },
+    {
+      "id": "NEARUSDT-2026-07-06T21:57:20.568911+00:00",
+      "symbol": "NEARUSDT",
+      "entry_price": 2.079,
+      "sl": 2.01663,
+      "tp1": 2.14137,
+      "tp2": 2.20374,
+      "tp3": 2.2869,
+      "score": 54,
+      "entry_time": "2026-07-06T21:57:20.568911+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 12,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 2.01663,
+      "exit_time": "2026-07-07T03:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 317
+    },
+    {
+      "id": "OPUSDT-2026-07-06T23:15:19.664947+00:00",
+      "symbol": "OPUSDT",
+      "entry_price": 0.1084,
+      "sl": 0.105148,
+      "tp1": 0.111652,
+      "tp2": 0.114904,
+      "tp3": 0.11924,
+      "score": 50,
+      "entry_time": "2026-07-06T23:15:19.664947+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.105148,
+      "exit_time": "2026-07-07T04:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 299
+    },
+    {
+      "id": "ORDIUSDT-2026-07-07T01:07:53.011266+00:00",
+      "symbol": "ORDIUSDT",
+      "entry_price": 3.533,
+      "sl": 3.42701,
+      "tp1": 3.63899,
+      "tp2": 3.74498,
+      "tp3": 3.8863,
+      "score": 50,
+      "entry_time": "2026-07-07T01:07:53.011266+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 8,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 3.42701,
+      "exit_time": "2026-07-07T03:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 127
     }
   ],
   "meta": {
-    "total_active": 11,
-    "total_closed": 150,
-    "last_updated": "2026-07-07T01:29:01.590300+00:00"
+    "total_active": 7,
+    "total_closed": 154,
+    "last_updated": "2026-07-07T05:05:46.529944+00:00"
   }
 }
