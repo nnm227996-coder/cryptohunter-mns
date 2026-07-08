@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "ORDIUSDT-2026-07-08T18:09:01.759911+00:00",
-      "symbol": "ORDIUSDT",
-      "entry_price": 3.513,
-      "sl": 3.40761,
-      "tp1": 3.61839,
-      "tp2": 3.72378,
-      "tp3": 3.8643,
-      "score": 50,
-      "entry_time": "2026-07-08T18:09:01.759911+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "OPUSDT-2026-07-08T19:50:23.820374+00:00",
       "symbol": "OPUSDT",
       "entry_price": 0.0991,
@@ -39,21 +20,21 @@
       }
     },
     {
-      "id": "ORDIUSDT-2026-07-08T19:50:24.013986+00:00",
-      "symbol": "ORDIUSDT",
-      "entry_price": 3.51,
-      "sl": 3.4047,
-      "tp1": 3.6153,
-      "tp2": 3.7206,
-      "tp3": 3.861,
-      "score": 54,
-      "entry_time": "2026-07-08T19:50:24.013986+00:00",
+      "id": "ATOMUSDT-2026-07-08T22:50:32.889620+00:00",
+      "symbol": "ATOMUSDT",
+      "entry_price": 1.559,
+      "sl": 1.51223,
+      "tp1": 1.60577,
+      "tp2": 1.65254,
+      "tp3": 1.7149,
+      "score": 62,
+      "entry_time": "2026-07-08T22:50:32.889620+00:00",
       "status": "active",
       "engines": {
-        "volume": 12,
+        "volume": 0,
         "orderbook": 20,
-        "whale": 0,
-        "momentum": 12,
+        "whale": 12,
+        "momentum": 20,
         "breakout": 10
       }
     }
@@ -3946,11 +3927,59 @@
       "exit_time": "2026-07-08T13:45:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 901
+    },
+    {
+      "id": "ORDIUSDT-2026-07-08T18:09:01.759911+00:00",
+      "symbol": "ORDIUSDT",
+      "entry_price": 3.513,
+      "sl": 3.40761,
+      "tp1": 3.61839,
+      "tp2": 3.72378,
+      "tp3": 3.8643,
+      "score": 50,
+      "entry_time": "2026-07-08T18:09:01.759911+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 3.40761,
+      "exit_time": "2026-07-08T22:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 245
+    },
+    {
+      "id": "ORDIUSDT-2026-07-08T19:50:24.013986+00:00",
+      "symbol": "ORDIUSDT",
+      "entry_price": 3.51,
+      "sl": 3.4047,
+      "tp1": 3.6153,
+      "tp2": 3.7206,
+      "tp3": 3.861,
+      "score": 54,
+      "entry_time": "2026-07-08T19:50:24.013986+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 12,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 3.4047,
+      "exit_time": "2026-07-08T22:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 144
     }
   ],
   "meta": {
-    "total_active": 3,
-    "total_closed": 162,
-    "last_updated": "2026-07-08T21:53:45.566173+00:00"
+    "total_active": 2,
+    "total_closed": 164,
+    "last_updated": "2026-07-08T22:50:32.891313+00:00"
   }
 }
