@@ -1,83 +1,73 @@
 {
-  "last_scan_time": "2026-07-08T18:07:10.836285+00:00",
-  "last_scan_time_human": "2026-07-08 18:07:10 UTC",
-  "total_scans": 566,
-  "total_signals_sent": 162,
-  "signals_today": 1,
+  "last_scan_time": "2026-07-08T18:09:01.760011+00:00",
+  "last_scan_time_human": "2026-07-08 18:09:01 UTC",
+  "total_scans": 567,
+  "total_signals_sent": 163,
+  "signals_today": 2,
   "signals_this_week": 20,
   "top_scoring_pairs": [
     {
+      "symbol": "ORDIUSDT",
+      "score": 50,
+      "price": 3.513,
+      "time": "2026-07-08T18:09:01.515935+00:00"
+    },
+    {
       "symbol": "BTCUSDT",
       "score": 32,
-      "price": 62192.0,
-      "time": "2026-07-08T18:07:10.836210+00:00"
+      "price": 62209.62,
+      "time": "2026-07-08T18:09:01.515859+00:00"
     },
     {
-      "symbol": "ORDIUSDT",
-      "score": 30,
-      "price": 3.52,
-      "time": "2026-07-08T18:07:10.836280+00:00"
-    },
-    {
-      "symbol": "SUIUSDT",
-      "score": 24,
-      "price": 0.7091,
-      "time": "2026-07-08T18:07:10.836274+00:00"
+      "symbol": "ETHUSDT",
+      "score": 32,
+      "price": 1738.05,
+      "time": "2026-07-08T18:09:01.515874+00:00"
     },
     {
       "symbol": "MATICUSDT",
       "score": 22,
       "price": 0.3794,
-      "time": "2026-07-08T18:07:10.836253+00:00"
+      "time": "2026-07-08T18:09:01.515907+00:00"
     },
     {
       "symbol": "AVAXUSDT",
       "score": 20,
-      "price": 6.451,
-      "time": "2026-07-08T18:07:10.836246+00:00"
+      "price": 6.45,
+      "time": "2026-07-08T18:09:01.515900+00:00"
     },
     {
       "symbol": "DOGEUSDT",
       "score": 20,
       "price": 0.07263,
-      "time": "2026-07-08T18:07:10.836249+00:00"
+      "time": "2026-07-08T18:09:01.515902+00:00"
     },
     {
       "symbol": "ATOMUSDT",
       "score": 20,
       "price": 1.561,
-      "time": "2026-07-08T18:07:10.836259+00:00"
+      "time": "2026-07-08T18:09:01.515914+00:00"
     },
     {
       "symbol": "ARBUSDT",
       "score": 20,
-      "price": 0.0765,
-      "time": "2026-07-08T18:07:10.836268+00:00"
+      "price": 0.0763,
+      "time": "2026-07-08T18:09:01.515922+00:00"
     },
     {
-      "symbol": "ETHUSDT",
-      "score": 12,
-      "price": 1737.38,
-      "time": "2026-07-08T18:07:10.836223+00:00"
+      "symbol": "PEPEUSDT",
+      "score": 20,
+      "price": 2.6e-06,
+      "time": "2026-07-08T18:09:01.760001+00:00"
     },
     {
-      "symbol": "XRPUSDT",
-      "score": 12,
-      "price": 1.0881,
-      "time": "2026-07-08T18:07:10.836242+00:00"
+      "symbol": "INJUSDT",
+      "score": 18,
+      "price": 4.658,
+      "time": "2026-07-08T18:09:01.515927+00:00"
     }
   ],
   "recent_signals": [
-    {
-      "symbol": "BNBUSDT",
-      "entry": 576.2,
-      "sl": 558.914,
-      "tp1": 593.486,
-      "tp2": 610.772,
-      "tp3": 633.82,
-      "score": 50,
-      "timestamp": "2026-07-04T17:20:06.890111+00:00"
-    },
     {
       "symbol": "APTUSDT",
       "entry": 0.642,
@@ -267,25 +257,34 @@
       "tp3": 69975.389,
       "score": 50,
       "timestamp": "2026-07-07T22:43:31.934959+00:00"
+    },
+    {
+      "symbol": "ORDIUSDT",
+      "entry": 3.513,
+      "sl": 3.40761,
+      "tp1": 3.61839,
+      "tp2": 3.72378,
+      "tp3": 3.8643,
+      "score": 50,
+      "timestamp": "2026-07-08T18:09:01.759911+00:00"
     }
   ],
   "engine_performance": {
     "volume": 48,
-    "orderbook": 143,
+    "orderbook": 144,
     "whale": 67,
-    "momentum": 147,
-    "breakout": 152
+    "momentum": 148,
+    "breakout": 153
   },
   "bot_uptime": {
     "started_at": "2026-05-18T20:09:55.535316+00:00",
-    "scans_total": 566
+    "scans_total": 567
   },
   "last_error": null,
   "min_score": 50,
   "pairs_count": 25,
   "scan_interval_minutes": 5,
   "recent_max_scores": [
-    30,
     28,
     34,
     42,
@@ -334,9 +333,10 @@
     22,
     28,
     32,
-    32
+    32,
+    50
   ],
-  "avg_score_last_50_scans": 35.9,
-  "active_trades_count": 0,
+  "avg_score_last_50_scans": 36.3,
+  "active_trades_count": 1,
   "closed_trades_count": 162
 }
