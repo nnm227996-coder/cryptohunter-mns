@@ -37,6 +37,44 @@
         "momentum": 20,
         "breakout": 10
       }
+    },
+    {
+      "id": "ETHUSDT-2026-07-09T01:50:46.835122+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 1730.98,
+      "sl": 1679.0506,
+      "tp1": 1782.9094,
+      "tp2": 1834.8388,
+      "tp3": 1904.078,
+      "score": 62,
+      "entry_time": "2026-07-09T01:50:46.835122+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 20,
+        "orderbook": 20,
+        "whale": 12,
+        "momentum": 0,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "WIFUSDT-2026-07-09T01:50:46.974323+00:00",
+      "symbol": "WIFUSDT",
+      "entry_price": 0.1576,
+      "sl": 0.152872,
+      "tp1": 0.162328,
+      "tp2": 0.167056,
+      "tp3": 0.17336,
+      "score": 52,
+      "entry_time": "2026-07-09T01:50:46.974323+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 12,
+        "momentum": 20,
+        "breakout": 0
+      }
     }
   ],
   "closed": [
@@ -3978,8 +4016,8 @@
     }
   ],
   "meta": {
-    "total_active": 2,
+    "total_active": 4,
     "total_closed": 164,
-    "last_updated": "2026-07-09T01:46:17.110663+00:00"
+    "last_updated": "2026-07-09T01:50:46.976177+00:00"
   }
 }
