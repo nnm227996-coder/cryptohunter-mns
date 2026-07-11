@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "DOGEUSDT-2026-07-09T18:26:15.233975+00:00",
-      "symbol": "DOGEUSDT",
-      "entry_price": 0.07315,
-      "sl": 0.0709555,
-      "tp1": 0.0753445,
-      "tp2": 0.077539,
-      "tp3": 0.080465,
-      "score": 50,
-      "entry_time": "2026-07-09T18:26:15.233975+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "SEIUSDT-2026-07-09T21:45:35.164259+00:00",
       "symbol": "SEIUSDT",
       "entry_price": 0.04846,
@@ -4581,11 +4562,35 @@
       "exit_time": "2026-07-11T15:08:53.028965+00:00",
       "pnl_pct": 1.17,
       "duration_minutes": 2932
+    },
+    {
+      "id": "DOGEUSDT-2026-07-09T18:26:15.233975+00:00",
+      "symbol": "DOGEUSDT",
+      "entry_price": 0.07315,
+      "sl": 0.0709555,
+      "tp1": 0.0753445,
+      "tp2": 0.077539,
+      "tp3": 0.080465,
+      "score": 50,
+      "entry_time": "2026-07-09T18:26:15.233975+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 0.07544,
+      "exit_time": "2026-07-11T19:20:35.308900+00:00",
+      "pnl_pct": 3.13,
+      "duration_minutes": 2934
     }
   ],
   "meta": {
-    "total_active": 20,
-    "total_closed": 175,
-    "last_updated": "2026-07-11T18:07:03.180649+00:00"
+    "total_active": 19,
+    "total_closed": 176,
+    "last_updated": "2026-07-11T19:20:40.616583+00:00"
   }
 }
