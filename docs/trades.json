@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "SEIUSDT-2026-07-09T21:45:35.164259+00:00",
-      "symbol": "SEIUSDT",
-      "entry_price": 0.04846,
-      "sl": 0.0470062,
-      "tp1": 0.0499138,
-      "tp2": 0.0513676,
-      "tp3": 0.053306,
-      "score": 54,
-      "entry_time": "2026-07-09T21:45:35.164259+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 12,
-        "whale": 12,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "DOTUSDT-2026-07-10T20:07:43.279977+00:00",
       "symbol": "DOTUSDT",
       "entry_price": 0.872,
@@ -4662,11 +4643,35 @@
       "exit_time": "2026-07-11T19:20:35.308900+00:00",
       "pnl_pct": 3.13,
       "duration_minutes": 2934
+    },
+    {
+      "id": "SEIUSDT-2026-07-09T21:45:35.164259+00:00",
+      "symbol": "SEIUSDT",
+      "entry_price": 0.04846,
+      "sl": 0.0470062,
+      "tp1": 0.0499138,
+      "tp2": 0.0513676,
+      "tp3": 0.053306,
+      "score": 54,
+      "entry_time": "2026-07-09T21:45:35.164259+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 12,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 0.05019,
+      "exit_time": "2026-07-11T21:58:30.209273+00:00",
+      "pnl_pct": 3.57,
+      "duration_minutes": 2892
     }
   ],
   "meta": {
-    "total_active": 23,
-    "total_closed": 176,
-    "last_updated": "2026-07-11T21:05:14.149634+00:00"
+    "total_active": 22,
+    "total_closed": 177,
+    "last_updated": "2026-07-11T21:58:35.859158+00:00"
   }
 }
