@@ -398,6 +398,44 @@
         "momentum": 0,
         "breakout": 10
       }
+    },
+    {
+      "id": "OPUSDT-2026-07-11T21:03:58.758810+00:00",
+      "symbol": "OPUSDT",
+      "entry_price": 0.1061,
+      "sl": 0.102917,
+      "tp1": 0.109283,
+      "tp2": 0.112466,
+      "tp3": 0.11671,
+      "score": 62,
+      "entry_time": "2026-07-11T21:03:58.758810+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 20,
+        "orderbook": 20,
+        "whale": 12,
+        "momentum": 0,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "WIFUSDT-2026-07-11T21:03:59.008668+00:00",
+      "symbol": "WIFUSDT",
+      "entry_price": 0.1545,
+      "sl": 0.149865,
+      "tp1": 0.159135,
+      "tp2": 0.16377,
+      "tp3": 0.16995,
+      "score": 54,
+      "entry_time": "2026-07-11T21:03:59.008668+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
+      }
     }
   ],
   "closed": [
@@ -4627,8 +4665,8 @@
     }
   ],
   "meta": {
-    "total_active": 21,
+    "total_active": 23,
     "total_closed": 176,
-    "last_updated": "2026-07-11T20:12:28.136929+00:00"
+    "last_updated": "2026-07-11T21:03:59.010473+00:00"
   }
 }
