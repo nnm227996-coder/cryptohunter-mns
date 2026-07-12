@@ -1,63 +1,6 @@
 {
   "active": [
     {
-      "id": "ETHUSDT-2026-07-10T21:17:27.583495+00:00",
-      "symbol": "ETHUSDT",
-      "entry_price": 1792.58,
-      "sl": 1738.8026,
-      "tp1": 1846.3574,
-      "tp2": 1900.1348,
-      "tp3": 1971.838,
-      "score": 50,
-      "entry_time": "2026-07-10T21:17:27.583495+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "INJUSDT-2026-07-10T21:17:28.159646+00:00",
-      "symbol": "INJUSDT",
-      "entry_price": 4.912,
-      "sl": 4.76464,
-      "tp1": 5.05936,
-      "tp2": 5.20672,
-      "tp3": 5.4032,
-      "score": 54,
-      "entry_time": "2026-07-10T21:17:28.159646+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 12,
-        "whale": 12,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "BNBUSDT-2026-07-10T21:19:31.060322+00:00",
-      "symbol": "BNBUSDT",
-      "entry_price": 576.2,
-      "sl": 558.914,
-      "tp1": 593.486,
-      "tp2": 610.772,
-      "tp3": 633.82,
-      "score": 50,
-      "entry_time": "2026-07-10T21:19:31.060322+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-07-10T22:28:26.096704+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 64136.0,
@@ -92,44 +35,6 @@
         "orderbook": 20,
         "whale": 0,
         "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "APTUSDT-2026-07-10T22:28:26.483801+00:00",
-      "symbol": "APTUSDT",
-      "entry_price": 0.629,
-      "sl": 0.61013,
-      "tp1": 0.64787,
-      "tp2": 0.66674,
-      "tp3": 0.6919,
-      "score": 54,
-      "entry_time": "2026-07-10T22:28:26.483801+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 12,
-        "whale": 20,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "APTUSDT-2026-07-10T23:32:01.031639+00:00",
-      "symbol": "APTUSDT",
-      "entry_price": 0.629,
-      "sl": 0.61013,
-      "tp1": 0.64787,
-      "tp2": 0.66674,
-      "tp3": 0.6919,
-      "score": 54,
-      "entry_time": "2026-07-10T23:32:01.031639+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 12,
-        "whale": 0,
-        "momentum": 12,
         "breakout": 10
       }
     },
@@ -434,6 +339,25 @@
         "orderbook": 20,
         "whale": 0,
         "momentum": 20,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "ATOMUSDT-2026-07-12T22:02:50.643924+00:00",
+      "symbol": "ATOMUSDT",
+      "entry_price": 1.573,
+      "sl": 1.52581,
+      "tp1": 1.62019,
+      "tp2": 1.66738,
+      "tp3": 1.7303,
+      "score": 50,
+      "entry_time": "2026-07-12T22:02:50.643924+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 0,
         "breakout": 10
       }
     }
@@ -4878,11 +4802,131 @@
       "exit_time": "2026-07-12T20:11:26.004856+00:00",
       "pnl_pct": 1.63,
       "duration_minutes": 2883
+    },
+    {
+      "id": "ETHUSDT-2026-07-10T21:17:27.583495+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 1792.58,
+      "sl": 1738.8026,
+      "tp1": 1846.3574,
+      "tp2": 1900.1348,
+      "tp3": 1971.838,
+      "score": 50,
+      "entry_time": "2026-07-10T21:17:27.583495+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 1805.2,
+      "exit_time": "2026-07-12T22:02:43.621764+00:00",
+      "pnl_pct": 0.7,
+      "duration_minutes": 2925
+    },
+    {
+      "id": "INJUSDT-2026-07-10T21:17:28.159646+00:00",
+      "symbol": "INJUSDT",
+      "entry_price": 4.912,
+      "sl": 4.76464,
+      "tp1": 5.05936,
+      "tp2": 5.20672,
+      "tp3": 5.4032,
+      "score": 54,
+      "entry_time": "2026-07-10T21:17:28.159646+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 12,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 4.85,
+      "exit_time": "2026-07-12T22:02:44.587033+00:00",
+      "pnl_pct": -1.26,
+      "duration_minutes": 2925
+    },
+    {
+      "id": "BNBUSDT-2026-07-10T21:19:31.060322+00:00",
+      "symbol": "BNBUSDT",
+      "entry_price": 576.2,
+      "sl": 558.914,
+      "tp1": 593.486,
+      "tp2": 610.772,
+      "tp3": 633.82,
+      "score": 50,
+      "entry_time": "2026-07-10T21:19:31.060322+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 574.81,
+      "exit_time": "2026-07-12T22:02:44.834076+00:00",
+      "pnl_pct": -0.24,
+      "duration_minutes": 2923
+    },
+    {
+      "id": "APTUSDT-2026-07-10T22:28:26.483801+00:00",
+      "symbol": "APTUSDT",
+      "entry_price": 0.629,
+      "sl": 0.61013,
+      "tp1": 0.64787,
+      "tp2": 0.66674,
+      "tp3": 0.6919,
+      "score": 54,
+      "entry_time": "2026-07-10T22:28:26.483801+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "tp1_hit",
+      "exit_price": 0.64787,
+      "exit_time": "2026-07-11T14:30:00+00:00",
+      "pnl_pct": 3.0,
+      "duration_minutes": 961
+    },
+    {
+      "id": "APTUSDT-2026-07-10T23:32:01.031639+00:00",
+      "symbol": "APTUSDT",
+      "entry_price": 0.629,
+      "sl": 0.61013,
+      "tp1": 0.64787,
+      "tp2": 0.66674,
+      "tp3": 0.6919,
+      "score": 54,
+      "entry_time": "2026-07-10T23:32:01.031639+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "tp1_hit",
+      "exit_price": 0.64787,
+      "exit_time": "2026-07-11T14:30:00+00:00",
+      "pnl_pct": 3.0,
+      "duration_minutes": 897
     }
   ],
   "meta": {
-    "total_active": 23,
-    "total_closed": 185,
-    "last_updated": "2026-07-12T21:09:20.489868+00:00"
+    "total_active": 19,
+    "total_closed": 190,
+    "last_updated": "2026-07-12T22:02:50.645869+00:00"
   }
 }
