@@ -267,25 +267,6 @@
       }
     },
     {
-      "id": "INJUSDT-2026-07-14T23:33:03.688368+00:00",
-      "symbol": "INJUSDT",
-      "entry_price": 5.055,
-      "sl": 4.90335,
-      "tp1": 5.20665,
-      "tp2": 5.3583,
-      "tp3": 5.5605,
-      "score": 50,
-      "entry_time": "2026-07-14T23:33:03.688368+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "DOTUSDT-2026-07-15T00:13:09.197993+00:00",
       "symbol": "DOTUSDT",
       "entry_price": 0.858,
@@ -5479,11 +5460,35 @@
       "exit_time": "2026-07-15T02:30:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 831
+    },
+    {
+      "id": "INJUSDT-2026-07-14T23:33:03.688368+00:00",
+      "symbol": "INJUSDT",
+      "entry_price": 5.055,
+      "sl": 4.90335,
+      "tp1": 5.20665,
+      "tp2": 5.3583,
+      "tp3": 5.5605,
+      "score": 50,
+      "entry_time": "2026-07-14T23:33:03.688368+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 4.90335,
+      "exit_time": "2026-07-15T07:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 461
     }
   ],
   "meta": {
-    "total_active": 18,
-    "total_closed": 214,
-    "last_updated": "2026-07-15T06:02:22.541073+00:00"
+    "total_active": 17,
+    "total_closed": 215,
+    "last_updated": "2026-07-15T07:52:38.403072+00:00"
   }
 }
