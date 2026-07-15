@@ -436,6 +436,63 @@
         "momentum": 20,
         "breakout": 10
       }
+    },
+    {
+      "id": "ETHUSDT-2026-07-15T12:59:54.694048+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 1927.27,
+      "sl": 1869.4519,
+      "tp1": 1985.0881,
+      "tp2": 2042.9062,
+      "tp3": 2119.997,
+      "score": 60,
+      "entry_time": "2026-07-15T12:59:54.694048+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 20
+      }
+    },
+    {
+      "id": "DOTUSDT-2026-07-15T12:59:54.894201+00:00",
+      "symbol": "DOTUSDT",
+      "entry_price": 0.863,
+      "sl": 0.83711,
+      "tp1": 0.88889,
+      "tp2": 0.91478,
+      "tp3": 0.9493,
+      "score": 52,
+      "entry_time": "2026-07-15T12:59:54.894201+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 20
+      }
+    },
+    {
+      "id": "SUIUSDT-2026-07-15T12:59:55.085598+00:00",
+      "symbol": "SUIUSDT",
+      "entry_price": 0.7626,
+      "sl": 0.739722,
+      "tp1": 0.785478,
+      "tp2": 0.808356,
+      "tp3": 0.83886,
+      "score": 62,
+      "entry_time": "2026-07-15T12:59:55.085598+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
+      }
     }
   ],
   "closed": [
@@ -5601,8 +5658,8 @@
     }
   ],
   "meta": {
-    "total_active": 23,
+    "total_active": 26,
     "total_closed": 215,
-    "last_updated": "2026-07-15T12:43:54.241060+00:00"
+    "last_updated": "2026-07-15T12:59:55.087368+00:00"
   }
 }
