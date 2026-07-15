@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "WIFUSDT-2026-07-13T13:39:57.780214+00:00",
-      "symbol": "WIFUSDT",
-      "entry_price": 0.1507,
-      "sl": 0.146179,
-      "tp1": 0.155221,
-      "tp2": 0.159742,
-      "tp3": 0.16577,
-      "score": 56,
-      "entry_time": "2026-07-13T13:39:57.780214+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 6,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "ETHUSDT-2026-07-14T10:07:13.973263+00:00",
       "symbol": "ETHUSDT",
       "entry_price": 1790.99,
@@ -5655,11 +5636,35 @@
       "exit_time": "2026-07-15T07:15:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 461
+    },
+    {
+      "id": "WIFUSDT-2026-07-13T13:39:57.780214+00:00",
+      "symbol": "WIFUSDT",
+      "entry_price": 0.1507,
+      "sl": 0.146179,
+      "tp1": 0.155221,
+      "tp2": 0.159742,
+      "tp3": 0.16577,
+      "score": 56,
+      "entry_time": "2026-07-13T13:39:57.780214+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 6,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 0.1556,
+      "exit_time": "2026-07-15T14:26:48.866577+00:00",
+      "pnl_pct": 3.25,
+      "duration_minutes": 2926
     }
   ],
   "meta": {
-    "total_active": 26,
-    "total_closed": 215,
-    "last_updated": "2026-07-15T12:59:55.087368+00:00"
+    "total_active": 25,
+    "total_closed": 216,
+    "last_updated": "2026-07-15T14:26:57.825315+00:00"
   }
 }
