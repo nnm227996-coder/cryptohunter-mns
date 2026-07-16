@@ -607,6 +607,44 @@
         "momentum": 0,
         "breakout": 10
       }
+    },
+    {
+      "id": "ETHUSDT-2026-07-16T03:34:51.650539+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 1926.14,
+      "sl": 1868.3558,
+      "tp1": 1983.9242,
+      "tp2": 2041.7084,
+      "tp3": 2118.754,
+      "score": 50,
+      "entry_time": "2026-07-16T03:34:51.650539+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "SEIUSDT-2026-07-16T03:34:51.858983+00:00",
+      "symbol": "SEIUSDT",
+      "entry_price": 0.0488,
+      "sl": 0.047336,
+      "tp1": 0.050264,
+      "tp2": 0.051728,
+      "tp3": 0.05368,
+      "score": 54,
+      "entry_time": "2026-07-16T03:34:51.858983+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 12,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      }
     }
   ],
   "closed": [
@@ -5796,8 +5834,8 @@
     }
   ],
   "meta": {
-    "total_active": 32,
+    "total_active": 34,
     "total_closed": 216,
-    "last_updated": "2026-07-16T01:03:44.801442+00:00"
+    "last_updated": "2026-07-16T03:34:51.860833+00:00"
   }
 }
