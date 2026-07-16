@@ -1,44 +1,6 @@
 {
   "active": [
     {
-      "id": "APTUSDT-2026-07-14T23:28:19.609034+00:00",
-      "symbol": "APTUSDT",
-      "entry_price": 0.618,
-      "sl": 0.59946,
-      "tp1": 0.63654,
-      "tp2": 0.65508,
-      "tp3": 0.6798,
-      "score": 54,
-      "entry_time": "2026-07-14T23:28:19.609034+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 12,
-        "whale": 0,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "OPUSDT-2026-07-14T23:33:03.534337+00:00",
-      "symbol": "OPUSDT",
-      "entry_price": 0.1012,
-      "sl": 0.098164,
-      "tp1": 0.104236,
-      "tp2": 0.107272,
-      "tp3": 0.11132,
-      "score": 50,
-      "entry_time": "2026-07-14T23:33:03.534337+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 8,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-07-15T06:02:22.539028+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 64906.01,
@@ -92,44 +54,6 @@
         "orderbook": 12,
         "whale": 20,
         "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "SEIUSDT-2026-07-15T12:43:54.239509+00:00",
-      "symbol": "SEIUSDT",
-      "entry_price": 0.04843,
-      "sl": 0.0469771,
-      "tp1": 0.0498829,
-      "tp2": 0.0513358,
-      "tp3": 0.053273,
-      "score": 56,
-      "entry_time": "2026-07-15T12:43:54.239509+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 6,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "AVAXUSDT-2026-07-15T14:58:17.443186+00:00",
-      "symbol": "AVAXUSDT",
-      "entry_price": 6.698,
-      "sl": 6.49706,
-      "tp1": 6.89894,
-      "tp2": 7.09988,
-      "tp3": 7.3678,
-      "score": 50,
-      "entry_time": "2026-07-15T14:58:17.443186+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
         "breakout": 10
       }
     },
@@ -6008,11 +5932,107 @@
       "exit_time": "2026-07-16T23:00:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 2056
+    },
+    {
+      "id": "APTUSDT-2026-07-14T23:28:19.609034+00:00",
+      "symbol": "APTUSDT",
+      "entry_price": 0.618,
+      "sl": 0.59946,
+      "tp1": 0.63654,
+      "tp2": 0.65508,
+      "tp3": 0.6798,
+      "score": 54,
+      "entry_time": "2026-07-14T23:28:19.609034+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 0.609,
+      "exit_time": "2026-07-16T23:37:06.240042+00:00",
+      "pnl_pct": -1.46,
+      "duration_minutes": 2888
+    },
+    {
+      "id": "OPUSDT-2026-07-14T23:33:03.534337+00:00",
+      "symbol": "OPUSDT",
+      "entry_price": 0.1012,
+      "sl": 0.098164,
+      "tp1": 0.104236,
+      "tp2": 0.107272,
+      "tp3": 0.11132,
+      "score": 50,
+      "entry_time": "2026-07-14T23:33:03.534337+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 8,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 0.0985,
+      "exit_time": "2026-07-16T23:37:07.040066+00:00",
+      "pnl_pct": -2.67,
+      "duration_minutes": 2884
+    },
+    {
+      "id": "SEIUSDT-2026-07-15T12:43:54.239509+00:00",
+      "symbol": "SEIUSDT",
+      "entry_price": 0.04843,
+      "sl": 0.0469771,
+      "tp1": 0.0498829,
+      "tp2": 0.0513358,
+      "tp3": 0.053273,
+      "score": 56,
+      "entry_time": "2026-07-15T12:43:54.239509+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 6,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.0469771,
+      "exit_time": "2026-07-16T23:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 2071
+    },
+    {
+      "id": "AVAXUSDT-2026-07-15T14:58:17.443186+00:00",
+      "symbol": "AVAXUSDT",
+      "entry_price": 6.698,
+      "sl": 6.49706,
+      "tp1": 6.89894,
+      "tp2": 7.09988,
+      "tp3": 7.3678,
+      "score": 50,
+      "entry_time": "2026-07-15T14:58:17.443186+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 6.49706,
+      "exit_time": "2026-07-16T23:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1936
     }
   ],
   "meta": {
-    "total_active": 13,
-    "total_closed": 240,
-    "last_updated": "2026-07-16T23:12:26.744284+00:00"
+    "total_active": 9,
+    "total_closed": 244,
+    "last_updated": "2026-07-16T23:37:11.469922+00:00"
   }
 }
