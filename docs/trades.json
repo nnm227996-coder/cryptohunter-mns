@@ -77,25 +77,6 @@
       }
     },
     {
-      "id": "PEPEUSDT-2026-07-14T12:38:51.787854+00:00",
-      "symbol": "PEPEUSDT",
-      "entry_price": 2.77e-06,
-      "sl": 2.69e-06,
-      "tp1": 2.85e-06,
-      "tp2": 2.94e-06,
-      "tp3": 3.05e-06,
-      "score": 50,
-      "entry_time": "2026-07-14T12:38:51.787854+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "WIFUSDT-2026-07-14T12:38:56.096652+00:00",
       "symbol": "WIFUSDT",
       "entry_price": 0.1528,
@@ -244,44 +225,6 @@
         "orderbook": 20,
         "whale": 0,
         "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "DOTUSDT-2026-07-15T00:13:09.197993+00:00",
-      "symbol": "DOTUSDT",
-      "entry_price": 0.858,
-      "sl": 0.83226,
-      "tp1": 0.88374,
-      "tp2": 0.90948,
-      "tp3": 0.9438,
-      "score": 50,
-      "entry_time": "2026-07-15T00:13:09.197993+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 20,
-        "momentum": 0,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "DOTUSDT-2026-07-15T00:53:55.633046+00:00",
-      "symbol": "DOTUSDT",
-      "entry_price": 0.855,
-      "sl": 0.82935,
-      "tp1": 0.88065,
-      "tp2": 0.9063,
-      "tp3": 0.9405,
-      "score": 54,
-      "entry_time": "2026-07-15T00:53:55.633046+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 12,
-        "whale": 12,
-        "momentum": 20,
         "breakout": 10
       }
     },
@@ -435,44 +378,6 @@
         "whale": 20,
         "momentum": 0,
         "breakout": 20
-      }
-    },
-    {
-      "id": "DOTUSDT-2026-07-15T12:59:54.894201+00:00",
-      "symbol": "DOTUSDT",
-      "entry_price": 0.863,
-      "sl": 0.83711,
-      "tp1": 0.88889,
-      "tp2": 0.91478,
-      "tp3": 0.9493,
-      "score": 52,
-      "entry_time": "2026-07-15T12:59:54.894201+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 12,
-        "breakout": 20
-      }
-    },
-    {
-      "id": "SUIUSDT-2026-07-15T12:59:55.085598+00:00",
-      "symbol": "SUIUSDT",
-      "entry_price": 0.7626,
-      "sl": 0.739722,
-      "tp1": 0.785478,
-      "tp2": 0.808356,
-      "tp3": 0.83886,
-      "score": 62,
-      "entry_time": "2026-07-15T12:59:55.085598+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 20,
-        "momentum": 12,
-        "breakout": 10
       }
     },
     {
@@ -5850,11 +5755,131 @@
       "exit_time": "2026-07-15T14:26:48.866577+00:00",
       "pnl_pct": 3.25,
       "duration_minutes": 2926
+    },
+    {
+      "id": "PEPEUSDT-2026-07-14T12:38:51.787854+00:00",
+      "symbol": "PEPEUSDT",
+      "entry_price": 2.77e-06,
+      "sl": 2.69e-06,
+      "tp1": 2.85e-06,
+      "tp2": 2.94e-06,
+      "tp3": 3.05e-06,
+      "score": 50,
+      "entry_time": "2026-07-14T12:38:51.787854+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "tp2_hit",
+      "exit_price": 2.94e-06,
+      "exit_time": "2026-07-15T13:30:00+00:00",
+      "pnl_pct": 6.0,
+      "duration_minutes": 1491
+    },
+    {
+      "id": "DOTUSDT-2026-07-15T00:13:09.197993+00:00",
+      "symbol": "DOTUSDT",
+      "entry_price": 0.858,
+      "sl": 0.83226,
+      "tp1": 0.88374,
+      "tp2": 0.90948,
+      "tp3": 0.9438,
+      "score": 50,
+      "entry_time": "2026-07-15T00:13:09.197993+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.83226,
+      "exit_time": "2026-07-16T07:30:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1876
+    },
+    {
+      "id": "DOTUSDT-2026-07-15T00:53:55.633046+00:00",
+      "symbol": "DOTUSDT",
+      "entry_price": 0.855,
+      "sl": 0.82935,
+      "tp1": 0.88065,
+      "tp2": 0.9063,
+      "tp3": 0.9405,
+      "score": 54,
+      "entry_time": "2026-07-15T00:53:55.633046+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 12,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.82935,
+      "exit_time": "2026-07-16T08:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1866
+    },
+    {
+      "id": "DOTUSDT-2026-07-15T12:59:54.894201+00:00",
+      "symbol": "DOTUSDT",
+      "entry_price": 0.863,
+      "sl": 0.83711,
+      "tp1": 0.88889,
+      "tp2": 0.91478,
+      "tp3": 0.9493,
+      "score": 52,
+      "entry_time": "2026-07-15T12:59:54.894201+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 20
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.83711,
+      "exit_time": "2026-07-16T07:30:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1110
+    },
+    {
+      "id": "SUIUSDT-2026-07-15T12:59:55.085598+00:00",
+      "symbol": "SUIUSDT",
+      "entry_price": 0.7626,
+      "sl": 0.739722,
+      "tp1": 0.785478,
+      "tp2": 0.808356,
+      "tp3": 0.83886,
+      "score": 62,
+      "entry_time": "2026-07-15T12:59:55.085598+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.739722,
+      "exit_time": "2026-07-16T07:45:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1125
     }
   ],
   "meta": {
-    "total_active": 35,
-    "total_closed": 216,
-    "last_updated": "2026-07-16T06:33:35.386245+00:00"
+    "total_active": 30,
+    "total_closed": 221,
+    "last_updated": "2026-07-16T08:26:18.805374+00:00"
   }
 }
