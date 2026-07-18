@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "DOTUSDT-2026-07-16T15:50:44.476709+00:00",
-      "symbol": "DOTUSDT",
-      "entry_price": 0.854,
-      "sl": 0.82838,
-      "tp1": 0.87962,
-      "tp2": 0.90524,
-      "tp3": 0.9394,
-      "score": 50,
-      "entry_time": "2026-07-16T15:50:44.476709+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "LTCUSDT-2026-07-16T22:16:55.624507+00:00",
       "symbol": "LTCUSDT",
       "entry_price": 45.33,
@@ -6496,11 +6477,35 @@
       "exit_time": "2026-07-18T12:15:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 727
+    },
+    {
+      "id": "DOTUSDT-2026-07-16T15:50:44.476709+00:00",
+      "symbol": "DOTUSDT",
+      "entry_price": 0.854,
+      "sl": 0.82838,
+      "tp1": 0.87962,
+      "tp2": 0.90524,
+      "tp3": 0.9394,
+      "score": 50,
+      "entry_time": "2026-07-16T15:50:44.476709+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 0.831,
+      "exit_time": "2026-07-18T16:02:54.199820+00:00",
+      "pnl_pct": -2.69,
+      "duration_minutes": 2892
     }
   ],
   "meta": {
-    "total_active": 21,
-    "total_closed": 254,
-    "last_updated": "2026-07-18T15:35:41.775591+00:00"
+    "total_active": 20,
+    "total_closed": 255,
+    "last_updated": "2026-07-18T16:02:59.568359+00:00"
   }
 }
