@@ -210,25 +210,6 @@
       }
     },
     {
-      "id": "APTUSDT-2026-07-18T00:07:02.245746+00:00",
-      "symbol": "APTUSDT",
-      "entry_price": 0.624,
-      "sl": 0.60528,
-      "tp1": 0.64272,
-      "tp2": 0.66144,
-      "tp3": 0.6864,
-      "score": 58,
-      "entry_time": "2026-07-18T00:07:02.245746+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 12,
-        "orderbook": 6,
-        "whale": 20,
-        "momentum": 0,
-        "breakout": 20
-      }
-    },
-    {
       "id": "PEPEUSDT-2026-07-18T00:08:35.552656+00:00",
       "symbol": "PEPEUSDT",
       "entry_price": 2.74e-06,
@@ -6491,11 +6472,35 @@
       "exit_time": "2026-07-18T05:45:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 597
+    },
+    {
+      "id": "APTUSDT-2026-07-18T00:07:02.245746+00:00",
+      "symbol": "APTUSDT",
+      "entry_price": 0.624,
+      "sl": 0.60528,
+      "tp1": 0.64272,
+      "tp2": 0.66144,
+      "tp3": 0.6864,
+      "score": 58,
+      "entry_time": "2026-07-18T00:07:02.245746+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 12,
+        "orderbook": 6,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 20
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.60528,
+      "exit_time": "2026-07-18T12:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 727
     }
   ],
   "meta": {
-    "total_active": 22,
-    "total_closed": 253,
-    "last_updated": "2026-07-18T12:11:14.514619+00:00"
+    "total_active": 21,
+    "total_closed": 254,
+    "last_updated": "2026-07-18T12:29:45.742418+00:00"
   }
 }
