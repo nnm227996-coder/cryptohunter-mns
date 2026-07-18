@@ -417,6 +417,63 @@
         "momentum": 0,
         "breakout": 0
       }
+    },
+    {
+      "id": "BTCUSDT-2026-07-18T17:32:59.790281+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 64317.99,
+      "sl": 62388.4503,
+      "tp1": 66247.5297,
+      "tp2": 68177.0694,
+      "tp3": 70749.789,
+      "score": 50,
+      "entry_time": "2026-07-18T17:32:59.790281+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "ATOMUSDT-2026-07-18T17:33:00.005189+00:00",
+      "symbol": "ATOMUSDT",
+      "entry_price": 1.496,
+      "sl": 1.45112,
+      "tp1": 1.54088,
+      "tp2": 1.58576,
+      "tp3": 1.6456,
+      "score": 50,
+      "entry_time": "2026-07-18T17:33:00.005189+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 8,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "WIFUSDT-2026-07-18T17:33:00.221115+00:00",
+      "symbol": "WIFUSDT",
+      "entry_price": 0.155,
+      "sl": 0.15035,
+      "tp1": 0.15965,
+      "tp2": 0.1643,
+      "tp3": 0.1705,
+      "score": 50,
+      "entry_time": "2026-07-18T17:33:00.221115+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 10
+      }
     }
   ],
   "closed": [
@@ -6542,8 +6599,8 @@
     }
   ],
   "meta": {
-    "total_active": 22,
+    "total_active": 25,
     "total_closed": 255,
-    "last_updated": "2026-07-18T17:06:06.743947+00:00"
+    "last_updated": "2026-07-18T17:33:00.222545+00:00"
   }
 }
