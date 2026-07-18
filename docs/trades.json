@@ -379,6 +379,44 @@
         "momentum": 20,
         "breakout": 20
       }
+    },
+    {
+      "id": "BTCUSDT-2026-07-18T16:31:39.700520+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 64154.99,
+      "sl": 62230.3403,
+      "tp1": 66079.6397,
+      "tp2": 68004.2894,
+      "tp3": 70570.489,
+      "score": 50,
+      "entry_time": "2026-07-18T16:31:39.700520+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "UNIUSDT-2026-07-18T16:31:39.948188+00:00",
+      "symbol": "UNIUSDT",
+      "entry_price": 3.535,
+      "sl": 3.42895,
+      "tp1": 3.64105,
+      "tp2": 3.7471,
+      "tp3": 3.8885,
+      "score": 52,
+      "entry_time": "2026-07-18T16:31:39.948188+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 20,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 0
+      }
     }
   ],
   "closed": [
@@ -6504,8 +6542,8 @@
     }
   ],
   "meta": {
-    "total_active": 20,
+    "total_active": 22,
     "total_closed": 255,
-    "last_updated": "2026-07-18T16:02:59.568359+00:00"
+    "last_updated": "2026-07-18T16:31:39.950196+00:00"
   }
 }
