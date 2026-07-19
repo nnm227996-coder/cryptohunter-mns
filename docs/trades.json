@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "BTCUSDT-2026-07-17T16:49:52.597406+00:00",
-      "symbol": "BTCUSDT",
-      "entry_price": 63631.99,
-      "sl": 61723.0303,
-      "tp1": 65540.9497,
-      "tp2": 67449.9094,
-      "tp3": 69995.189,
-      "score": 50,
-      "entry_time": "2026-07-17T16:49:52.597406+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-07-17T18:44:38.580990+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 64108.0,
@@ -226,25 +207,6 @@
         "whale": 0,
         "momentum": 20,
         "breakout": 10
-      }
-    },
-    {
-      "id": "APTUSDT-2026-07-18T11:27:41.914062+00:00",
-      "symbol": "APTUSDT",
-      "entry_price": 0.612,
-      "sl": 0.59364,
-      "tp1": 0.63036,
-      "tp2": 0.64872,
-      "tp3": 0.6732,
-      "score": 52,
-      "entry_time": "2026-07-18T11:27:41.914062+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 12,
-        "whale": 20,
-        "momentum": 0,
-        "breakout": 0
       }
     },
     {
@@ -732,25 +694,6 @@
       "tp3": 7.2468,
       "score": 50,
       "entry_time": "2026-07-19T00:04:39.707101+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "DOTUSDT-2026-07-19T00:04:39.870860+00:00",
-      "symbol": "DOTUSDT",
-      "entry_price": 0.838,
-      "sl": 0.81286,
-      "tp1": 0.86314,
-      "tp2": 0.88828,
-      "tp3": 0.9218,
-      "score": 50,
-      "entry_time": "2026-07-19T00:04:39.870860+00:00",
       "status": "active",
       "engines": {
         "volume": 0,
@@ -7210,11 +7153,83 @@
       "exit_time": "2026-07-19T16:09:03.057219+00:00",
       "pnl_pct": -1.46,
       "duration_minutes": 2899
+    },
+    {
+      "id": "BTCUSDT-2026-07-17T16:49:52.597406+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 63631.99,
+      "sl": 61723.0303,
+      "tp1": 65540.9497,
+      "tp2": 67449.9094,
+      "tp3": 69995.189,
+      "score": 50,
+      "entry_time": "2026-07-17T16:49:52.597406+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 64671.3,
+      "exit_time": "2026-07-19T17:14:20.111452+00:00",
+      "pnl_pct": 1.63,
+      "duration_minutes": 2904
+    },
+    {
+      "id": "APTUSDT-2026-07-18T11:27:41.914062+00:00",
+      "symbol": "APTUSDT",
+      "entry_price": 0.612,
+      "sl": 0.59364,
+      "tp1": 0.63036,
+      "tp2": 0.64872,
+      "tp3": 0.6732,
+      "score": 52,
+      "entry_time": "2026-07-18T11:27:41.914062+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 0
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.59364,
+      "exit_time": "2026-07-19T17:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1772
+    },
+    {
+      "id": "DOTUSDT-2026-07-19T00:04:39.870860+00:00",
+      "symbol": "DOTUSDT",
+      "entry_price": 0.838,
+      "sl": 0.81286,
+      "tp1": 0.86314,
+      "tp2": 0.88828,
+      "tp3": 0.9218,
+      "score": 50,
+      "entry_time": "2026-07-19T00:04:39.870860+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.81286,
+      "exit_time": "2026-07-19T17:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1015
     }
   ],
   "meta": {
-    "total_active": 51,
-    "total_closed": 260,
-    "last_updated": "2026-07-19T16:31:38.271443+00:00"
+    "total_active": 48,
+    "total_closed": 263,
+    "last_updated": "2026-07-19T17:14:32.967695+00:00"
   }
 }
