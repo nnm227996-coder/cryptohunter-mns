@@ -1,93 +1,73 @@
 {
-  "last_scan_time": "2026-07-19T14:42:06.320025+00:00",
-  "last_scan_time_human": "2026-07-19 14:42:06 UTC",
-  "total_scans": 894,
-  "total_signals_sent": 309,
+  "last_scan_time": "2026-07-19T15:13:39.404438+00:00",
+  "last_scan_time_human": "2026-07-19 15:13:39 UTC",
+  "total_scans": 895,
+  "total_signals_sent": 311,
   "signals_today": 20,
   "signals_this_week": 20,
   "top_scoring_pairs": [
     {
-      "symbol": "ORDIUSDT",
+      "symbol": "ATOMUSDT",
+      "score": 54,
+      "price": 1.49,
+      "time": "2026-07-19T15:13:39.218033+00:00"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "score": 50,
+      "price": 1.0983,
+      "time": "2026-07-19T15:13:39.041922+00:00"
+    },
+    {
+      "symbol": "BTCUSDT",
       "score": 42,
-      "price": 3.675,
-      "time": "2026-07-19T14:42:06.320018+00:00"
+      "price": 64570.48,
+      "time": "2026-07-19T15:13:39.041900+00:00"
+    },
+    {
+      "symbol": "SEIUSDT",
+      "score": 42,
+      "price": 0.04665,
+      "time": "2026-07-19T15:13:39.404431+00:00"
     },
     {
       "symbol": "LTCUSDT",
       "score": 36,
-      "price": 47.3,
-      "time": "2026-07-19T14:42:06.319997+00:00"
+      "price": 47.27,
+      "time": "2026-07-19T15:13:39.404414+00:00"
     },
     {
-      "symbol": "NEARUSDT",
-      "score": 36,
-      "price": 1.928,
-      "time": "2026-07-19T14:42:06.319999+00:00"
-    },
-    {
-      "symbol": "SEIUSDT",
+      "symbol": "ORDIUSDT",
       "score": 34,
-      "price": 0.04654,
-      "time": "2026-07-19T14:42:06.320016+00:00"
+      "price": 3.651,
+      "time": "2026-07-19T15:13:39.404433+00:00"
+    },
+    {
+      "symbol": "INJUSDT",
+      "score": 32,
+      "price": 5.111,
+      "time": "2026-07-19T15:13:39.404426+00:00"
     },
     {
       "symbol": "SOLUSDT",
       "score": 30,
-      "price": 76.35,
-      "time": "2026-07-19T14:42:06.319970+00:00"
+      "price": 76.3,
+      "time": "2026-07-19T15:13:39.041919+00:00"
     },
     {
-      "symbol": "XRPUSDT",
+      "symbol": "NEARUSDT",
+      "score": 30,
+      "price": 1.927,
+      "time": "2026-07-19T15:13:39.404418+00:00"
+    },
+    {
+      "symbol": "ADAUSDT",
       "score": 28,
-      "price": 1.0956,
-      "time": "2026-07-19T14:42:06.319973+00:00"
-    },
-    {
-      "symbol": "ATOMUSDT",
-      "score": 28,
-      "price": 1.489,
-      "time": "2026-07-19T14:42:06.319994+00:00"
-    },
-    {
-      "symbol": "ARBUSDT",
-      "score": 28,
-      "price": 0.0887,
-      "time": "2026-07-19T14:42:06.320004+00:00"
-    },
-    {
-      "symbol": "INJUSDT",
-      "score": 28,
-      "price": 5.128,
-      "time": "2026-07-19T14:42:06.320009+00:00"
-    },
-    {
-      "symbol": "BTCUSDT",
-      "score": 22,
-      "price": 64486.95,
-      "time": "2026-07-19T14:42:06.319950+00:00"
+      "price": 0.1665,
+      "time": "2026-07-19T15:13:39.218012+00:00"
     }
   ],
   "recent_signals": [
-    {
-      "symbol": "BNBUSDT",
-      "entry": 570.52,
-      "sl": 553.4044,
-      "tp1": 587.6356,
-      "tp2": 604.7512,
-      "tp3": 627.572,
-      "score": 50,
-      "timestamp": "2026-07-18T22:57:20.955748+00:00"
-    },
-    {
-      "symbol": "INJUSDT",
-      "entry": 5.161,
-      "sl": 5.00617,
-      "tp1": 5.31583,
-      "tp2": 5.47066,
-      "tp3": 5.6771,
-      "score": 50,
-      "timestamp": "2026-07-18T22:57:21.157300+00:00"
-    },
     {
       "symbol": "ATOMUSDT",
       "entry": 1.499,
@@ -267,25 +247,44 @@
       "tp3": 4.0205,
       "score": 50,
       "timestamp": "2026-07-19T12:35:37.775980+00:00"
+    },
+    {
+      "symbol": "XRPUSDT",
+      "entry": 1.0983,
+      "sl": 1.065351,
+      "tp1": 1.131249,
+      "tp2": 1.164198,
+      "tp3": 1.20813,
+      "score": 50,
+      "timestamp": "2026-07-19T15:13:39.217943+00:00"
+    },
+    {
+      "symbol": "ATOMUSDT",
+      "entry": 1.49,
+      "sl": 1.4453,
+      "tp1": 1.5347,
+      "tp2": 1.5794,
+      "tp3": 1.639,
+      "score": 54,
+      "timestamp": "2026-07-19T15:13:39.404372+00:00"
     }
   ],
   "engine_performance": {
-    "volume": 104,
-    "orderbook": 262,
-    "whale": 131,
-    "momentum": 268,
-    "breakout": 287
+    "volume": 105,
+    "orderbook": 263,
+    "whale": 132,
+    "momentum": 270,
+    "breakout": 289
   },
   "bot_uptime": {
     "started_at": "2026-05-18T20:09:55.535316+00:00",
-    "scans_total": 894
+    "scans_total": 895
   },
   "last_error": null,
   "min_score": 50,
   "pairs_count": 25,
   "scan_interval_minutes": 5,
   "recent_max_scores": [
-    34,
     34,
     42,
     54,
@@ -334,9 +333,10 @@
     50,
     42,
     42,
-    42
+    42,
+    54
   ],
-  "avg_score_last_50_scans": 47.2,
-  "active_trades_count": 50,
+  "avg_score_last_50_scans": 47.6,
+  "active_trades_count": 52,
   "closed_trades_count": 259
 }
