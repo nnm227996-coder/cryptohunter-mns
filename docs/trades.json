@@ -1,44 +1,6 @@
 {
   "active": [
     {
-      "id": "BNBUSDT-2026-07-18T12:11:14.312878+00:00",
-      "symbol": "BNBUSDT",
-      "entry_price": 570.01,
-      "sl": 552.9097,
-      "tp1": 587.1103,
-      "tp2": 604.2106,
-      "tp3": 627.011,
-      "score": 50,
-      "entry_time": "2026-07-18T12:11:14.312878+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "LINKUSDT-2026-07-18T12:11:14.512594+00:00",
-      "symbol": "LINKUSDT",
-      "entry_price": 8.302,
-      "sl": 8.05294,
-      "tp1": 8.55106,
-      "tp2": 8.80012,
-      "tp3": 9.1322,
-      "score": 52,
-      "entry_time": "2026-07-18T12:11:14.512594+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 12,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 20
-      }
-    },
-    {
       "id": "BTCUSDT-2026-07-18T16:31:39.700520+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 64154.99,
@@ -7679,11 +7641,59 @@
       "exit_time": "2026-07-20T12:04:50.497685+00:00",
       "pnl_pct": 2.42,
       "duration_minutes": 2918
+    },
+    {
+      "id": "BNBUSDT-2026-07-18T12:11:14.312878+00:00",
+      "symbol": "BNBUSDT",
+      "entry_price": 570.01,
+      "sl": 552.9097,
+      "tp1": 587.1103,
+      "tp2": 604.2106,
+      "tp3": 627.011,
+      "score": 50,
+      "entry_time": "2026-07-18T12:11:14.312878+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 566.64,
+      "exit_time": "2026-07-20T14:28:15.782216+00:00",
+      "pnl_pct": -0.59,
+      "duration_minutes": 3017
+    },
+    {
+      "id": "LINKUSDT-2026-07-18T12:11:14.512594+00:00",
+      "symbol": "LINKUSDT",
+      "entry_price": 8.302,
+      "sl": 8.05294,
+      "tp1": 8.55106,
+      "tp2": 8.80012,
+      "tp3": 9.1322,
+      "score": 52,
+      "entry_time": "2026-07-18T12:11:14.512594+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 20
+      },
+      "exit_type": "timeout",
+      "exit_price": 8.371,
+      "exit_time": "2026-07-20T14:28:16.632897+00:00",
+      "pnl_pct": 0.83,
+      "duration_minutes": 3017
     }
   ],
   "meta": {
-    "total_active": 34,
-    "total_closed": 293,
-    "last_updated": "2026-07-20T12:05:50.944977+00:00"
+    "total_active": 32,
+    "total_closed": 295,
+    "last_updated": "2026-07-20T14:28:26.224797+00:00"
   }
 }
