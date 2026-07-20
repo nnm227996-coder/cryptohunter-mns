@@ -1,44 +1,6 @@
 {
   "active": [
     {
-      "id": "BTCUSDT-2026-07-18T16:31:39.700520+00:00",
-      "symbol": "BTCUSDT",
-      "entry_price": 64154.99,
-      "sl": 62230.3403,
-      "tp1": 66079.6397,
-      "tp2": 68004.2894,
-      "tp3": 70570.489,
-      "score": 50,
-      "entry_time": "2026-07-18T16:31:39.700520+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "BTCUSDT-2026-07-18T17:32:59.790281+00:00",
-      "symbol": "BTCUSDT",
-      "entry_price": 64317.99,
-      "sl": 62388.4503,
-      "tp1": 66247.5297,
-      "tp2": 68177.0694,
-      "tp3": 70749.789,
-      "score": 50,
-      "entry_time": "2026-07-18T17:32:59.790281+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 20,
-        "momentum": 0,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-07-18T19:15:51.384791+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 64571.73,
@@ -7708,11 +7670,59 @@
       "exit_time": "2026-07-20T14:28:16.632897+00:00",
       "pnl_pct": 0.83,
       "duration_minutes": 3017
+    },
+    {
+      "id": "BTCUSDT-2026-07-18T16:31:39.700520+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 64154.99,
+      "sl": 62230.3403,
+      "tp1": 66079.6397,
+      "tp2": 68004.2894,
+      "tp3": 70570.489,
+      "score": 50,
+      "entry_time": "2026-07-18T16:31:39.700520+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 65715.99,
+      "exit_time": "2026-07-20T18:15:24.740736+00:00",
+      "pnl_pct": 2.43,
+      "duration_minutes": 2983
+    },
+    {
+      "id": "BTCUSDT-2026-07-18T17:32:59.790281+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 64317.99,
+      "sl": 62388.4503,
+      "tp1": 66247.5297,
+      "tp2": 68177.0694,
+      "tp3": 70749.789,
+      "score": 50,
+      "entry_time": "2026-07-18T17:32:59.790281+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 65715.99,
+      "exit_time": "2026-07-20T18:15:25.406454+00:00",
+      "pnl_pct": 2.17,
+      "duration_minutes": 2922
     }
   ],
   "meta": {
-    "total_active": 33,
-    "total_closed": 295,
-    "last_updated": "2026-07-20T16:09:48.731974+00:00"
+    "total_active": 31,
+    "total_closed": 297,
+    "last_updated": "2026-07-20T18:15:32.345029+00:00"
   }
 }
