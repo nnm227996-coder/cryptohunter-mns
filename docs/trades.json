@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "TIAUSDT-2026-07-19T19:43:23.283893+00:00",
-      "symbol": "TIAUSDT",
-      "entry_price": 0.3596,
-      "sl": 0.348812,
-      "tp1": 0.370388,
-      "tp2": 0.381176,
-      "tp3": 0.39556,
-      "score": 50,
-      "entry_time": "2026-07-19T19:43:23.283893+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 0,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "PEPEUSDT-2026-07-19T20:24:36.919451+00:00",
       "symbol": "PEPEUSDT",
       "entry_price": 2.84e-06,
@@ -7917,11 +7898,35 @@
       "exit_time": "2026-07-21T17:43:18.115029+00:00",
       "pnl_pct": 2.73,
       "duration_minutes": 2890
+    },
+    {
+      "id": "TIAUSDT-2026-07-19T19:43:23.283893+00:00",
+      "symbol": "TIAUSDT",
+      "entry_price": 0.3596,
+      "sl": 0.348812,
+      "tp1": 0.370388,
+      "tp2": 0.381176,
+      "tp3": 0.39556,
+      "score": 50,
+      "entry_time": "2026-07-19T19:43:23.283893+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 0.3652,
+      "exit_time": "2026-07-21T20:05:17.990014+00:00",
+      "pnl_pct": 1.56,
+      "duration_minutes": 2901
     }
   ],
   "meta": {
-    "total_active": 20,
-    "total_closed": 314,
-    "last_updated": "2026-07-21T18:54:40.302739+00:00"
+    "total_active": 19,
+    "total_closed": 315,
+    "last_updated": "2026-07-21T20:05:25.818074+00:00"
   }
 }
