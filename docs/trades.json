@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "BNBUSDT-2026-07-22T00:58:48.575713+00:00",
-      "symbol": "BNBUSDT",
-      "entry_price": 574.94,
-      "sl": 557.6918,
-      "tp1": 592.1882,
-      "tp2": 609.4364,
-      "tp3": 632.434,
-      "score": 54,
-      "entry_time": "2026-07-22T00:58:48.575713+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 12,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "UNIUSDT-2026-07-22T11:20:22.126975+00:00",
       "symbol": "UNIUSDT",
       "entry_price": 3.764,
@@ -8390,11 +8371,35 @@
       "exit_time": "2026-07-24T00:30:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 194
+    },
+    {
+      "id": "BNBUSDT-2026-07-22T00:58:48.575713+00:00",
+      "symbol": "BNBUSDT",
+      "entry_price": 574.94,
+      "sl": 557.6918,
+      "tp1": 592.1882,
+      "tp2": 609.4364,
+      "tp3": 632.434,
+      "score": 54,
+      "entry_time": "2026-07-22T00:58:48.575713+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 12,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 569.65,
+      "exit_time": "2026-07-24T03:41:06.497122+00:00",
+      "pnl_pct": -0.92,
+      "duration_minutes": 3042
     }
   ],
   "meta": {
-    "total_active": 7,
-    "total_closed": 344,
-    "last_updated": "2026-07-24T00:58:06.374894+00:00"
+    "total_active": 6,
+    "total_closed": 345,
+    "last_updated": "2026-07-24T03:41:10.344167+00:00"
   }
 }
