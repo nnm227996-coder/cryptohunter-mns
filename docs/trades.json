@@ -189,25 +189,6 @@
         "momentum": 12,
         "breakout": 10
       }
-    },
-    {
-      "id": "UNIUSDT-2026-07-27T13:57:50.538532+00:00",
-      "symbol": "UNIUSDT",
-      "entry_price": 3.897,
-      "sl": 3.78009,
-      "tp1": 4.01391,
-      "tp2": 4.13082,
-      "tp3": 4.2867,
-      "score": 50,
-      "entry_time": "2026-07-27T13:57:50.538532+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
     }
   ],
   "closed": [
@@ -9330,11 +9311,35 @@
       "exit_time": "2026-07-27T18:45:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 287
+    },
+    {
+      "id": "UNIUSDT-2026-07-27T13:57:50.538532+00:00",
+      "symbol": "UNIUSDT",
+      "entry_price": 3.897,
+      "sl": 3.78009,
+      "tp1": 4.01391,
+      "tp2": 4.13082,
+      "tp3": 4.2867,
+      "score": 50,
+      "entry_time": "2026-07-27T13:57:50.538532+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 3.78009,
+      "exit_time": "2026-07-27T21:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 437
     }
   ],
   "meta": {
-    "total_active": 11,
-    "total_closed": 380,
-    "last_updated": "2026-07-27T20:54:49.368740+00:00"
+    "total_active": 10,
+    "total_closed": 381,
+    "last_updated": "2026-07-27T21:48:21.430821+00:00"
   }
 }
