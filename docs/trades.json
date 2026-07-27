@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "BTCUSDT-2026-07-25T18:07:38.701797+00:00",
-      "symbol": "BTCUSDT",
-      "entry_price": 64342.78,
-      "sl": 62412.4966,
-      "tp1": 66273.0634,
-      "tp2": 68203.3468,
-      "tp3": 70777.058,
-      "score": 50,
-      "entry_time": "2026-07-25T18:07:38.701797+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "SEIUSDT-2026-07-25T22:13:34.502401+00:00",
       "symbol": "SEIUSDT",
       "entry_price": 0.0447,
@@ -55,25 +36,6 @@
         "whale": 0,
         "momentum": 12,
         "breakout": 10
-      }
-    },
-    {
-      "id": "NEARUSDT-2026-07-26T07:18:41.396825+00:00",
-      "symbol": "NEARUSDT",
-      "entry_price": 1.806,
-      "sl": 1.75182,
-      "tp1": 1.86018,
-      "tp2": 1.91436,
-      "tp3": 1.9866,
-      "score": 50,
-      "entry_time": "2026-07-26T07:18:41.396825+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 12,
-        "orderbook": 6,
-        "whale": 0,
-        "momentum": 12,
-        "breakout": 20
       }
     },
     {
@@ -245,25 +207,6 @@
         "whale": 20,
         "momentum": 20,
         "breakout": 10
-      }
-    },
-    {
-      "id": "PEPEUSDT-2026-07-27T13:57:50.735371+00:00",
-      "symbol": "PEPEUSDT",
-      "entry_price": 2.99e-06,
-      "sl": 2.9e-06,
-      "tp1": 3.08e-06,
-      "tp2": 3.17e-06,
-      "tp3": 3.29e-06,
-      "score": 52,
-      "entry_time": "2026-07-27T13:57:50.735371+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 20,
-        "momentum": 12,
-        "breakout": 0
       }
     }
   ],
@@ -9315,11 +9258,83 @@
       "exit_time": "2026-07-27T17:56:19.277513+00:00",
       "pnl_pct": 1.22,
       "duration_minutes": 2920
+    },
+    {
+      "id": "BTCUSDT-2026-07-25T18:07:38.701797+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 64342.78,
+      "sl": 62412.4966,
+      "tp1": 66273.0634,
+      "tp2": 68203.3468,
+      "tp3": 70777.058,
+      "score": 50,
+      "entry_time": "2026-07-25T18:07:38.701797+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 64969.99,
+      "exit_time": "2026-07-27T19:16:55.321181+00:00",
+      "pnl_pct": 0.97,
+      "duration_minutes": 2949
+    },
+    {
+      "id": "NEARUSDT-2026-07-26T07:18:41.396825+00:00",
+      "symbol": "NEARUSDT",
+      "entry_price": 1.806,
+      "sl": 1.75182,
+      "tp1": 1.86018,
+      "tp2": 1.91436,
+      "tp3": 1.9866,
+      "score": 50,
+      "entry_time": "2026-07-26T07:18:41.396825+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 12,
+        "orderbook": 6,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 20
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 1.75182,
+      "exit_time": "2026-07-27T18:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 2096
+    },
+    {
+      "id": "PEPEUSDT-2026-07-27T13:57:50.735371+00:00",
+      "symbol": "PEPEUSDT",
+      "entry_price": 2.99e-06,
+      "sl": 2.9e-06,
+      "tp1": 3.08e-06,
+      "tp2": 3.17e-06,
+      "tp3": 3.29e-06,
+      "score": 52,
+      "entry_time": "2026-07-27T13:57:50.735371+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 0
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 2.9e-06,
+      "exit_time": "2026-07-27T18:45:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 287
     }
   ],
   "meta": {
-    "total_active": 14,
-    "total_closed": 377,
-    "last_updated": "2026-07-27T18:00:57.902768+00:00"
+    "total_active": 11,
+    "total_closed": 380,
+    "last_updated": "2026-07-27T19:16:59.935167+00:00"
   }
 }
