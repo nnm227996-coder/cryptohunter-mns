@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "BTCUSDT-2026-07-26T15:51:13.031379+00:00",
-      "symbol": "BTCUSDT",
-      "entry_price": 64781.53,
-      "sl": 62838.0841,
-      "tp1": 66724.9759,
-      "tp2": 68668.4218,
-      "tp3": 71259.683,
-      "score": 50,
-      "entry_time": "2026-07-26T15:51:13.031379+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "DOTUSDT-2026-07-27T22:46:07.403306+00:00",
       "symbol": "DOTUSDT",
       "entry_price": 0.77,
@@ -35,6 +16,25 @@
         "orderbook": 20,
         "whale": 20,
         "momentum": 0,
+        "breakout": 0
+      }
+    },
+    {
+      "id": "SUIUSDT-2026-07-28T15:33:09.134627+00:00",
+      "symbol": "SUIUSDT",
+      "entry_price": 0.6895,
+      "sl": 0.668815,
+      "tp1": 0.710185,
+      "tp2": 0.73087,
+      "tp3": 0.75845,
+      "score": 52,
+      "entry_time": "2026-07-28T15:33:09.134627+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 20,
         "breakout": 0
       }
     }
@@ -9399,11 +9399,35 @@
       "exit_time": "2026-07-28T11:32:41.968295+00:00",
       "pnl_pct": 1.04,
       "duration_minutes": 2908
+    },
+    {
+      "id": "BTCUSDT-2026-07-26T15:51:13.031379+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 64781.53,
+      "sl": 62838.0841,
+      "tp1": 66724.9759,
+      "tp2": 68668.4218,
+      "tp3": 71259.683,
+      "score": 50,
+      "entry_time": "2026-07-26T15:51:13.031379+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 62838.0841,
+      "exit_time": "2026-07-28T13:45:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 2753
     }
   ],
   "meta": {
     "total_active": 2,
-    "total_closed": 390,
-    "last_updated": "2026-07-28T13:13:29.741318+00:00"
+    "total_closed": 391,
+    "last_updated": "2026-07-28T15:33:09.136343+00:00"
   }
 }
