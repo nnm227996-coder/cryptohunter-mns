@@ -1,70 +1,70 @@
 {
-  "last_scan_time": "2026-07-31T01:11:46.603947+00:00",
-  "last_scan_time_human": "2026-07-31 01:11:46 UTC",
-  "total_scans": 1205,
+  "last_scan_time": "2026-07-31T01:12:08.002038+00:00",
+  "last_scan_time_human": "2026-07-31 01:12:08 UTC",
+  "total_scans": 1206,
   "total_signals_sent": 418,
   "signals_today": 16,
   "signals_this_week": 20,
   "top_scoring_pairs": [
     {
       "symbol": "BTCUSDT",
-      "score": 52,
-      "price": 65292.0,
-      "time": "2026-07-31T01:11:46.126959+00:00"
+      "score": 60,
+      "price": 65284.9,
+      "time": "2026-07-31T01:12:08.001899+00:00"
     },
     {
       "symbol": "ETHUSDT",
       "score": 50,
-      "price": 1931.39,
-      "time": "2026-07-31T01:11:46.281074+00:00"
-    },
-    {
-      "symbol": "DOTUSDT",
-      "score": 50,
-      "price": 0.773,
-      "time": "2026-07-31T01:11:46.439380+00:00"
-    },
-    {
-      "symbol": "SOLUSDT",
-      "score": 48,
-      "price": 75.06,
-      "time": "2026-07-31T01:11:46.439365+00:00"
+      "price": 1930.81,
+      "time": "2026-07-31T01:12:08.001953+00:00"
     },
     {
       "symbol": "DOGEUSDT",
       "score": 42,
-      "price": 0.0709,
-      "time": "2026-07-31T01:11:46.439377+00:00"
+      "price": 0.07092,
+      "time": "2026-07-31T01:12:08.001979+00:00"
     },
     {
-      "symbol": "XRPUSDT",
-      "score": 38,
-      "price": 1.0882,
-      "time": "2026-07-31T01:11:46.439368+00:00"
+      "symbol": "DOTUSDT",
+      "score": 42,
+      "price": 0.773,
+      "time": "2026-07-31T01:12:08.001981+00:00"
+    },
+    {
+      "symbol": "SEIUSDT",
+      "score": 42,
+      "price": 0.0427,
+      "time": "2026-07-31T01:12:08.002019+00:00"
     },
     {
       "symbol": "ORDIUSDT",
+      "score": 42,
+      "price": 3.279,
+      "time": "2026-07-31T01:12:08.002024+00:00"
+    },
+    {
+      "symbol": "SOLUSDT",
+      "score": 40,
+      "price": 75.05,
+      "time": "2026-07-31T01:12:08.001970+00:00"
+    },
+    {
+      "symbol": "XRPUSDT",
       "score": 36,
-      "price": 3.28,
-      "time": "2026-07-31T01:11:46.603940+00:00"
+      "price": 1.0881,
+      "time": "2026-07-31T01:12:08.001972+00:00"
     },
     {
       "symbol": "PEPEUSDT",
       "score": 36,
       "price": 2.79e-06,
-      "time": "2026-07-31T01:11:46.603942+00:00"
-    },
-    {
-      "symbol": "SEIUSDT",
-      "score": 34,
-      "price": 0.04268,
-      "time": "2026-07-31T01:11:46.603938+00:00"
+      "time": "2026-07-31T01:12:08.002028+00:00"
     },
     {
       "symbol": "UNIUSDT",
       "score": 32,
-      "price": 4.481,
-      "time": "2026-07-31T01:11:46.603916+00:00"
+      "price": 4.482,
+      "time": "2026-07-31T01:12:08.001988+00:00"
     }
   ],
   "recent_signals": [
@@ -278,14 +278,13 @@
   },
   "bot_uptime": {
     "started_at": "2026-05-18T20:09:55.535316+00:00",
-    "scans_total": 1205
+    "scans_total": 1206
   },
   "last_error": null,
   "min_score": 50,
   "pairs_count": 25,
   "scan_interval_minutes": 5,
   "recent_max_scores": [
-    42,
     48,
     50,
     46,
@@ -334,9 +333,10 @@
     42,
     50,
     54,
-    52
+    52,
+    60
   ],
-  "avg_score_last_50_scans": 44.4,
+  "avg_score_last_50_scans": 44.8,
   "active_trades_count": 19,
   "closed_trades_count": 399
 }
