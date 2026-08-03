@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "SOLUSDT-2026-08-01T17:28:42.897699+00:00",
-      "symbol": "SOLUSDT",
-      "entry_price": 72.16,
-      "sl": 69.9952,
-      "tp1": 74.3248,
-      "tp2": 76.4896,
-      "tp3": 79.376,
-      "score": 50,
-      "entry_time": "2026-08-01T17:28:42.897699+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 20,
-        "momentum": 0,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-08-01T18:31:45.510819+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 62285.07,
@@ -10772,11 +10753,35 @@
       "exit_time": "2026-08-03T15:15:00+00:00",
       "pnl_pct": 10.0,
       "duration_minutes": 2683
+    },
+    {
+      "id": "SOLUSDT-2026-08-01T17:28:42.897699+00:00",
+      "symbol": "SOLUSDT",
+      "entry_price": 72.16,
+      "sl": 69.9952,
+      "tp1": 74.3248,
+      "tp2": 76.4896,
+      "tp3": 79.376,
+      "score": 50,
+      "entry_time": "2026-08-01T17:28:42.897699+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 74.11,
+      "exit_time": "2026-08-03T18:14:41.856266+00:00",
+      "pnl_pct": 2.7,
+      "duration_minutes": 2925
     }
   ],
   "meta": {
-    "total_active": 25,
-    "total_closed": 429,
-    "last_updated": "2026-08-03T16:31:40.531952+00:00"
+    "total_active": 24,
+    "total_closed": 430,
+    "last_updated": "2026-08-03T18:14:50.494487+00:00"
   }
 }
