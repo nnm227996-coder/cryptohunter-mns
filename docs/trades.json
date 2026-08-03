@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "BTCUSDT-2026-08-01T12:42:49.929831+00:00",
-      "symbol": "BTCUSDT",
-      "entry_price": 63100.03,
-      "sl": 61207.0291,
-      "tp1": 64993.0309,
-      "tp2": 66886.0318,
-      "tp3": 69410.033,
-      "score": 54,
-      "entry_time": "2026-08-01T12:42:49.929831+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 12,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "DOTUSDT-2026-08-01T15:17:25.858259+00:00",
       "symbol": "DOTUSDT",
       "entry_price": 0.776,
@@ -188,25 +169,6 @@
         "whale": 20,
         "momentum": 0,
         "breakout": 0
-      }
-    },
-    {
-      "id": "ADAUSDT-2026-08-02T01:08:29.321596+00:00",
-      "symbol": "ADAUSDT",
-      "entry_price": 0.1751,
-      "sl": 0.169847,
-      "tp1": 0.180353,
-      "tp2": 0.185606,
-      "tp3": 0.19261,
-      "score": 50,
-      "entry_time": "2026-08-02T01:08:29.321596+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
       }
     },
     {
@@ -530,6 +492,25 @@
         "whale": 12,
         "momentum": 0,
         "breakout": 10
+      }
+    },
+    {
+      "id": "SUIUSDT-2026-08-03T13:59:07.439175+00:00",
+      "symbol": "SUIUSDT",
+      "entry_price": 0.6963,
+      "sl": 0.675411,
+      "tp1": 0.717189,
+      "tp2": 0.738078,
+      "tp3": 0.76593,
+      "score": 52,
+      "entry_time": "2026-08-03T13:59:07.439175+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 20
       }
     }
   ],
@@ -10733,11 +10714,59 @@
       "exit_time": "2026-08-03T11:35:50.602674+00:00",
       "pnl_pct": 0.54,
       "duration_minutes": 3021
+    },
+    {
+      "id": "BTCUSDT-2026-08-01T12:42:49.929831+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 63100.03,
+      "sl": 61207.0291,
+      "tp1": 64993.0309,
+      "tp2": 66886.0318,
+      "tp3": 69410.033,
+      "score": 54,
+      "entry_time": "2026-08-01T12:42:49.929831+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 12,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 63313.44,
+      "exit_time": "2026-08-03T13:58:59.664747+00:00",
+      "pnl_pct": 0.34,
+      "duration_minutes": 2956
+    },
+    {
+      "id": "ADAUSDT-2026-08-02T01:08:29.321596+00:00",
+      "symbol": "ADAUSDT",
+      "entry_price": 0.1751,
+      "sl": 0.169847,
+      "tp1": 0.180353,
+      "tp2": 0.185606,
+      "tp3": 0.19261,
+      "score": 50,
+      "entry_time": "2026-08-02T01:08:29.321596+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "tp3_hit",
+      "exit_price": 0.19261,
+      "exit_time": "2026-08-03T13:45:00+00:00",
+      "pnl_pct": 10.0,
+      "duration_minutes": 2196
     }
   ],
   "meta": {
-    "total_active": 28,
-    "total_closed": 425,
-    "last_updated": "2026-08-03T11:36:39.117500+00:00"
+    "total_active": 27,
+    "total_closed": 427,
+    "last_updated": "2026-08-03T13:59:07.441029+00:00"
   }
 }
