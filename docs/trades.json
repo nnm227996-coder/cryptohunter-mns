@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "BTCUSDT-2026-08-02T21:28:32.810693+00:00",
-      "symbol": "BTCUSDT",
-      "entry_price": 63534.0,
-      "sl": 61627.98,
-      "tp1": 65440.02,
-      "tp2": 67346.04,
-      "tp3": 69887.4,
-      "score": 50,
-      "entry_time": "2026-08-02T21:28:32.810693+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-08-03T04:40:03.222560+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 63000.13,
@@ -282,6 +263,25 @@
         "orderbook": 20,
         "whale": 0,
         "momentum": 12,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "BTCUSDT-2026-08-04T21:39:12.375943+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 64229.48,
+      "sl": 62302.5956,
+      "tp1": 66156.3644,
+      "tp2": 68083.2488,
+      "tp3": 70652.428,
+      "score": 50,
+      "entry_time": "2026-08-04T21:39:12.375943+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
         "breakout": 10
       }
     }
@@ -11110,11 +11110,35 @@
       "exit_time": "2026-08-04T18:54:51.019817+00:00",
       "pnl_pct": 1.69,
       "duration_minutes": 2906
+    },
+    {
+      "id": "BTCUSDT-2026-08-02T21:28:32.810693+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 63534.0,
+      "sl": 61627.98,
+      "tp1": 65440.02,
+      "tp2": 67346.04,
+      "tp3": 69887.4,
+      "score": 50,
+      "entry_time": "2026-08-02T21:28:32.810693+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 64229.48,
+      "exit_time": "2026-08-04T21:39:06.282721+00:00",
+      "pnl_pct": 1.09,
+      "duration_minutes": 2890
     }
   ],
   "meta": {
     "total_active": 15,
-    "total_closed": 451,
-    "last_updated": "2026-08-04T20:38:08.638307+00:00"
+    "total_closed": 452,
+    "last_updated": "2026-08-04T21:39:12.377465+00:00"
   }
 }
