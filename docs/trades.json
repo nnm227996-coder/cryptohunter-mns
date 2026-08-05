@@ -115,25 +115,6 @@
       }
     },
     {
-      "id": "ATOMUSDT-2026-08-04T09:08:26.272773+00:00",
-      "symbol": "ATOMUSDT",
-      "entry_price": 1.392,
-      "sl": 1.35024,
-      "tp1": 1.43376,
-      "tp2": 1.47552,
-      "tp3": 1.5312,
-      "score": 54,
-      "entry_time": "2026-08-04T09:08:26.272773+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 12,
-        "orderbook": 12,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-08-04T13:16:41.010068+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 63947.86,
@@ -11277,11 +11258,35 @@
       "exit_time": "2026-08-05T06:45:57.912015+00:00",
       "pnl_pct": 2.02,
       "duration_minutes": 3005
+    },
+    {
+      "id": "ATOMUSDT-2026-08-04T09:08:26.272773+00:00",
+      "symbol": "ATOMUSDT",
+      "entry_price": 1.392,
+      "sl": 1.35024,
+      "tp1": 1.43376,
+      "tp2": 1.47552,
+      "tp3": 1.5312,
+      "score": 54,
+      "entry_time": "2026-08-04T09:08:26.272773+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 12,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 1.35024,
+      "exit_time": "2026-08-05T09:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1431
     }
   ],
   "meta": {
-    "total_active": 20,
-    "total_closed": 454,
-    "last_updated": "2026-08-05T07:17:39.409268+00:00"
+    "total_active": 19,
+    "total_closed": 455,
+    "last_updated": "2026-08-05T09:26:46.439332+00:00"
   }
 }
