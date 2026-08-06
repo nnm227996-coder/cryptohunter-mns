@@ -267,25 +267,6 @@
       }
     },
     {
-      "id": "ORDIUSDT-2026-08-05T17:54:25.531604+00:00",
-      "symbol": "ORDIUSDT",
-      "entry_price": 3.416,
-      "sl": 3.31352,
-      "tp1": 3.51848,
-      "tp2": 3.62096,
-      "tp3": 3.7576,
-      "score": 62,
-      "entry_time": "2026-08-05T17:54:25.531604+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 12,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "AVAXUSDT-2026-08-05T19:06:42.789821+00:00",
       "symbol": "AVAXUSDT",
       "entry_price": 6.688,
@@ -339,6 +320,25 @@
         "orderbook": 0,
         "whale": 20,
         "momentum": 20,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "ATOMUSDT-2026-08-06T06:25:58.734353+00:00",
+      "symbol": "ATOMUSDT",
+      "entry_price": 1.34,
+      "sl": 1.2998,
+      "tp1": 1.3802,
+      "tp2": 1.4204,
+      "tp3": 1.474,
+      "score": 54,
+      "entry_time": "2026-08-06T06:25:58.734353+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 12,
         "breakout": 10
       }
     }
@@ -11431,11 +11431,35 @@
       "exit_time": "2026-08-06T02:15:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 1168
+    },
+    {
+      "id": "ORDIUSDT-2026-08-05T17:54:25.531604+00:00",
+      "symbol": "ORDIUSDT",
+      "entry_price": 3.416,
+      "sl": 3.31352,
+      "tp1": 3.51848,
+      "tp2": 3.62096,
+      "tp3": 3.7576,
+      "score": 62,
+      "entry_time": "2026-08-05T17:54:25.531604+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 3.31352,
+      "exit_time": "2026-08-06T06:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 740
     }
   ],
   "meta": {
     "total_active": 18,
-    "total_closed": 462,
-    "last_updated": "2026-08-06T04:21:12.989575+00:00"
+    "total_closed": 463,
+    "last_updated": "2026-08-06T06:25:58.736143+00:00"
   }
 }
