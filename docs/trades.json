@@ -189,6 +189,44 @@
         "momentum": 20,
         "breakout": 10
       }
+    },
+    {
+      "id": "DOTUSDT-2026-08-07T13:21:31.351468+00:00",
+      "symbol": "DOTUSDT",
+      "entry_price": 0.818,
+      "sl": 0.79346,
+      "tp1": 0.84254,
+      "tp2": 0.86708,
+      "tp3": 0.8998,
+      "score": 54,
+      "entry_time": "2026-08-07T13:21:31.351468+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 8,
+        "orderbook": 12,
+        "whale": 12,
+        "momentum": 12,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "SEIUSDT-2026-08-07T13:21:31.530473+00:00",
+      "symbol": "SEIUSDT",
+      "entry_price": 0.04128,
+      "sl": 0.0400416,
+      "tp1": 0.0425184,
+      "tp2": 0.0437568,
+      "tp3": 0.045408,
+      "score": 54,
+      "entry_time": "2026-08-07T13:21:31.530473+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 12,
+        "momentum": 12,
+        "breakout": 10
+      }
     }
   ],
   "closed": [
@@ -11642,8 +11680,8 @@
     }
   ],
   "meta": {
-    "total_active": 10,
+    "total_active": 12,
     "total_closed": 477,
-    "last_updated": "2026-08-07T12:03:10.245564+00:00"
+    "last_updated": "2026-08-07T13:21:31.532188+00:00"
   }
 }
