@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "ETHUSDT-2026-08-07T22:26:49.507760+00:00",
-      "symbol": "ETHUSDT",
-      "entry_price": 1915.59,
-      "sl": 1858.1223,
-      "tp1": 1973.0577,
-      "tp2": 2030.5254,
-      "tp3": 2107.149,
-      "score": 62,
-      "entry_time": "2026-08-07T22:26:49.507760+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 12,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "DOTUSDT-2026-08-07T23:02:58.756326+00:00",
       "symbol": "DOTUSDT",
       "entry_price": 0.813,
@@ -947,6 +928,25 @@
         "orderbook": 20,
         "whale": 0,
         "momentum": 20,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "DOGEUSDT-2026-08-09T22:48:31.991121+00:00",
+      "symbol": "DOGEUSDT",
+      "entry_price": 0.07004,
+      "sl": 0.0679388,
+      "tp1": 0.0721412,
+      "tp2": 0.0742424,
+      "tp3": 0.077044,
+      "score": 50,
+      "entry_time": "2026-08-09T22:48:31.991121+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 0,
         "breakout": 10
       }
     }
@@ -12759,11 +12759,35 @@
       "exit_time": "2026-08-09T22:11:01.370517+00:00",
       "pnl_pct": 0.49,
       "duration_minutes": 2901
+    },
+    {
+      "id": "ETHUSDT-2026-08-07T22:26:49.507760+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 1915.59,
+      "sl": 1858.1223,
+      "tp1": 1973.0577,
+      "tp2": 2030.5254,
+      "tp3": 2107.149,
+      "score": 62,
+      "entry_time": "2026-08-07T22:26:49.507760+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 12,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 1918.39,
+      "exit_time": "2026-08-09T22:48:22.638661+00:00",
+      "pnl_pct": 0.15,
+      "duration_minutes": 2901
     }
   ],
   "meta": {
     "total_active": 50,
-    "total_closed": 492,
-    "last_updated": "2026-08-09T22:12:27.348775+00:00"
+    "total_closed": 493,
+    "last_updated": "2026-08-09T22:48:31.992643+00:00"
   }
 }
