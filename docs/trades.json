@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "ETHUSDT-2026-08-08T16:49:45.510295+00:00",
-      "symbol": "ETHUSDT",
-      "entry_price": 1921.96,
-      "sl": 1864.3012,
-      "tp1": 1979.6188,
-      "tp2": 2037.2776,
-      "tp3": 2114.156,
-      "score": 50,
-      "entry_time": "2026-08-08T16:49:45.510295+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "ETHUSDT-2026-08-08T21:13:04.622919+00:00",
       "symbol": "ETHUSDT",
       "entry_price": 1920.67,
@@ -92,25 +73,6 @@
         "orderbook": 20,
         "whale": 20,
         "momentum": 0,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "APTUSDT-2026-08-09T03:55:12.874121+00:00",
-      "symbol": "APTUSDT",
-      "entry_price": 0.604,
-      "sl": 0.58588,
-      "tp1": 0.62212,
-      "tp2": 0.64024,
-      "tp3": 0.6644,
-      "score": 62,
-      "entry_time": "2026-08-09T03:55:12.874121+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 12,
         "breakout": 10
       }
     },
@@ -586,25 +548,6 @@
         "orderbook": 12,
         "whale": 20,
         "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "NEARUSDT-2026-08-10T11:58:48.031629+00:00",
-      "symbol": "NEARUSDT",
-      "entry_price": 1.656,
-      "sl": 1.60632,
-      "tp1": 1.70568,
-      "tp2": 1.75536,
-      "tp3": 1.8216,
-      "score": 50,
-      "entry_time": "2026-08-10T11:58:48.031629+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 0,
-        "whale": 0,
-        "momentum": 20,
         "breakout": 10
       }
     },
@@ -13050,11 +12993,83 @@
       "exit_time": "2026-08-10T15:31:58.759038+00:00",
       "pnl_pct": -0.73,
       "duration_minutes": 2896
+    },
+    {
+      "id": "ETHUSDT-2026-08-08T16:49:45.510295+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 1921.96,
+      "sl": 1864.3012,
+      "tp1": 1979.6188,
+      "tp2": 2037.2776,
+      "tp3": 2114.156,
+      "score": 50,
+      "entry_time": "2026-08-08T16:49:45.510295+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 1870.11,
+      "exit_time": "2026-08-10T17:02:08.384367+00:00",
+      "pnl_pct": -2.7,
+      "duration_minutes": 2892
+    },
+    {
+      "id": "APTUSDT-2026-08-09T03:55:12.874121+00:00",
+      "symbol": "APTUSDT",
+      "entry_price": 0.604,
+      "sl": 0.58588,
+      "tp1": 0.62212,
+      "tp2": 0.64024,
+      "tp3": 0.6644,
+      "score": 62,
+      "entry_time": "2026-08-09T03:55:12.874121+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.58588,
+      "exit_time": "2026-08-10T16:45:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 2209
+    },
+    {
+      "id": "NEARUSDT-2026-08-10T11:58:48.031629+00:00",
+      "symbol": "NEARUSDT",
+      "entry_price": 1.656,
+      "sl": 1.60632,
+      "tp1": 1.70568,
+      "tp2": 1.75536,
+      "tp3": 1.8216,
+      "score": 50,
+      "entry_time": "2026-08-10T11:58:48.031629+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 1.60632,
+      "exit_time": "2026-08-10T16:45:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 286
     }
   ],
   "meta": {
-    "total_active": 35,
-    "total_closed": 516,
-    "last_updated": "2026-08-10T16:24:56.541276+00:00"
+    "total_active": 32,
+    "total_closed": 519,
+    "last_updated": "2026-08-10T17:02:18.660309+00:00"
   }
 }
