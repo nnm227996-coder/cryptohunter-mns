@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "ARBUSDT-2026-08-08T22:02:31.676058+00:00",
-      "symbol": "ARBUSDT",
-      "entry_price": 0.0786,
-      "sl": 0.076242,
-      "tp1": 0.080958,
-      "tp2": 0.083316,
-      "tp3": 0.08646,
-      "score": 50,
-      "entry_time": "2026-08-08T22:02:31.676058+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 0,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BNBUSDT-2026-08-08T22:37:35.589504+00:00",
       "symbol": "BNBUSDT",
       "entry_price": 600.95,
@@ -191,25 +172,6 @@
       }
     },
     {
-      "id": "XRPUSDT-2026-08-09T14:59:22.952275+00:00",
-      "symbol": "XRPUSDT",
-      "entry_price": 1.0423,
-      "sl": 1.011031,
-      "tp1": 1.073569,
-      "tp2": 1.104838,
-      "tp3": 1.14653,
-      "score": 50,
-      "entry_time": "2026-08-09T14:59:22.952275+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 8,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "ORDIUSDT-2026-08-09T17:12:36.217259+00:00",
       "symbol": "ORDIUSDT",
       "entry_price": 3.503,
@@ -358,25 +320,6 @@
         "orderbook": 20,
         "whale": 0,
         "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "XRPUSDT-2026-08-09T21:13:13.841943+00:00",
-      "symbol": "XRPUSDT",
-      "entry_price": 1.0428,
-      "sl": 1.011516,
-      "tp1": 1.074084,
-      "tp2": 1.105368,
-      "tp3": 1.14708,
-      "score": 56,
-      "entry_time": "2026-08-09T21:13:13.841943+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 6,
-        "whale": 0,
-        "momentum": 20,
         "breakout": 10
       }
     },
@@ -13094,11 +13037,83 @@
       "exit_time": "2026-08-10T21:27:46.665522+00:00",
       "pnl_pct": 1.14,
       "duration_minutes": 2894
+    },
+    {
+      "id": "ARBUSDT-2026-08-08T22:02:31.676058+00:00",
+      "symbol": "ARBUSDT",
+      "entry_price": 0.0786,
+      "sl": 0.076242,
+      "tp1": 0.080958,
+      "tp2": 0.083316,
+      "tp3": 0.08646,
+      "score": 50,
+      "entry_time": "2026-08-08T22:02:31.676058+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 0,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 0.0795,
+      "exit_time": "2026-08-10T22:09:01.519210+00:00",
+      "pnl_pct": 1.15,
+      "duration_minutes": 2886
+    },
+    {
+      "id": "XRPUSDT-2026-08-09T14:59:22.952275+00:00",
+      "symbol": "XRPUSDT",
+      "entry_price": 1.0423,
+      "sl": 1.011031,
+      "tp1": 1.073569,
+      "tp2": 1.104838,
+      "tp3": 1.14653,
+      "score": 50,
+      "entry_time": "2026-08-09T14:59:22.952275+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 8,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 1.011031,
+      "exit_time": "2026-08-10T22:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1860
+    },
+    {
+      "id": "XRPUSDT-2026-08-09T21:13:13.841943+00:00",
+      "symbol": "XRPUSDT",
+      "entry_price": 1.0428,
+      "sl": 1.011516,
+      "tp1": 1.074084,
+      "tp2": 1.105368,
+      "tp3": 1.14708,
+      "score": 56,
+      "entry_time": "2026-08-09T21:13:13.841943+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 6,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 1.011516,
+      "exit_time": "2026-08-10T22:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1486
     }
   ],
   "meta": {
-    "total_active": 31,
-    "total_closed": 521,
-    "last_updated": "2026-08-10T21:53:13.448499+00:00"
+    "total_active": 28,
+    "total_closed": 524,
+    "last_updated": "2026-08-10T22:09:08.727292+00:00"
   }
 }
