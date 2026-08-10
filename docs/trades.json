@@ -1,63 +1,6 @@
 {
   "active": [
     {
-      "id": "LTCUSDT-2026-08-08T09:08:02.169686+00:00",
-      "symbol": "LTCUSDT",
-      "entry_price": 45.58,
-      "sl": 44.2126,
-      "tp1": 46.9474,
-      "tp2": 48.3148,
-      "tp3": 50.138,
-      "score": 50,
-      "entry_time": "2026-08-08T09:08:02.169686+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "ETHUSDT-2026-08-08T09:49:37.642267+00:00",
-      "symbol": "ETHUSDT",
-      "entry_price": 1919.34,
-      "sl": 1861.7598,
-      "tp1": 1976.9202,
-      "tp2": 2034.5004,
-      "tp3": 2111.274,
-      "score": 50,
-      "entry_time": "2026-08-08T09:49:37.642267+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "LINKUSDT-2026-08-08T09:49:37.851053+00:00",
-      "symbol": "LINKUSDT",
-      "entry_price": 8.295,
-      "sl": 8.04615,
-      "tp1": 8.54385,
-      "tp2": 8.7927,
-      "tp3": 9.1245,
-      "score": 50,
-      "entry_time": "2026-08-08T09:49:37.851053+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "LTCUSDT-2026-08-08T10:52:15.403669+00:00",
       "symbol": "LTCUSDT",
       "entry_price": 45.56,
@@ -12924,11 +12867,83 @@
       "exit_time": "2026-08-10T08:26:17.644033+00:00",
       "pnl_pct": -0.11,
       "duration_minutes": 2963
+    },
+    {
+      "id": "LTCUSDT-2026-08-08T09:08:02.169686+00:00",
+      "symbol": "LTCUSDT",
+      "entry_price": 45.58,
+      "sl": 44.2126,
+      "tp1": 46.9474,
+      "tp2": 48.3148,
+      "tp3": 50.138,
+      "score": 50,
+      "entry_time": "2026-08-08T09:08:02.169686+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 45.48,
+      "exit_time": "2026-08-10T09:55:24.387123+00:00",
+      "pnl_pct": -0.22,
+      "duration_minutes": 2927
+    },
+    {
+      "id": "ETHUSDT-2026-08-08T09:49:37.642267+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 1919.34,
+      "sl": 1861.7598,
+      "tp1": 1976.9202,
+      "tp2": 2034.5004,
+      "tp3": 2111.274,
+      "score": 50,
+      "entry_time": "2026-08-08T09:49:37.642267+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 1916.92,
+      "exit_time": "2026-08-10T09:55:25.467962+00:00",
+      "pnl_pct": -0.13,
+      "duration_minutes": 2885
+    },
+    {
+      "id": "LINKUSDT-2026-08-08T09:49:37.851053+00:00",
+      "symbol": "LINKUSDT",
+      "entry_price": 8.295,
+      "sl": 8.04615,
+      "tp1": 8.54385,
+      "tp2": 8.7927,
+      "tp3": 9.1245,
+      "score": 50,
+      "entry_time": "2026-08-08T09:49:37.851053+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 8.235,
+      "exit_time": "2026-08-10T09:55:25.766033+00:00",
+      "pnl_pct": -0.72,
+      "duration_minutes": 2885
     }
   ],
   "meta": {
-    "total_active": 41,
-    "total_closed": 506,
-    "last_updated": "2026-08-10T08:45:32.136724+00:00"
+    "total_active": 38,
+    "total_closed": 509,
+    "last_updated": "2026-08-10T09:55:35.207521+00:00"
   }
 }
