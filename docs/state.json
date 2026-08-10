@@ -1,70 +1,70 @@
 {
-  "last_scan_time": "2026-08-09T23:47:14.819638+00:00",
-  "last_scan_time_human": "2026-08-09 23:47:14 UTC",
-  "total_scans": 1559,
+  "last_scan_time": "2026-08-10T00:36:30.129171+00:00",
+  "last_scan_time_human": "2026-08-10 00:36:30 UTC",
+  "total_scans": 1560,
   "total_signals_sent": 544,
   "signals_today": 20,
   "signals_this_week": 20,
   "top_scoring_pairs": [
     {
-      "symbol": "ATOMUSDT",
-      "score": 42,
-      "price": 1.373,
-      "time": "2026-08-09T23:47:14.819606+00:00"
+      "symbol": "BNBUSDT",
+      "score": 34,
+      "price": 604.46,
+      "time": "2026-08-10T00:36:30.129134+00:00"
     },
     {
-      "symbol": "LINKUSDT",
+      "symbol": "SEIUSDT",
+      "score": 34,
+      "price": 0.04145,
+      "time": "2026-08-10T00:36:30.129165+00:00"
+    },
+    {
+      "symbol": "OPUSDT",
       "score": 32,
-      "price": 8.197,
-      "time": "2026-08-09T23:47:14.819601+00:00"
+      "price": 0.0885,
+      "time": "2026-08-10T00:36:30.129159+00:00"
     },
     {
-      "symbol": "APTUSDT",
-      "score": 32,
-      "price": 0.59,
-      "time": "2026-08-09T23:47:14.819613+00:00"
-    },
-    {
-      "symbol": "XRPUSDT",
+      "symbol": "ETHUSDT",
       "score": 30,
-      "price": 1.0304,
-      "time": "2026-08-09T23:47:14.819587+00:00"
+      "price": 1913.92,
+      "time": "2026-08-10T00:36:30.129132+00:00"
     },
     {
-      "symbol": "ADAUSDT",
-      "score": 26,
-      "price": 0.1947,
-      "time": "2026-08-09T23:47:14.819589+00:00"
+      "symbol": "BTCUSDT",
+      "score": 28,
+      "price": 64981.37,
+      "time": "2026-08-10T00:36:30.129118+00:00"
     },
     {
-      "symbol": "AVAXUSDT",
-      "score": 26,
-      "price": 6.426,
-      "time": "2026-08-09T23:47:14.819592+00:00"
+      "symbol": "SOLUSDT",
+      "score": 28,
+      "price": 76.56,
+      "time": "2026-08-10T00:36:30.129136+00:00"
     },
     {
       "symbol": "DOTUSDT",
-      "score": 24,
-      "price": 0.799,
-      "time": "2026-08-09T23:47:14.819596+00:00"
+      "score": 22,
+      "price": 0.8,
+      "time": "2026-08-10T00:36:30.129144+00:00"
     },
     {
       "symbol": "MATICUSDT",
       "score": 22,
       "price": 0.3794,
-      "time": "2026-08-09T23:47:14.819599+00:00"
-    },
-    {
-      "symbol": "UNIUSDT",
-      "score": 20,
-      "price": 3.994,
-      "time": "2026-08-09T23:47:14.819604+00:00"
+      "time": "2026-08-10T00:36:30.129146+00:00"
     },
     {
       "symbol": "ARBUSDT",
       "score": 20,
       "price": 0.0779,
-      "time": "2026-08-09T23:47:14.819616+00:00"
+      "time": "2026-08-10T00:36:30.129157+00:00"
+    },
+    {
+      "symbol": "UNIUSDT",
+      "score": 18,
+      "price": 4.005,
+      "time": "2026-08-10T00:36:30.129149+00:00"
     }
   ],
   "recent_signals": [
@@ -278,14 +278,13 @@
   },
   "bot_uptime": {
     "started_at": "2026-05-18T20:09:55.535316+00:00",
-    "scans_total": 1559
+    "scans_total": 1560
   },
   "last_error": null,
   "min_score": 50,
   "pairs_count": 25,
   "scan_interval_minutes": 5,
   "recent_max_scores": [
-    42,
     48,
     50,
     42,
@@ -334,9 +333,10 @@
     50,
     62,
     42,
-    42
+    42,
+    34
   ],
-  "avg_score_last_50_scans": 48.8,
-  "active_trades_count": 43,
-  "closed_trades_count": 501
+  "avg_score_last_50_scans": 48.7,
+  "active_trades_count": 42,
+  "closed_trades_count": 502
 }
