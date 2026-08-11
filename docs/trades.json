@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "SEIUSDT-2026-08-09T12:18:49.271456+00:00",
-      "symbol": "SEIUSDT",
-      "entry_price": 0.04152,
-      "sl": 0.0402744,
-      "tp1": 0.0427656,
-      "tp2": 0.0440112,
-      "tp3": 0.045672,
-      "score": 50,
-      "entry_time": "2026-08-09T12:18:49.271456+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 8,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "SUIUSDT-2026-08-09T13:25:28.003935+00:00",
       "symbol": "SUIUSDT",
       "entry_price": 0.6957,
@@ -453,6 +434,25 @@
         "orderbook": 0,
         "whale": 20,
         "momentum": 12,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "ARBUSDT-2026-08-11T12:31:34.125008+00:00",
+      "symbol": "ARBUSDT",
+      "entry_price": 0.0799,
+      "sl": 0.077503,
+      "tp1": 0.082297,
+      "tp2": 0.084694,
+      "tp3": 0.08789,
+      "score": 62,
+      "entry_time": "2026-08-11T12:31:34.125008+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 20,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 20,
         "breakout": 10
       }
     }
@@ -13225,11 +13225,35 @@
       "exit_time": "2026-08-11T11:51:16.993131+00:00",
       "pnl_pct": -0.95,
       "duration_minutes": 2880
+    },
+    {
+      "id": "SEIUSDT-2026-08-09T12:18:49.271456+00:00",
+      "symbol": "SEIUSDT",
+      "entry_price": 0.04152,
+      "sl": 0.0402744,
+      "tp1": 0.0427656,
+      "tp2": 0.0440112,
+      "tp3": 0.045672,
+      "score": 50,
+      "entry_time": "2026-08-09T12:18:49.271456+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 8,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 0.04092,
+      "exit_time": "2026-08-11T12:31:28.067162+00:00",
+      "pnl_pct": -1.45,
+      "duration_minutes": 2892
     }
   ],
   "meta": {
     "total_active": 24,
-    "total_closed": 532,
-    "last_updated": "2026-08-11T11:55:09.877435+00:00"
+    "total_closed": 533,
+    "last_updated": "2026-08-11T12:31:34.126780+00:00"
   }
 }
