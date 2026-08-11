@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "DOGEUSDT-2026-08-09T22:48:31.991121+00:00",
-      "symbol": "DOGEUSDT",
-      "entry_price": 0.07004,
-      "sl": 0.0679388,
-      "tp1": 0.0721412,
-      "tp2": 0.0742424,
-      "tp3": 0.077044,
-      "score": 50,
-      "entry_time": "2026-08-09T22:48:31.991121+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 20,
-        "momentum": 0,
-        "breakout": 10
-      }
-    },
-    {
       "id": "DOTUSDT-2026-08-09T23:13:34.900094+00:00",
       "symbol": "DOTUSDT",
       "entry_price": 0.802,
@@ -226,6 +207,44 @@
         "whale": 0,
         "momentum": 20,
         "breakout": 10
+      }
+    },
+    {
+      "id": "ATOMUSDT-2026-08-11T23:07:41.873655+00:00",
+      "symbol": "ATOMUSDT",
+      "entry_price": 1.439,
+      "sl": 1.39583,
+      "tp1": 1.48217,
+      "tp2": 1.52534,
+      "tp3": 1.5829,
+      "score": 54,
+      "entry_time": "2026-08-11T23:07:41.873655+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 20,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "ORDIUSDT-2026-08-11T23:07:42.040365+00:00",
+      "symbol": "ORDIUSDT",
+      "entry_price": 3.444,
+      "sl": 3.34068,
+      "tp1": 3.54732,
+      "tp2": 3.65064,
+      "tp3": 3.7884,
+      "score": 60,
+      "entry_time": "2026-08-11T23:07:42.040365+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 0
       }
     }
   ],
@@ -13429,11 +13448,35 @@
       "exit_time": "2026-08-11T21:38:37.924425+00:00",
       "pnl_pct": 3.81,
       "duration_minutes": 2905
+    },
+    {
+      "id": "DOGEUSDT-2026-08-09T22:48:31.991121+00:00",
+      "symbol": "DOGEUSDT",
+      "entry_price": 0.07004,
+      "sl": 0.0679388,
+      "tp1": 0.0721412,
+      "tp2": 0.0742424,
+      "tp3": 0.077044,
+      "score": 50,
+      "entry_time": "2026-08-09T22:48:31.991121+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 0.07219,
+      "exit_time": "2026-08-11T23:07:36.385542+00:00",
+      "pnl_pct": 3.07,
+      "duration_minutes": 2899
     }
   ],
   "meta": {
-    "total_active": 12,
-    "total_closed": 550,
-    "last_updated": "2026-08-11T22:47:32.936311+00:00"
+    "total_active": 13,
+    "total_closed": 551,
+    "last_updated": "2026-08-11T23:07:42.041612+00:00"
   }
 }
