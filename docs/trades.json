@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "LTCUSDT-2026-08-09T09:51:52.496656+00:00",
-      "symbol": "LTCUSDT",
-      "entry_price": 46.16,
-      "sl": 44.7752,
-      "tp1": 47.5448,
-      "tp2": 48.9296,
-      "tp3": 50.776,
-      "score": 50,
-      "entry_time": "2026-08-09T09:51:52.496656+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "DOTUSDT-2026-08-09T11:22:10.750214+00:00",
       "symbol": "DOTUSDT",
       "entry_price": 0.808,
@@ -510,6 +491,25 @@
         "orderbook": 12,
         "whale": 20,
         "momentum": 20,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "INJUSDT-2026-08-11T10:09:59.248219+00:00",
+      "symbol": "INJUSDT",
+      "entry_price": 4.512,
+      "sl": 4.37664,
+      "tp1": 4.64736,
+      "tp2": 4.78272,
+      "tp3": 4.9632,
+      "score": 50,
+      "entry_time": "2026-08-11T10:09:59.248219+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 8,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 12,
         "breakout": 10
       }
     }
@@ -13186,11 +13186,35 @@
       "exit_time": "2026-08-11T09:13:05.649084+00:00",
       "pnl_pct": -1.04,
       "duration_minutes": 2900
+    },
+    {
+      "id": "LTCUSDT-2026-08-09T09:51:52.496656+00:00",
+      "symbol": "LTCUSDT",
+      "entry_price": 46.16,
+      "sl": 44.7752,
+      "tp1": 47.5448,
+      "tp2": 48.9296,
+      "tp3": 50.776,
+      "score": 50,
+      "entry_time": "2026-08-09T09:51:52.496656+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 45.45,
+      "exit_time": "2026-08-11T10:09:52.903059+00:00",
+      "pnl_pct": -1.54,
+      "duration_minutes": 2898
     }
   ],
   "meta": {
     "total_active": 27,
-    "total_closed": 528,
-    "last_updated": "2026-08-11T09:33:01.411839+00:00"
+    "total_closed": 529,
+    "last_updated": "2026-08-11T10:09:59.249407+00:00"
   }
 }
