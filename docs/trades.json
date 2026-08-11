@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "ETHUSDT-2026-08-09T17:15:55.309902+00:00",
-      "symbol": "ETHUSDT",
-      "entry_price": 1924.06,
-      "sl": 1866.3382,
-      "tp1": 1981.7818,
-      "tp2": 2039.5036,
-      "tp3": 2116.466,
-      "score": 62,
-      "entry_time": "2026-08-09T17:15:55.309902+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "ARBUSDT-2026-08-09T19:40:31.009525+00:00",
       "symbol": "ARBUSDT",
       "entry_price": 0.0787,
@@ -187,25 +168,6 @@
         "orderbook": 0,
         "whale": 20,
         "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "ARBUSDT-2026-08-11T12:31:34.125008+00:00",
-      "symbol": "ARBUSDT",
-      "entry_price": 0.0799,
-      "sl": 0.077503,
-      "tp1": 0.082297,
-      "tp2": 0.084694,
-      "tp3": 0.08789,
-      "score": 62,
-      "entry_time": "2026-08-11T12:31:34.125008+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 12,
-        "whale": 0,
-        "momentum": 20,
         "breakout": 10
       }
     },
@@ -13371,11 +13333,59 @@
       "exit_time": "2026-08-11T15:00:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 2078
+    },
+    {
+      "id": "ETHUSDT-2026-08-09T17:15:55.309902+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 1924.06,
+      "sl": 1866.3382,
+      "tp1": 1981.7818,
+      "tp2": 2039.5036,
+      "tp3": 2116.466,
+      "score": 62,
+      "entry_time": "2026-08-09T17:15:55.309902+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 1866.3382,
+      "exit_time": "2026-08-11T15:30:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 2774
+    },
+    {
+      "id": "ARBUSDT-2026-08-11T12:31:34.125008+00:00",
+      "symbol": "ARBUSDT",
+      "entry_price": 0.0799,
+      "sl": 0.077503,
+      "tp1": 0.082297,
+      "tp2": 0.084694,
+      "tp3": 0.08789,
+      "score": 62,
+      "entry_time": "2026-08-11T12:31:34.125008+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.077503,
+      "exit_time": "2026-08-11T15:30:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 178
     }
   ],
   "meta": {
-    "total_active": 14,
-    "total_closed": 546,
-    "last_updated": "2026-08-11T15:06:45.627131+00:00"
+    "total_active": 12,
+    "total_closed": 548,
+    "last_updated": "2026-08-11T15:52:19.917072+00:00"
   }
 }
