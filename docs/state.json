@@ -1,83 +1,73 @@
 {
-  "last_scan_time": "2026-08-13T15:38:57.399617+00:00",
-  "last_scan_time_human": "2026-08-13 15:38:57 UTC",
-  "total_scans": 1716,
-  "total_signals_sent": 583,
-  "signals_today": 12,
+  "last_scan_time": "2026-08-13T15:43:39.692187+00:00",
+  "last_scan_time_human": "2026-08-13 15:43:39 UTC",
+  "total_scans": 1717,
+  "total_signals_sent": 584,
+  "signals_today": 13,
   "signals_this_week": 20,
   "top_scoring_pairs": [
     {
+      "symbol": "INJUSDT",
+      "score": 50,
+      "price": 4.648,
+      "time": "2026-08-13T15:43:39.529288+00:00"
+    },
+    {
       "symbol": "BTCUSDT",
       "score": 42,
-      "price": 63671.78,
-      "time": "2026-08-13T15:38:57.399542+00:00"
+      "price": 63752.0,
+      "time": "2026-08-13T15:43:39.529236+00:00"
     },
     {
       "symbol": "ETHUSDT",
       "score": 42,
-      "price": 1888.85,
-      "time": "2026-08-13T15:38:57.399556+00:00"
+      "price": 1891.99,
+      "time": "2026-08-13T15:43:39.529251+00:00"
     },
     {
       "symbol": "DOTUSDT",
       "score": 42,
-      "price": 0.773,
-      "time": "2026-08-13T15:38:57.399574+00:00"
-    },
-    {
-      "symbol": "WIFUSDT",
-      "score": 42,
-      "price": 0.1385,
-      "time": "2026-08-13T15:38:57.399615+00:00"
+      "price": 0.774,
+      "time": "2026-08-13T15:43:39.529268+00:00"
     },
     {
       "symbol": "SUIUSDT",
-      "score": 34,
-      "price": 0.69,
-      "time": "2026-08-13T15:38:57.399602+00:00"
+      "score": 36,
+      "price": 0.6902,
+      "time": "2026-08-13T15:43:39.692171+00:00"
     },
     {
       "symbol": "ARBUSDT",
       "score": 32,
       "price": 0.0755,
-      "time": "2026-08-13T15:38:57.399595+00:00"
+      "time": "2026-08-13T15:43:39.529284+00:00"
     },
     {
       "symbol": "ADAUSDT",
       "score": 30,
       "price": 0.1833,
-      "time": "2026-08-13T15:38:57.399567+00:00"
+      "time": "2026-08-13T15:43:39.529262+00:00"
     },
     {
       "symbol": "TIAUSDT",
+      "score": 30,
+      "price": 0.3126,
+      "time": "2026-08-13T15:43:39.692175+00:00"
+    },
+    {
+      "symbol": "WIFUSDT",
       "score": 28,
-      "price": 0.3132,
-      "time": "2026-08-13T15:38:57.399605+00:00"
+      "price": 0.1383,
+      "time": "2026-08-13T15:43:39.692185+00:00"
     },
     {
-      "symbol": "SEIUSDT",
-      "score": 24,
-      "price": 0.04112,
-      "time": "2026-08-13T15:38:57.399608+00:00"
-    },
-    {
-      "symbol": "SOLUSDT",
+      "symbol": "BNBUSDT",
       "score": 22,
-      "price": 76.1,
-      "time": "2026-08-13T15:38:57.399562+00:00"
+      "price": 609.44,
+      "time": "2026-08-13T15:43:39.529255+00:00"
     }
   ],
   "recent_signals": [
-    {
-      "symbol": "ORDIUSDT",
-      "entry": 3.444,
-      "sl": 3.34068,
-      "tp1": 3.54732,
-      "tp2": 3.65064,
-      "tp3": 3.7884,
-      "score": 60,
-      "timestamp": "2026-08-11T23:07:42.040365+00:00"
-    },
     {
       "symbol": "BTCUSDT",
       "entry": 63849.01,
@@ -267,25 +257,34 @@
       "tp3": 0.15367,
       "score": 54,
       "timestamp": "2026-08-13T14:48:43.787510+00:00"
+    },
+    {
+      "symbol": "INJUSDT",
+      "entry": 4.648,
+      "sl": 4.50856,
+      "tp1": 4.78744,
+      "tp2": 4.92688,
+      "tp3": 5.1128,
+      "score": 50,
+      "timestamp": "2026-08-13T15:43:39.692088+00:00"
     }
   ],
   "engine_performance": {
-    "volume": 223,
-    "orderbook": 483,
+    "volume": 224,
+    "orderbook": 484,
     "whale": 247,
     "momentum": 506,
-    "breakout": 546
+    "breakout": 547
   },
   "bot_uptime": {
     "started_at": "2026-05-18T20:09:55.535316+00:00",
-    "scans_total": 1716
+    "scans_total": 1717
   },
   "last_error": null,
   "min_score": 50,
   "pairs_count": 25,
   "scan_interval_minutes": 5,
   "recent_max_scores": [
-    38,
     42,
     42,
     30,
@@ -334,9 +333,10 @@
     42,
     50,
     74,
-    42
+    42,
+    50
   ],
-  "avg_score_last_50_scans": 41.5,
-  "active_trades_count": 18,
+  "avg_score_last_50_scans": 41.7,
+  "active_trades_count": 19,
   "closed_trades_count": 565
 }
