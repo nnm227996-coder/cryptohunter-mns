@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "INJUSDT-2026-08-11T14:55:46.909589+00:00",
-      "symbol": "INJUSDT",
-      "entry_price": 4.449,
-      "sl": 4.31553,
-      "tp1": 4.58247,
-      "tp2": 4.71594,
-      "tp3": 4.8939,
-      "score": 50,
-      "entry_time": "2026-08-11T14:55:46.909589+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 0,
-        "breakout": 10
-      }
-    },
-    {
       "id": "XRPUSDT-2026-08-11T20:21:13.795735+00:00",
       "symbol": "XRPUSDT",
       "entry_price": 1.0181,
@@ -13898,11 +13879,35 @@
       "exit_time": "2026-08-13T14:43:56.582728+00:00",
       "pnl_pct": 0.39,
       "duration_minutes": 2921
+    },
+    {
+      "id": "INJUSDT-2026-08-11T14:55:46.909589+00:00",
+      "symbol": "INJUSDT",
+      "entry_price": 4.449,
+      "sl": 4.31553,
+      "tp1": 4.58247,
+      "tp2": 4.71594,
+      "tp3": 4.8939,
+      "score": 50,
+      "entry_time": "2026-08-11T14:55:46.909589+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 4.637,
+      "exit_time": "2026-08-13T15:38:50.970636+00:00",
+      "pnl_pct": 4.23,
+      "duration_minutes": 2923
     }
   ],
   "meta": {
-    "total_active": 19,
-    "total_closed": 564,
-    "last_updated": "2026-08-13T14:48:43.789299+00:00"
+    "total_active": 18,
+    "total_closed": 565,
+    "last_updated": "2026-08-13T15:38:57.401455+00:00"
   }
 }
