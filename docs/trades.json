@@ -96,25 +96,6 @@
       }
     },
     {
-      "id": "ARBUSDT-2026-08-13T22:23:19.999432+00:00",
-      "symbol": "ARBUSDT",
-      "entry_price": 0.0756,
-      "sl": 0.073332,
-      "tp1": 0.077868,
-      "tp2": 0.080136,
-      "tp3": 0.08316,
-      "score": 54,
-      "entry_time": "2026-08-13T22:23:19.999432+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 12,
-        "whale": 20,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "AVAXUSDT-2026-08-14T00:50:56.207367+00:00",
       "symbol": "AVAXUSDT",
       "entry_price": 6.479,
@@ -14231,11 +14212,35 @@
       "exit_time": "2026-08-14T18:45:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 622
+    },
+    {
+      "id": "ARBUSDT-2026-08-13T22:23:19.999432+00:00",
+      "symbol": "ARBUSDT",
+      "entry_price": 0.0756,
+      "sl": 0.073332,
+      "tp1": 0.077868,
+      "tp2": 0.080136,
+      "tp3": 0.08316,
+      "score": 54,
+      "entry_time": "2026-08-13T22:23:19.999432+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.073332,
+      "exit_time": "2026-08-14T22:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1431
     }
   ],
   "meta": {
-    "total_active": 10,
-    "total_closed": 585,
-    "last_updated": "2026-08-14T22:11:22.302713+00:00"
+    "total_active": 9,
+    "total_closed": 586,
+    "last_updated": "2026-08-14T22:31:11.314934+00:00"
   }
 }
