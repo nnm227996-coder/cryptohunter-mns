@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "BNBUSDT-2026-08-12T18:27:36.947557+00:00",
-      "symbol": "BNBUSDT",
-      "entry_price": 610.78,
-      "sl": 592.4566,
-      "tp1": 629.1034,
-      "tp2": 647.4268,
-      "tp3": 671.858,
-      "score": 50,
-      "entry_time": "2026-08-12T18:27:36.947557+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 0,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BNBUSDT-2026-08-13T07:10:34.217846+00:00",
       "symbol": "BNBUSDT",
       "entry_price": 613.6,
@@ -149,25 +130,6 @@
         "orderbook": 0,
         "whale": 20,
         "momentum": 0,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "ATOMUSDT-2026-08-14T08:22:35.007975+00:00",
-      "symbol": "ATOMUSDT",
-      "entry_price": 1.547,
-      "sl": 1.50059,
-      "tp1": 1.59341,
-      "tp2": 1.63982,
-      "tp3": 1.7017,
-      "score": 56,
-      "entry_time": "2026-08-14T08:22:35.007975+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 6,
-        "whale": 20,
-        "momentum": 20,
         "breakout": 10
       }
     },
@@ -14202,11 +14164,59 @@
       "exit_time": "2026-08-14T17:08:42.778326+00:00",
       "pnl_pct": -0.54,
       "duration_minutes": 2917
+    },
+    {
+      "id": "BNBUSDT-2026-08-12T18:27:36.947557+00:00",
+      "symbol": "BNBUSDT",
+      "entry_price": 610.78,
+      "sl": 592.4566,
+      "tp1": 629.1034,
+      "tp2": 647.4268,
+      "tp3": 671.858,
+      "score": 50,
+      "entry_time": "2026-08-12T18:27:36.947557+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 0,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 605.85,
+      "exit_time": "2026-08-14T19:04:28.465041+00:00",
+      "pnl_pct": -0.81,
+      "duration_minutes": 2916
+    },
+    {
+      "id": "ATOMUSDT-2026-08-14T08:22:35.007975+00:00",
+      "symbol": "ATOMUSDT",
+      "entry_price": 1.547,
+      "sl": 1.50059,
+      "tp1": 1.59341,
+      "tp2": 1.63982,
+      "tp3": 1.7017,
+      "score": 56,
+      "entry_time": "2026-08-14T08:22:35.007975+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 6,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 1.50059,
+      "exit_time": "2026-08-14T18:45:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 622
     }
   ],
   "meta": {
-    "total_active": 11,
-    "total_closed": 583,
-    "last_updated": "2026-08-14T18:04:43.167924+00:00"
+    "total_active": 9,
+    "total_closed": 585,
+    "last_updated": "2026-08-14T19:04:34.763715+00:00"
   }
 }
