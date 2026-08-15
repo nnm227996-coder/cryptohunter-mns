@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "ORDIUSDT-2026-08-13T19:34:38.040495+00:00",
-      "symbol": "ORDIUSDT",
-      "entry_price": 3.483,
-      "sl": 3.37851,
-      "tp1": 3.58749,
-      "tp2": 3.69198,
-      "tp3": 3.8313,
-      "score": 68,
-      "entry_time": "2026-08-13T19:34:38.040495+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 6,
-        "whale": 20,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "AVAXUSDT-2026-08-14T00:50:56.207367+00:00",
       "symbol": "AVAXUSDT",
       "entry_price": 6.479,
@@ -14921,11 +14902,35 @@
       "exit_time": "2026-08-15T14:54:24.734099+00:00",
       "pnl_pct": -0.61,
       "duration_minutes": 2890
+    },
+    {
+      "id": "ORDIUSDT-2026-08-13T19:34:38.040495+00:00",
+      "symbol": "ORDIUSDT",
+      "entry_price": 3.483,
+      "sl": 3.37851,
+      "tp1": 3.58749,
+      "tp2": 3.69198,
+      "tp3": 3.8313,
+      "score": 68,
+      "entry_time": "2026-08-13T19:34:38.040495+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 6,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 3.474,
+      "exit_time": "2026-08-15T19:40:31.129714+00:00",
+      "pnl_pct": -0.26,
+      "duration_minutes": 2885
     }
   ],
   "meta": {
-    "total_active": 40,
-    "total_closed": 590,
-    "last_updated": "2026-08-15T19:26:56.958294+00:00"
+    "total_active": 39,
+    "total_closed": 591,
+    "last_updated": "2026-08-15T19:40:42.241061+00:00"
   }
 }
