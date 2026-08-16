@@ -172,25 +172,6 @@
       }
     },
     {
-      "id": "APTUSDT-2026-08-15T04:38:55.623369+00:00",
-      "symbol": "APTUSDT",
-      "entry_price": 0.544,
-      "sl": 0.52768,
-      "tp1": 0.56032,
-      "tp2": 0.57664,
-      "tp3": 0.5984,
-      "score": 62,
-      "entry_time": "2026-08-15T04:38:55.623369+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 12,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-08-15T05:01:26.145621+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 63124.53,
@@ -495,25 +476,6 @@
       }
     },
     {
-      "id": "APTUSDT-2026-08-15T14:42:49.141318+00:00",
-      "symbol": "APTUSDT",
-      "entry_price": 0.544,
-      "sl": 0.52768,
-      "tp1": 0.56032,
-      "tp2": 0.57664,
-      "tp3": 0.5984,
-      "score": 82,
-      "entry_time": "2026-08-15T14:42:49.141318+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 20,
-        "whale": 20,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "ETHUSDT-2026-08-15T14:54:31.241487+00:00",
       "symbol": "ETHUSDT",
       "entry_price": 1884.32,
@@ -547,25 +509,6 @@
         "volume": 0,
         "orderbook": 20,
         "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "APTUSDT-2026-08-15T15:33:24.018068+00:00",
-      "symbol": "APTUSDT",
-      "entry_price": 0.544,
-      "sl": 0.52768,
-      "tp1": 0.56032,
-      "tp2": 0.57664,
-      "tp3": 0.5984,
-      "score": 54,
-      "entry_time": "2026-08-15T15:33:24.018068+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 12,
-        "whale": 12,
         "momentum": 20,
         "breakout": 10
       }
@@ -14974,11 +14917,83 @@
       "exit_time": "2026-08-16T01:15:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 906
+    },
+    {
+      "id": "APTUSDT-2026-08-15T04:38:55.623369+00:00",
+      "symbol": "APTUSDT",
+      "entry_price": 0.544,
+      "sl": 0.52768,
+      "tp1": 0.56032,
+      "tp2": 0.57664,
+      "tp3": 0.5984,
+      "score": 62,
+      "entry_time": "2026-08-15T04:38:55.623369+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.52768,
+      "exit_time": "2026-08-16T02:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1281
+    },
+    {
+      "id": "APTUSDT-2026-08-15T14:42:49.141318+00:00",
+      "symbol": "APTUSDT",
+      "entry_price": 0.544,
+      "sl": 0.52768,
+      "tp1": 0.56032,
+      "tp2": 0.57664,
+      "tp3": 0.5984,
+      "score": 82,
+      "entry_time": "2026-08-15T14:42:49.141318+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.52768,
+      "exit_time": "2026-08-16T02:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 677
+    },
+    {
+      "id": "APTUSDT-2026-08-15T15:33:24.018068+00:00",
+      "symbol": "APTUSDT",
+      "entry_price": 0.544,
+      "sl": 0.52768,
+      "tp1": 0.56032,
+      "tp2": 0.57664,
+      "tp3": 0.5984,
+      "score": 54,
+      "entry_time": "2026-08-15T15:33:24.018068+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 12,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.52768,
+      "exit_time": "2026-08-16T02:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 626
     }
   ],
   "meta": {
-    "total_active": 39,
-    "total_closed": 593,
-    "last_updated": "2026-08-16T02:02:02.925095+00:00"
+    "total_active": 36,
+    "total_closed": 596,
+    "last_updated": "2026-08-16T02:10:35.808488+00:00"
   }
 }
