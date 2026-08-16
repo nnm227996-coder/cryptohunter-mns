@@ -115,25 +115,6 @@
       }
     },
     {
-      "id": "PEPEUSDT-2026-08-15T03:41:25.684102+00:00",
-      "symbol": "PEPEUSDT",
-      "entry_price": 2.66e-06,
-      "sl": 2.58e-06,
-      "tp1": 2.74e-06,
-      "tp2": 2.82e-06,
-      "tp3": 2.93e-06,
-      "score": 58,
-      "entry_time": "2026-08-15T03:41:25.684102+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 8,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-08-15T05:01:26.145621+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 63124.53,
@@ -15460,11 +15441,35 @@
       "exit_time": "2026-08-16T17:13:29.231433+00:00",
       "pnl_pct": 0.22,
       "duration_minutes": 2884
+    },
+    {
+      "id": "PEPEUSDT-2026-08-15T03:41:25.684102+00:00",
+      "symbol": "PEPEUSDT",
+      "entry_price": 2.66e-06,
+      "sl": 2.58e-06,
+      "tp1": 2.74e-06,
+      "tp2": 2.82e-06,
+      "tp3": 2.93e-06,
+      "score": 58,
+      "entry_time": "2026-08-15T03:41:25.684102+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 8,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 2.58e-06,
+      "exit_time": "2026-08-16T18:45:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 2343
     }
   ],
   "meta": {
-    "total_active": 57,
-    "total_closed": 599,
-    "last_updated": "2026-08-16T18:39:03.433181+00:00"
+    "total_active": 56,
+    "total_closed": 600,
+    "last_updated": "2026-08-16T18:58:09.856909+00:00"
   }
 }
