@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "AVAXUSDT-2026-08-14T00:50:56.207367+00:00",
-      "symbol": "AVAXUSDT",
-      "entry_price": 6.479,
-      "sl": 6.28463,
-      "tp1": 6.67337,
-      "tp2": 6.86774,
-      "tp3": 7.1269,
-      "score": 50,
-      "entry_time": "2026-08-14T00:50:56.207367+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 0,
-        "breakout": 10
-      }
-    },
-    {
       "id": "DOTUSDT-2026-08-14T14:33:44.576875+00:00",
       "symbol": "DOTUSDT",
       "entry_price": 0.762,
@@ -14964,11 +14945,35 @@
       "exit_time": "2026-08-15T19:40:31.129714+00:00",
       "pnl_pct": -0.26,
       "duration_minutes": 2885
+    },
+    {
+      "id": "AVAXUSDT-2026-08-14T00:50:56.207367+00:00",
+      "symbol": "AVAXUSDT",
+      "entry_price": 6.479,
+      "sl": 6.28463,
+      "tp1": 6.67337,
+      "tp2": 6.86774,
+      "tp3": 7.1269,
+      "score": 50,
+      "entry_time": "2026-08-14T00:50:56.207367+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 10
+      },
+      "exit_type": "tp2_hit",
+      "exit_price": 6.86774,
+      "exit_time": "2026-08-15T02:45:00+00:00",
+      "pnl_pct": 6.0,
+      "duration_minutes": 1554
     }
   ],
   "meta": {
-    "total_active": 41,
-    "total_closed": 591,
-    "last_updated": "2026-08-15T23:55:33.882602+00:00"
+    "total_active": 40,
+    "total_closed": 592,
+    "last_updated": "2026-08-16T00:24:58.494834+00:00"
   }
 }
