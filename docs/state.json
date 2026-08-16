@@ -1,83 +1,73 @@
 {
-  "last_scan_time": "2026-08-16T15:49:05.243475+00:00",
-  "last_scan_time_human": "2026-08-16 15:49:05 UTC",
-  "total_scans": 1972,
-  "total_signals_sent": 649,
+  "last_scan_time": "2026-08-16T15:52:08.209337+00:00",
+  "last_scan_time_human": "2026-08-16 15:52:08 UTC",
+  "total_scans": 1973,
+  "total_signals_sent": 650,
   "signals_today": 20,
   "signals_this_week": 20,
   "top_scoring_pairs": [
     {
       "symbol": "ETHUSDT",
-      "score": 50,
-      "price": 1884.34,
-      "time": "2026-08-16T15:49:05.037106+00:00"
+      "score": 62,
+      "price": 1883.97,
+      "time": "2026-08-16T15:52:08.014098+00:00"
+    },
+    {
+      "symbol": "ORDIUSDT",
+      "score": 52,
+      "price": 3.422,
+      "time": "2026-08-16T15:52:08.014193+00:00"
     },
     {
       "symbol": "ADAUSDT",
       "score": 50,
-      "price": 0.177,
-      "time": "2026-08-16T15:49:05.243363+00:00"
+      "price": 0.1769,
+      "time": "2026-08-16T15:52:08.014146+00:00"
     },
     {
       "symbol": "UNIUSDT",
       "score": 46,
-      "price": 3.32,
-      "time": "2026-08-16T15:49:05.243403+00:00"
+      "price": 3.318,
+      "time": "2026-08-16T15:52:08.014167+00:00"
     },
     {
-      "symbol": "XRPUSDT",
+      "symbol": "BTCUSDT",
       "score": 42,
-      "price": 1.0023,
-      "time": "2026-08-16T15:49:05.243359+00:00"
+      "price": 63133.51,
+      "time": "2026-08-16T15:52:08.014086+00:00"
     },
     {
       "symbol": "WIFUSDT",
       "score": 42,
-      "price": 0.1381,
-      "time": "2026-08-16T15:49:05.243470+00:00"
+      "price": 0.1382,
+      "time": "2026-08-16T15:52:08.209334+00:00"
     },
     {
       "symbol": "ARBUSDT",
       "score": 36,
       "price": 0.0749,
-      "time": "2026-08-16T15:49:05.243431+00:00"
-    },
-    {
-      "symbol": "OPUSDT",
-      "score": 36,
-      "price": 0.0854,
-      "time": "2026-08-16T15:49:05.243437+00:00"
-    },
-    {
-      "symbol": "BNBUSDT",
-      "score": 34,
-      "price": 607.44,
-      "time": "2026-08-16T15:49:05.243350+00:00"
+      "time": "2026-08-16T15:52:08.014176+00:00"
     },
     {
       "symbol": "APTUSDT",
       "score": 32,
       "price": 0.535,
-      "time": "2026-08-16T15:49:05.243425+00:00"
+      "time": "2026-08-16T15:52:08.014174+00:00"
     },
     {
-      "symbol": "LTCUSDT",
+      "symbol": "DOGEUSDT",
       "score": 30,
-      "price": 44.77,
-      "time": "2026-08-16T15:49:05.243415+00:00"
+      "price": 0.07004,
+      "time": "2026-08-16T15:52:08.014159+00:00"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "score": 30,
+      "price": 0.768,
+      "time": "2026-08-16T15:52:08.014161+00:00"
     }
   ],
   "recent_signals": [
-    {
-      "symbol": "LTCUSDT",
-      "entry": 44.31,
-      "sl": 42.9807,
-      "tp1": 45.6393,
-      "tp2": 46.9686,
-      "tp3": 48.741,
-      "score": 60,
-      "timestamp": "2026-08-15T19:26:56.956337+00:00"
-    },
     {
       "symbol": "LTCUSDT",
       "entry": 44.15,
@@ -267,25 +257,34 @@
       "tp3": 2072.774,
       "score": 50,
       "timestamp": "2026-08-16T15:49:05.243226+00:00"
+    },
+    {
+      "symbol": "ORDIUSDT",
+      "entry": 3.422,
+      "sl": 3.31934,
+      "tp1": 3.52466,
+      "tp2": 3.62732,
+      "tp3": 3.7642,
+      "score": 52,
+      "timestamp": "2026-08-16T15:52:08.209259+00:00"
     }
   ],
   "engine_performance": {
-    "volume": 258,
-    "orderbook": 538,
+    "volume": 259,
+    "orderbook": 539,
     "whale": 270,
-    "momentum": 561,
+    "momentum": 562,
     "breakout": 607
   },
   "bot_uptime": {
     "started_at": "2026-05-18T20:09:55.535316+00:00",
-    "scans_total": 1972
+    "scans_total": 1973
   },
   "last_error": null,
   "min_score": 50,
   "pairs_count": 25,
   "scan_interval_minutes": 5,
   "recent_max_scores": [
-    50,
     40,
     38,
     42,
@@ -334,9 +333,10 @@
     52,
     54,
     50,
-    50
+    50,
+    62
   ],
-  "avg_score_last_50_scans": 44.0,
-  "active_trades_count": 51,
+  "avg_score_last_50_scans": 44.3,
+  "active_trades_count": 52,
   "closed_trades_count": 598
 }
