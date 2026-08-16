@@ -911,6 +911,44 @@
         "momentum": 20,
         "breakout": 0
       }
+    },
+    {
+      "id": "ADAUSDT-2026-08-16T15:30:49.426211+00:00",
+      "symbol": "ADAUSDT",
+      "entry_price": 0.1769,
+      "sl": 0.171593,
+      "tp1": 0.182207,
+      "tp2": 0.187514,
+      "tp3": 0.19459,
+      "score": 50,
+      "entry_time": "2026-08-16T15:30:49.426211+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "UNIUSDT-2026-08-16T15:30:49.662285+00:00",
+      "symbol": "UNIUSDT",
+      "entry_price": 3.327,
+      "sl": 3.22719,
+      "tp1": 3.42681,
+      "tp2": 3.52662,
+      "tp3": 3.6597,
+      "score": 54,
+      "entry_time": "2026-08-16T15:30:49.662285+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 20,
+        "orderbook": 12,
+        "whale": 12,
+        "momentum": 0,
+        "breakout": 10
+      }
     }
   ],
   "closed": [
@@ -15268,8 +15306,8 @@
     }
   ],
   "meta": {
-    "total_active": 48,
+    "total_active": 50,
     "total_closed": 598,
-    "last_updated": "2026-08-16T15:13:34.686348+00:00"
+    "last_updated": "2026-08-16T15:30:49.663999+00:00"
   }
 }
