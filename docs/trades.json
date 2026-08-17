@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "SOLUSDT-2026-08-15T14:21:45.705365+00:00",
-      "symbol": "SOLUSDT",
-      "entry_price": 75.51,
-      "sl": 73.2447,
-      "tp1": 77.7753,
-      "tp2": 80.0406,
-      "tp3": 83.061,
-      "score": 56,
-      "entry_time": "2026-08-15T14:21:45.705365+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 6,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "ETHUSDT-2026-08-15T14:54:31.241487+00:00",
       "symbol": "ETHUSDT",
       "entry_price": 1884.32,
@@ -16033,11 +16014,35 @@
       "exit_time": "2026-08-17T14:04:49.227449+00:00",
       "pnl_pct": 0.95,
       "duration_minutes": 2889
+    },
+    {
+      "id": "SOLUSDT-2026-08-15T14:21:45.705365+00:00",
+      "symbol": "SOLUSDT",
+      "entry_price": 75.51,
+      "sl": 73.2447,
+      "tp1": 77.7753,
+      "tp2": 80.0406,
+      "tp3": 83.061,
+      "score": 56,
+      "entry_time": "2026-08-15T14:21:45.705365+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 6,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 75.7,
+      "exit_time": "2026-08-17T14:37:08.028847+00:00",
+      "pnl_pct": 0.25,
+      "duration_minutes": 2895
     }
   ],
   "meta": {
-    "total_active": 48,
-    "total_closed": 630,
-    "last_updated": "2026-08-17T14:12:30.861682+00:00"
+    "total_active": 47,
+    "total_closed": 631,
+    "last_updated": "2026-08-17T14:37:15.842532+00:00"
   }
 }
