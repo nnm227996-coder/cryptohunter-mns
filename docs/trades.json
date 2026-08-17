@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "SEIUSDT-2026-08-15T11:07:09.781710+00:00",
-      "symbol": "SEIUSDT",
-      "entry_price": 0.04012,
-      "sl": 0.0389164,
-      "tp1": 0.0413236,
-      "tp2": 0.0425272,
-      "tp3": 0.044132,
-      "score": 50,
-      "entry_time": "2026-08-15T11:07:09.781710+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 0,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-08-15T11:58:39.732170+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 63028.0,
@@ -15979,11 +15960,35 @@
       "exit_time": "2026-08-17T10:51:45.187983+00:00",
       "pnl_pct": -0.24,
       "duration_minutes": 2880
+    },
+    {
+      "id": "SEIUSDT-2026-08-15T11:07:09.781710+00:00",
+      "symbol": "SEIUSDT",
+      "entry_price": 0.04012,
+      "sl": 0.0389164,
+      "tp1": 0.0413236,
+      "tp2": 0.0425272,
+      "tp3": 0.044132,
+      "score": 50,
+      "entry_time": "2026-08-15T11:07:09.781710+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 0.03982,
+      "exit_time": "2026-08-17T11:11:26.063912+00:00",
+      "pnl_pct": -0.75,
+      "duration_minutes": 2884
     }
   ],
   "meta": {
-    "total_active": 54,
-    "total_closed": 623,
-    "last_updated": "2026-08-17T11:01:05.253185+00:00"
+    "total_active": 53,
+    "total_closed": 624,
+    "last_updated": "2026-08-17T11:11:39.589353+00:00"
   }
 }
