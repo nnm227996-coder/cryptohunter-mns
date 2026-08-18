@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "UNIUSDT-2026-08-16T07:19:31.174069+00:00",
-      "symbol": "UNIUSDT",
-      "entry_price": 3.249,
-      "sl": 3.15153,
-      "tp1": 3.34647,
-      "tp2": 3.44394,
-      "tp3": 3.5739,
-      "score": 56,
-      "entry_time": "2026-08-16T07:19:31.174069+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 6,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "WIFUSDT-2026-08-16T11:20:36.414953+00:00",
       "symbol": "WIFUSDT",
       "entry_price": 0.1372,
@@ -16606,11 +16587,35 @@
       "exit_time": "2026-08-18T02:45:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 190
+    },
+    {
+      "id": "UNIUSDT-2026-08-16T07:19:31.174069+00:00",
+      "symbol": "UNIUSDT",
+      "entry_price": 3.249,
+      "sl": 3.15153,
+      "tp1": 3.34647,
+      "tp2": 3.44394,
+      "tp3": 3.5739,
+      "score": 56,
+      "entry_time": "2026-08-16T07:19:31.174069+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 6,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 3.258,
+      "exit_time": "2026-08-18T07:29:59.753802+00:00",
+      "pnl_pct": 0.28,
+      "duration_minutes": 2890
     }
   ],
   "meta": {
-    "total_active": 39,
-    "total_closed": 661,
-    "last_updated": "2026-08-18T07:07:00.215155+00:00"
+    "total_active": 38,
+    "total_closed": 662,
+    "last_updated": "2026-08-18T07:30:13.242381+00:00"
   }
 }
