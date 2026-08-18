@@ -1,63 +1,6 @@
 {
   "active": [
     {
-      "id": "BTCUSDT-2026-08-16T19:19:42.943380+00:00",
-      "symbol": "BTCUSDT",
-      "entry_price": 63188.76,
-      "sl": 61293.0972,
-      "tp1": 65084.4228,
-      "tp2": 66980.0856,
-      "tp3": 69507.636,
-      "score": 50,
-      "entry_time": "2026-08-16T19:19:42.943380+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "ETHUSDT-2026-08-16T19:26:44.127132+00:00",
-      "symbol": "ETHUSDT",
-      "entry_price": 1887.15,
-      "sl": 1830.5355,
-      "tp1": 1943.7645,
-      "tp2": 2000.379,
-      "tp3": 2075.865,
-      "score": 50,
-      "entry_time": "2026-08-16T19:26:44.127132+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 8,
-        "orderbook": 12,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "LTCUSDT-2026-08-16T19:26:44.362677+00:00",
-      "symbol": "LTCUSDT",
-      "entry_price": 44.53,
-      "sl": 43.1941,
-      "tp1": 45.8659,
-      "tp2": 47.2018,
-      "tp3": 48.983,
-      "score": 54,
-      "entry_time": "2026-08-16T19:26:44.362677+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 12,
-        "whale": 0,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-08-16T19:51:01.095309+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 63148.1,
@@ -966,6 +909,25 @@
         "orderbook": 20,
         "whale": 20,
         "momentum": 12,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "ATOMUSDT-2026-08-18T19:35:19.171155+00:00",
+      "symbol": "ATOMUSDT",
+      "entry_price": 1.437,
+      "sl": 1.39389,
+      "tp1": 1.48011,
+      "tp2": 1.52322,
+      "tp3": 1.5807,
+      "score": 62,
+      "entry_time": "2026-08-18T19:35:19.171155+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 12,
+        "momentum": 20,
         "breakout": 10
       }
     }
@@ -17026,11 +16988,83 @@
       "exit_time": "2026-08-18T19:06:21.124650+00:00",
       "pnl_pct": -1.08,
       "duration_minutes": 2884
+    },
+    {
+      "id": "BTCUSDT-2026-08-16T19:19:42.943380+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 63188.76,
+      "sl": 61293.0972,
+      "tp1": 65084.4228,
+      "tp2": 66980.0856,
+      "tp3": 69507.636,
+      "score": 50,
+      "entry_time": "2026-08-16T19:19:42.943380+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 64741.36,
+      "exit_time": "2026-08-18T19:35:06.991440+00:00",
+      "pnl_pct": 2.46,
+      "duration_minutes": 2895
+    },
+    {
+      "id": "ETHUSDT-2026-08-16T19:26:44.127132+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 1887.15,
+      "sl": 1830.5355,
+      "tp1": 1943.7645,
+      "tp2": 2000.379,
+      "tp3": 2075.865,
+      "score": 50,
+      "entry_time": "2026-08-16T19:26:44.127132+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 8,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 1915.95,
+      "exit_time": "2026-08-18T19:35:07.739363+00:00",
+      "pnl_pct": 1.53,
+      "duration_minutes": 2888
+    },
+    {
+      "id": "LTCUSDT-2026-08-16T19:26:44.362677+00:00",
+      "symbol": "LTCUSDT",
+      "entry_price": 44.53,
+      "sl": 43.1941,
+      "tp1": 45.8659,
+      "tp2": 47.2018,
+      "tp3": 48.983,
+      "score": 54,
+      "entry_time": "2026-08-16T19:26:44.362677+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 44.59,
+      "exit_time": "2026-08-18T19:35:08.038133+00:00",
+      "pnl_pct": 0.13,
+      "duration_minutes": 2888
     }
   ],
   "meta": {
-    "total_active": 51,
-    "total_closed": 669,
-    "last_updated": "2026-08-18T19:17:32.696260+00:00"
+    "total_active": 49,
+    "total_closed": 672,
+    "last_updated": "2026-08-18T19:35:19.173059+00:00"
   }
 }
