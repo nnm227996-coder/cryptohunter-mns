@@ -1,70 +1,70 @@
 {
-  "last_scan_time": "2026-08-19T17:34:30.367509+00:00",
-  "last_scan_time_human": "2026-08-19 17:34:30 UTC",
-  "total_scans": 2260,
+  "last_scan_time": "2026-08-19T17:37:18.685456+00:00",
+  "last_scan_time_human": "2026-08-19 17:37:18 UTC",
+  "total_scans": 2261,
   "total_signals_sent": 767,
   "signals_today": 20,
   "signals_this_week": 20,
   "top_scoring_pairs": [
     {
+      "symbol": "INJUSDT",
+      "score": 36,
+      "price": 4.394,
+      "time": "2026-08-19T17:37:18.685439+00:00"
+    },
+    {
       "symbol": "ATOMUSDT",
       "score": 34,
-      "price": 1.428,
-      "time": "2026-08-19T17:34:30.367483+00:00"
-    },
-    {
-      "symbol": "NEARUSDT",
-      "score": 34,
-      "price": 1.679,
-      "time": "2026-08-19T17:34:30.367487+00:00"
-    },
-    {
-      "symbol": "BNBUSDT",
-      "score": 30,
-      "price": 614.94,
-      "time": "2026-08-19T17:34:30.367462+00:00"
-    },
-    {
-      "symbol": "INJUSDT",
-      "score": 28,
-      "price": 4.38,
-      "time": "2026-08-19T17:34:30.367495+00:00"
-    },
-    {
-      "symbol": "ADAUSDT",
-      "score": 24,
-      "price": 0.1784,
-      "time": "2026-08-19T17:34:30.367468+00:00"
-    },
-    {
-      "symbol": "DOTUSDT",
-      "score": 24,
-      "price": 0.771,
-      "time": "2026-08-19T17:34:30.367474+00:00"
+      "price": 1.429,
+      "time": "2026-08-19T17:37:18.685425+00:00"
     },
     {
       "symbol": "MATICUSDT",
       "score": 22,
       "price": 0.3794,
-      "time": "2026-08-19T17:34:30.367476+00:00"
+      "time": "2026-08-19T17:37:18.685418+00:00"
     },
     {
       "symbol": "LINKUSDT",
       "score": 22,
-      "price": 9.877,
-      "time": "2026-08-19T17:34:30.367478+00:00"
+      "price": 9.895,
+      "time": "2026-08-19T17:37:18.685420+00:00"
     },
     {
-      "symbol": "BTCUSDT",
-      "score": 20,
-      "price": 67976.61,
-      "time": "2026-08-19T17:34:30.367446+00:00"
+      "symbol": "ADAUSDT",
+      "score": 18,
+      "price": 0.1789,
+      "time": "2026-08-19T17:37:18.685408+00:00"
+    },
+    {
+      "symbol": "DOTUSDT",
+      "score": 18,
+      "price": 0.772,
+      "time": "2026-08-19T17:37:18.685415+00:00"
     },
     {
       "symbol": "UNIUSDT",
       "score": 18,
       "price": 3.491,
-      "time": "2026-08-19T17:34:30.367480+00:00"
+      "time": "2026-08-19T17:37:18.685423+00:00"
+    },
+    {
+      "symbol": "APTUSDT",
+      "score": 18,
+      "price": 0.54,
+      "time": "2026-08-19T17:37:18.685432+00:00"
+    },
+    {
+      "symbol": "SEIUSDT",
+      "score": 18,
+      "price": 0.03965,
+      "time": "2026-08-19T17:37:18.685446+00:00"
+    },
+    {
+      "symbol": "WIFUSDT",
+      "score": 18,
+      "price": 0.1399,
+      "time": "2026-08-19T17:37:18.685453+00:00"
     }
   ],
   "recent_signals": [
@@ -278,14 +278,13 @@
   },
   "bot_uptime": {
     "started_at": "2026-05-18T20:09:55.535316+00:00",
-    "scans_total": 2260
+    "scans_total": 2261
   },
   "last_error": null,
   "min_score": 50,
   "pairs_count": 25,
   "scan_interval_minutes": 5,
   "recent_max_scores": [
-    44,
     46,
     42,
     48,
@@ -334,9 +333,10 @@
     30,
     42,
     42,
-    34
+    34,
+    36
   ],
-  "avg_score_last_50_scans": 48.2,
+  "avg_score_last_50_scans": 48.1,
   "active_trades_count": 68,
   "closed_trades_count": 699
 }
