@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "LTCUSDT-2026-08-17T17:57:47.327261+00:00",
-      "symbol": "LTCUSDT",
-      "entry_price": 44.57,
-      "sl": 43.2329,
-      "tp1": 45.9071,
-      "tp2": 47.2442,
-      "tp3": 49.027,
-      "score": 50,
-      "entry_time": "2026-08-17T17:57:47.327261+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-08-17T20:34:56.240882+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 64368.8,
@@ -18069,11 +18050,35 @@
       "exit_time": "2026-08-19T16:14:07.452518+00:00",
       "pnl_pct": 7.3,
       "duration_minutes": 2884
+    },
+    {
+      "id": "LTCUSDT-2026-08-17T17:57:47.327261+00:00",
+      "symbol": "LTCUSDT",
+      "entry_price": 44.57,
+      "sl": 43.2329,
+      "tp1": 45.9071,
+      "tp2": 47.2442,
+      "tp3": 49.027,
+      "score": 50,
+      "entry_time": "2026-08-17T17:57:47.327261+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 45.68,
+      "exit_time": "2026-08-19T18:12:52.125934+00:00",
+      "pnl_pct": 2.49,
+      "duration_minutes": 2895
     }
   ],
   "meta": {
-    "total_active": 68,
-    "total_closed": 699,
-    "last_updated": "2026-08-19T17:55:29.972083+00:00"
+    "total_active": 67,
+    "total_closed": 700,
+    "last_updated": "2026-08-19T18:13:02.934230+00:00"
   }
 }
