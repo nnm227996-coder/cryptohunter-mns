@@ -134,25 +134,6 @@
       }
     },
     {
-      "id": "ARBUSDT-2026-08-18T09:17:41.448423+00:00",
-      "symbol": "ARBUSDT",
-      "entry_price": 0.0755,
-      "sl": 0.073235,
-      "tp1": 0.077765,
-      "tp2": 0.08003,
-      "tp3": 0.08305,
-      "score": 50,
-      "entry_time": "2026-08-18T09:17:41.448423+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 20,
-        "momentum": 0,
-        "breakout": 10
-      }
-    },
-    {
       "id": "UNIUSDT-2026-08-18T13:15:05.245839+00:00",
       "symbol": "UNIUSDT",
       "entry_price": 3.286,
@@ -222,25 +203,6 @@
       "status": "active",
       "engines": {
         "volume": 0,
-        "orderbook": 12,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "ARBUSDT-2026-08-18T14:28:59.417666+00:00",
-      "symbol": "ARBUSDT",
-      "entry_price": 0.0757,
-      "sl": 0.073429,
-      "tp1": 0.077971,
-      "tp2": 0.080242,
-      "tp3": 0.08327,
-      "score": 74,
-      "entry_time": "2026-08-18T14:28:59.417666+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 12,
         "orderbook": 12,
         "whale": 20,
         "momentum": 20,
@@ -319,25 +281,6 @@
         "volume": 8,
         "orderbook": 12,
         "whale": 12,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "ARBUSDT-2026-08-18T15:38:43.811533+00:00",
-      "symbol": "ARBUSDT",
-      "entry_price": 0.0757,
-      "sl": 0.073429,
-      "tp1": 0.077971,
-      "tp2": 0.080242,
-      "tp3": 0.08327,
-      "score": 50,
-      "entry_time": "2026-08-18T15:38:43.811533+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 8,
-        "orderbook": 12,
-        "whale": 0,
         "momentum": 20,
         "breakout": 10
       }
@@ -723,25 +666,6 @@
       }
     },
     {
-      "id": "ARBUSDT-2026-08-19T00:23:19.371957+00:00",
-      "symbol": "ARBUSDT",
-      "entry_price": 0.0753,
-      "sl": 0.073041,
-      "tp1": 0.077559,
-      "tp2": 0.079818,
-      "tp3": 0.08283,
-      "score": 56,
-      "entry_time": "2026-08-19T00:23:19.371957+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 6,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "ATOMUSDT-2026-08-19T01:56:28.891679+00:00",
       "symbol": "ATOMUSDT",
       "entry_price": 1.419,
@@ -758,25 +682,6 @@
         "whale": 20,
         "momentum": 20,
         "breakout": 0
-      }
-    },
-    {
-      "id": "ARBUSDT-2026-08-19T01:56:29.078990+00:00",
-      "symbol": "ARBUSDT",
-      "entry_price": 0.0757,
-      "sl": 0.073429,
-      "tp1": 0.077971,
-      "tp2": 0.080242,
-      "tp3": 0.08327,
-      "score": 62,
-      "entry_time": "2026-08-19T01:56:29.078990+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 12,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
       }
     },
     {
@@ -18074,11 +17979,131 @@
       "exit_time": "2026-08-19T18:12:52.125934+00:00",
       "pnl_pct": 2.49,
       "duration_minutes": 2895
+    },
+    {
+      "id": "ARBUSDT-2026-08-18T09:17:41.448423+00:00",
+      "symbol": "ARBUSDT",
+      "entry_price": 0.0755,
+      "sl": 0.073235,
+      "tp1": 0.077765,
+      "tp2": 0.08003,
+      "tp3": 0.08305,
+      "score": 50,
+      "entry_time": "2026-08-18T09:17:41.448423+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 10
+      },
+      "exit_type": "tp3_hit",
+      "exit_price": 0.08305,
+      "exit_time": "2026-08-19T19:30:00+00:00",
+      "pnl_pct": 10.0,
+      "duration_minutes": 2052
+    },
+    {
+      "id": "ARBUSDT-2026-08-18T14:28:59.417666+00:00",
+      "symbol": "ARBUSDT",
+      "entry_price": 0.0757,
+      "sl": 0.073429,
+      "tp1": 0.077971,
+      "tp2": 0.080242,
+      "tp3": 0.08327,
+      "score": 74,
+      "entry_time": "2026-08-18T14:28:59.417666+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 12,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "tp3_hit",
+      "exit_price": 0.08327,
+      "exit_time": "2026-08-19T19:30:00+00:00",
+      "pnl_pct": 10.0,
+      "duration_minutes": 1741
+    },
+    {
+      "id": "ARBUSDT-2026-08-18T15:38:43.811533+00:00",
+      "symbol": "ARBUSDT",
+      "entry_price": 0.0757,
+      "sl": 0.073429,
+      "tp1": 0.077971,
+      "tp2": 0.080242,
+      "tp3": 0.08327,
+      "score": 50,
+      "entry_time": "2026-08-18T15:38:43.811533+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 8,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "tp3_hit",
+      "exit_price": 0.08327,
+      "exit_time": "2026-08-19T19:30:00+00:00",
+      "pnl_pct": 10.0,
+      "duration_minutes": 1671
+    },
+    {
+      "id": "ARBUSDT-2026-08-19T00:23:19.371957+00:00",
+      "symbol": "ARBUSDT",
+      "entry_price": 0.0753,
+      "sl": 0.073041,
+      "tp1": 0.077559,
+      "tp2": 0.079818,
+      "tp3": 0.08283,
+      "score": 56,
+      "entry_time": "2026-08-19T00:23:19.371957+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 6,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "tp3_hit",
+      "exit_price": 0.08283,
+      "exit_time": "2026-08-19T19:15:00+00:00",
+      "pnl_pct": 10.0,
+      "duration_minutes": 1131
+    },
+    {
+      "id": "ARBUSDT-2026-08-19T01:56:29.078990+00:00",
+      "symbol": "ARBUSDT",
+      "entry_price": 0.0757,
+      "sl": 0.073429,
+      "tp1": 0.077971,
+      "tp2": 0.080242,
+      "tp3": 0.08327,
+      "score": 62,
+      "entry_time": "2026-08-19T01:56:29.078990+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "tp3_hit",
+      "exit_price": 0.08327,
+      "exit_time": "2026-08-19T19:30:00+00:00",
+      "pnl_pct": 10.0,
+      "duration_minutes": 1053
     }
   ],
   "meta": {
-    "total_active": 67,
-    "total_closed": 700,
-    "last_updated": "2026-08-19T19:20:35.430988+00:00"
+    "total_active": 62,
+    "total_closed": 705,
+    "last_updated": "2026-08-19T19:38:57.832991+00:00"
   }
 }
