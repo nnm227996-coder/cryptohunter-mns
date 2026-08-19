@@ -1,82 +1,6 @@
 {
   "active": [
     {
-      "id": "BTCUSDT-2026-08-17T15:01:02.532304+00:00",
-      "symbol": "BTCUSDT",
-      "entry_price": 63892.0,
-      "sl": 61975.24,
-      "tp1": 65808.76,
-      "tp2": 67725.52,
-      "tp3": 70281.2,
-      "score": 62,
-      "entry_time": "2026-08-17T15:01:02.532304+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "ETHUSDT-2026-08-17T15:01:02.760286+00:00",
-      "symbol": "ETHUSDT",
-      "entry_price": 1908.0,
-      "sl": 1850.76,
-      "tp1": 1965.24,
-      "tp2": 2022.48,
-      "tp3": 2098.8,
-      "score": 50,
-      "entry_time": "2026-08-17T15:01:02.760286+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "PEPEUSDT-2026-08-17T15:01:02.962226+00:00",
-      "symbol": "PEPEUSDT",
-      "entry_price": 2.59e-06,
-      "sl": 2.51e-06,
-      "tp1": 2.67e-06,
-      "tp2": 2.75e-06,
-      "tp3": 2.85e-06,
-      "score": 50,
-      "entry_time": "2026-08-17T15:01:02.962226+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 0,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "WIFUSDT-2026-08-17T15:18:19.297722+00:00",
-      "symbol": "WIFUSDT",
-      "entry_price": 0.1375,
-      "sl": 0.133375,
-      "tp1": 0.141625,
-      "tp2": 0.14575,
-      "tp3": 0.15125,
-      "score": 50,
-      "entry_time": "2026-08-17T15:18:19.297722+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "ARBUSDT-2026-08-17T15:30:53.058057+00:00",
       "symbol": "ARBUSDT",
       "entry_price": 0.0751,
@@ -1479,6 +1403,44 @@
         "orderbook": 6,
         "whale": 20,
         "momentum": 0,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "ETHUSDT-2026-08-19T15:23:24.534049+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 2017.56,
+      "sl": 1957.0332,
+      "tp1": 2078.0868,
+      "tp2": 2138.6136,
+      "tp3": 2219.316,
+      "score": 50,
+      "entry_time": "2026-08-19T15:23:24.534049+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "ADAUSDT-2026-08-19T15:23:24.696927+00:00",
+      "symbol": "ADAUSDT",
+      "entry_price": 0.1782,
+      "sl": 0.172854,
+      "tp1": 0.183546,
+      "tp2": 0.188892,
+      "tp3": 0.19602,
+      "score": 54,
+      "entry_time": "2026-08-19T15:23:24.696927+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 12,
         "breakout": 10
       }
     }
@@ -17875,11 +17837,107 @@
       "exit_time": "2026-08-19T14:18:34.562452+00:00",
       "pnl_pct": 3.46,
       "duration_minutes": 2886
+    },
+    {
+      "id": "BTCUSDT-2026-08-17T15:01:02.532304+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 63892.0,
+      "sl": 61975.24,
+      "tp1": 65808.76,
+      "tp2": 67725.52,
+      "tp3": 70281.2,
+      "score": 62,
+      "entry_time": "2026-08-17T15:01:02.532304+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 66892.4,
+      "exit_time": "2026-08-19T15:23:07.959439+00:00",
+      "pnl_pct": 4.7,
+      "duration_minutes": 2902
+    },
+    {
+      "id": "ETHUSDT-2026-08-17T15:01:02.760286+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 1908.0,
+      "sl": 1850.76,
+      "tp1": 1965.24,
+      "tp2": 2022.48,
+      "tp3": 2098.8,
+      "score": 50,
+      "entry_time": "2026-08-17T15:01:02.760286+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 2017.9,
+      "exit_time": "2026-08-19T15:23:08.749529+00:00",
+      "pnl_pct": 5.76,
+      "duration_minutes": 2902
+    },
+    {
+      "id": "PEPEUSDT-2026-08-17T15:01:02.962226+00:00",
+      "symbol": "PEPEUSDT",
+      "entry_price": 2.59e-06,
+      "sl": 2.51e-06,
+      "tp1": 2.67e-06,
+      "tp2": 2.75e-06,
+      "tp3": 2.85e-06,
+      "score": 50,
+      "entry_time": "2026-08-17T15:01:02.962226+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 2.68e-06,
+      "exit_time": "2026-08-19T15:23:09.046866+00:00",
+      "pnl_pct": 3.47,
+      "duration_minutes": 2902
+    },
+    {
+      "id": "WIFUSDT-2026-08-17T15:18:19.297722+00:00",
+      "symbol": "WIFUSDT",
+      "entry_price": 0.1375,
+      "sl": 0.133375,
+      "tp1": 0.141625,
+      "tp2": 0.14575,
+      "tp3": 0.15125,
+      "score": 50,
+      "entry_time": "2026-08-17T15:18:19.297722+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 0.1392,
+      "exit_time": "2026-08-19T15:23:09.343844+00:00",
+      "pnl_pct": 1.24,
+      "duration_minutes": 2884
     }
   ],
   "meta": {
-    "total_active": 78,
-    "total_closed": 683,
-    "last_updated": "2026-08-19T14:57:21.470456+00:00"
+    "total_active": 76,
+    "total_closed": 687,
+    "last_updated": "2026-08-19T15:23:24.698404+00:00"
   }
 }
