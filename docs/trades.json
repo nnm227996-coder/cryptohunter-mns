@@ -514,25 +514,6 @@
       }
     },
     {
-      "id": "ADAUSDT-2026-08-19T15:23:24.696927+00:00",
-      "symbol": "ADAUSDT",
-      "entry_price": 0.1782,
-      "sl": 0.172854,
-      "tp1": 0.183546,
-      "tp2": 0.188892,
-      "tp3": 0.19602,
-      "score": 54,
-      "entry_time": "2026-08-19T15:23:24.696927+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 12,
-        "whale": 20,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-08-19T15:52:04.461609+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 68425.76,
@@ -865,6 +846,25 @@
       "tp3": 2517.933,
       "score": 50,
       "entry_time": "2026-08-20T13:28:47.355254+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "APTUSDT-2026-08-20T14:05:50.267517+00:00",
+      "symbol": "APTUSDT",
+      "entry_price": 0.569,
+      "sl": 0.55193,
+      "tp1": 0.58607,
+      "tp2": 0.60314,
+      "tp3": 0.6259,
+      "score": 50,
+      "entry_time": "2026-08-20T14:05:50.267517+00:00",
       "status": "active",
       "engines": {
         "volume": 0,
@@ -18587,11 +18587,35 @@
       "exit_time": "2026-08-20T12:15:00+00:00",
       "pnl_pct": 10.0,
       "duration_minutes": 2219
+    },
+    {
+      "id": "ADAUSDT-2026-08-19T15:23:24.696927+00:00",
+      "symbol": "ADAUSDT",
+      "entry_price": 0.1782,
+      "sl": 0.172854,
+      "tp1": 0.183546,
+      "tp2": 0.188892,
+      "tp3": 0.19602,
+      "score": 54,
+      "entry_time": "2026-08-19T15:23:24.696927+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "tp3_hit",
+      "exit_price": 0.19602,
+      "exit_time": "2026-08-20T14:00:00+00:00",
+      "pnl_pct": 10.0,
+      "duration_minutes": 1356
     }
   ],
   "meta": {
     "total_active": 46,
-    "total_closed": 738,
-    "last_updated": "2026-08-20T13:28:47.357260+00:00"
+    "total_closed": 739,
+    "last_updated": "2026-08-20T14:05:50.269991+00:00"
   }
 }
