@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "LTCUSDT-2026-08-18T21:09:47.411391+00:00",
-      "symbol": "LTCUSDT",
-      "entry_price": 44.58,
-      "sl": 43.2426,
-      "tp1": 45.9174,
-      "tp2": 47.2548,
-      "tp3": 49.038,
-      "score": 50,
-      "entry_time": "2026-08-18T21:09:47.411391+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 0,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BNBUSDT-2026-08-18T23:10:17.076500+00:00",
       "symbol": "BNBUSDT",
       "entry_price": 603.59,
@@ -18800,11 +18781,35 @@
       "exit_time": "2026-08-20T21:04:37.257174+00:00",
       "pnl_pct": 4.48,
       "duration_minutes": 2892
+    },
+    {
+      "id": "LTCUSDT-2026-08-18T21:09:47.411391+00:00",
+      "symbol": "LTCUSDT",
+      "entry_price": 44.58,
+      "sl": 43.2426,
+      "tp1": 45.9174,
+      "tp2": 47.2548,
+      "tp3": 49.038,
+      "score": 50,
+      "entry_time": "2026-08-18T21:09:47.411391+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 48.15,
+      "exit_time": "2026-08-20T21:13:24.333591+00:00",
+      "pnl_pct": 8.01,
+      "duration_minutes": 2883
     }
   ],
   "meta": {
-    "total_active": 37,
-    "total_closed": 754,
-    "last_updated": "2026-08-20T21:04:46.962438+00:00"
+    "total_active": 36,
+    "total_closed": 755,
+    "last_updated": "2026-08-20T21:13:34.933937+00:00"
   }
 }
