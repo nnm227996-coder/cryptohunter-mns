@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "APTUSDT-2026-08-18T15:51:37.701092+00:00",
-      "symbol": "APTUSDT",
-      "entry_price": 0.53,
-      "sl": 0.5141,
-      "tp1": 0.5459,
-      "tp2": 0.5618,
-      "tp3": 0.583,
-      "score": 54,
-      "entry_time": "2026-08-18T15:51:37.701092+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 12,
-        "whale": 0,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "ATOMUSDT-2026-08-18T17:00:52.100111+00:00",
       "symbol": "ATOMUSDT",
       "entry_price": 1.407,
@@ -18693,11 +18674,35 @@
       "exit_time": "2026-08-20T15:00:00+00:00",
       "pnl_pct": 10.0,
       "duration_minutes": 1442
+    },
+    {
+      "id": "APTUSDT-2026-08-18T15:51:37.701092+00:00",
+      "symbol": "APTUSDT",
+      "entry_price": 0.53,
+      "sl": 0.5141,
+      "tp1": 0.5459,
+      "tp2": 0.5618,
+      "tp3": 0.583,
+      "score": 54,
+      "entry_time": "2026-08-18T15:51:37.701092+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 0.574,
+      "exit_time": "2026-08-20T15:52:29.646808+00:00",
+      "pnl_pct": 8.3,
+      "duration_minutes": 2880
     }
   ],
   "meta": {
-    "total_active": 44,
-    "total_closed": 744,
-    "last_updated": "2026-08-20T15:51:41.122777+00:00"
+    "total_active": 43,
+    "total_closed": 745,
+    "last_updated": "2026-08-20T15:52:37.685441+00:00"
   }
 }
