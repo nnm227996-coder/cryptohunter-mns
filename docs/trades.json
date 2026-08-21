@@ -305,25 +305,6 @@
       }
     },
     {
-      "id": "APTUSDT-2026-08-20T22:49:49.832690+00:00",
-      "symbol": "APTUSDT",
-      "entry_price": 0.574,
-      "sl": 0.55678,
-      "tp1": 0.59122,
-      "tp2": 0.60844,
-      "tp3": 0.6314,
-      "score": 56,
-      "entry_time": "2026-08-20T22:49:49.832690+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 6,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "UNIUSDT-2026-08-20T23:23:20.262726+00:00",
       "symbol": "UNIUSDT",
       "entry_price": 3.762,
@@ -19314,11 +19295,35 @@
       "exit_time": "2026-08-21T09:30:00+00:00",
       "pnl_pct": 10.0,
       "duration_minutes": 1164
+    },
+    {
+      "id": "APTUSDT-2026-08-20T22:49:49.832690+00:00",
+      "symbol": "APTUSDT",
+      "entry_price": 0.574,
+      "sl": 0.55678,
+      "tp1": 0.59122,
+      "tp2": 0.60844,
+      "tp3": 0.6314,
+      "score": 56,
+      "entry_time": "2026-08-20T22:49:49.832690+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 6,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "tp3_hit",
+      "exit_price": 0.6314,
+      "exit_time": "2026-08-21T09:45:00+00:00",
+      "pnl_pct": 10.0,
+      "duration_minutes": 655
     }
   ],
   "meta": {
-    "total_active": 35,
-    "total_closed": 777,
-    "last_updated": "2026-08-21T09:45:02.595227+00:00"
+    "total_active": 34,
+    "total_closed": 778,
+    "last_updated": "2026-08-21T09:55:48.772966+00:00"
   }
 }
