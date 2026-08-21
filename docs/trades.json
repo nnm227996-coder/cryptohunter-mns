@@ -172,25 +172,6 @@
       }
     },
     {
-      "id": "LTCUSDT-2026-08-20T16:16:45.849209+00:00",
-      "symbol": "LTCUSDT",
-      "entry_price": 47.8,
-      "sl": 46.366,
-      "tp1": 49.234,
-      "tp2": 50.668,
-      "tp3": 52.58,
-      "score": 50,
-      "entry_time": "2026-08-20T16:16:45.849209+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "ETHUSDT-2026-08-20T19:56:51.502441+00:00",
       "symbol": "ETHUSDT",
       "entry_price": 2326.44,
@@ -19491,11 +19472,35 @@
       "exit_time": "2026-08-21T21:29:38.406700+00:00",
       "pnl_pct": 8.35,
       "duration_minutes": 2892
+    },
+    {
+      "id": "LTCUSDT-2026-08-20T16:16:45.849209+00:00",
+      "symbol": "LTCUSDT",
+      "entry_price": 47.8,
+      "sl": 46.366,
+      "tp1": 49.234,
+      "tp2": 50.668,
+      "tp3": 52.58,
+      "score": 50,
+      "entry_time": "2026-08-20T16:16:45.849209+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "tp3_hit",
+      "exit_price": 52.58,
+      "exit_time": "2026-08-21T21:30:00+00:00",
+      "pnl_pct": 10.0,
+      "duration_minutes": 1753
     }
   ],
   "meta": {
-    "total_active": 38,
-    "total_closed": 782,
-    "last_updated": "2026-08-21T21:31:34.317625+00:00"
+    "total_active": 37,
+    "total_closed": 783,
+    "last_updated": "2026-08-21T21:50:11.488837+00:00"
   }
 }
