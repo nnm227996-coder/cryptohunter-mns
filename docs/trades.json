@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "APTUSDT-2026-08-19T05:16:57.531497+00:00",
-      "symbol": "APTUSDT",
-      "entry_price": 0.533,
-      "sl": 0.51701,
-      "tp1": 0.54899,
-      "tp2": 0.56498,
-      "tp3": 0.5863,
-      "score": 62,
-      "entry_time": "2026-08-19T05:16:57.531497+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 12,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "APTUSDT-2026-08-19T07:10:44.740022+00:00",
       "symbol": "APTUSDT",
       "entry_price": 0.536,
@@ -793,6 +774,25 @@
       "engines": {
         "volume": 20,
         "orderbook": 6,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "LTCUSDT-2026-08-21T05:30:28.099737+00:00",
+      "symbol": "LTCUSDT",
+      "entry_price": 48.57,
+      "sl": 47.1129,
+      "tp1": 50.0271,
+      "tp2": 51.4842,
+      "tp3": 53.427,
+      "score": 50,
+      "entry_time": "2026-08-21T05:30:28.099737+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
         "whale": 0,
         "momentum": 20,
         "breakout": 10
@@ -19087,11 +19087,35 @@
       "exit_time": "2026-08-21T02:47:44.499910+00:00",
       "pnl_pct": 7.75,
       "duration_minutes": 2931
+    },
+    {
+      "id": "APTUSDT-2026-08-19T05:16:57.531497+00:00",
+      "symbol": "APTUSDT",
+      "entry_price": 0.533,
+      "sl": 0.51701,
+      "tp1": 0.54899,
+      "tp2": 0.56498,
+      "tp3": 0.5863,
+      "score": 62,
+      "entry_time": "2026-08-19T05:16:57.531497+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 0.579,
+      "exit_time": "2026-08-21T05:30:20.381009+00:00",
+      "pnl_pct": 8.63,
+      "duration_minutes": 2893
     }
   ],
   "meta": {
     "total_active": 42,
-    "total_closed": 762,
-    "last_updated": "2026-08-21T04:58:14.189422+00:00"
+    "total_closed": 763,
+    "last_updated": "2026-08-21T05:30:28.102000+00:00"
   }
 }
