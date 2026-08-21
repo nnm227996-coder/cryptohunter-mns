@@ -58,25 +58,6 @@
       }
     },
     {
-      "id": "BTCUSDT-2026-08-19T20:55:29.722030+00:00",
-      "symbol": "BTCUSDT",
-      "entry_price": 69048.51,
-      "sl": 66977.0547,
-      "tp1": 71119.9653,
-      "tp2": 73191.4206,
-      "tp3": 75953.361,
-      "score": 50,
-      "entry_time": "2026-08-19T20:55:29.722030+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 20,
-        "momentum": 0,
-        "breakout": 10
-      }
-    },
-    {
       "id": "LINKUSDT-2026-08-19T20:58:01.804077+00:00",
       "symbol": "LINKUSDT",
       "entry_price": 10.569,
@@ -777,6 +758,44 @@
         "whale": 0,
         "momentum": 20,
         "breakout": 10
+      }
+    },
+    {
+      "id": "BTCUSDT-2026-08-21T07:29:58.779922+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 76408.21,
+      "sl": 74115.9637,
+      "tp1": 78700.4563,
+      "tp2": 80992.7026,
+      "tp3": 84049.031,
+      "score": 60,
+      "entry_time": "2026-08-21T07:29:58.779922+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 20
+      }
+    },
+    {
+      "id": "LINKUSDT-2026-08-21T07:29:59.078939+00:00",
+      "symbol": "LINKUSDT",
+      "entry_price": 11.616,
+      "sl": 11.26752,
+      "tp1": 11.96448,
+      "tp2": 12.31296,
+      "tp3": 12.7776,
+      "score": 68,
+      "entry_time": "2026-08-21T07:29:59.078939+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 8,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 20
       }
     }
   ],
@@ -19164,11 +19183,35 @@
       "exit_time": "2026-08-21T06:00:00+00:00",
       "pnl_pct": 10.0,
       "duration_minutes": 2809
+    },
+    {
+      "id": "BTCUSDT-2026-08-19T20:55:29.722030+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 69048.51,
+      "sl": 66977.0547,
+      "tp1": 71119.9653,
+      "tp2": 73191.4206,
+      "tp3": 75953.361,
+      "score": 50,
+      "entry_time": "2026-08-19T20:55:29.722030+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 10
+      },
+      "exit_type": "tp3_hit",
+      "exit_price": 75953.361,
+      "exit_time": "2026-08-21T07:00:00+00:00",
+      "pnl_pct": 10.0,
+      "duration_minutes": 2044
     }
   ],
   "meta": {
-    "total_active": 41,
-    "total_closed": 766,
-    "last_updated": "2026-08-21T06:59:56.197145+00:00"
+    "total_active": 42,
+    "total_closed": 767,
+    "last_updated": "2026-08-21T07:29:59.081119+00:00"
   }
 }
