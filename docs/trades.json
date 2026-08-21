@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "BNBUSDT-2026-08-20T05:17:43.816221+00:00",
-      "symbol": "BNBUSDT",
-      "entry_price": 627.2,
-      "sl": 608.384,
-      "tp1": 646.016,
-      "tp2": 664.832,
-      "tp3": 689.92,
-      "score": 50,
-      "entry_time": "2026-08-20T05:17:43.816221+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 8,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "ATOMUSDT-2026-08-20T07:11:52.634906+00:00",
       "symbol": "ATOMUSDT",
       "entry_price": 1.48,
@@ -568,6 +549,25 @@
         "whale": 20,
         "momentum": 0,
         "breakout": 20
+      }
+    },
+    {
+      "id": "ATOMUSDT-2026-08-21T22:39:32.477764+00:00",
+      "symbol": "ATOMUSDT",
+      "entry_price": 1.602,
+      "sl": 1.55394,
+      "tp1": 1.65006,
+      "tp2": 1.69812,
+      "tp3": 1.7622,
+      "score": 54,
+      "entry_time": "2026-08-21T22:39:32.477764+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
       }
     }
   ],
@@ -19579,11 +19579,35 @@
       "exit_time": "2026-08-21T22:15:00+00:00",
       "pnl_pct": 10.0,
       "duration_minutes": 1004
+    },
+    {
+      "id": "BNBUSDT-2026-08-20T05:17:43.816221+00:00",
+      "symbol": "BNBUSDT",
+      "entry_price": 627.2,
+      "sl": 608.384,
+      "tp1": 646.016,
+      "tp2": 664.832,
+      "tp3": 689.92,
+      "score": 50,
+      "entry_time": "2026-08-20T05:17:43.816221+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 8,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "tp3_hit",
+      "exit_price": 689.92,
+      "exit_time": "2026-08-21T22:30:00+00:00",
+      "pnl_pct": 10.0,
+      "duration_minutes": 2472
     }
   ],
   "meta": {
     "total_active": 30,
-    "total_closed": 792,
-    "last_updated": "2026-08-21T22:33:47.461258+00:00"
+    "total_closed": 793,
+    "last_updated": "2026-08-21T22:39:32.479528+00:00"
   }
 }
