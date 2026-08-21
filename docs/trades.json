@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "ATOMUSDT-2026-08-19T15:52:04.702880+00:00",
-      "symbol": "ATOMUSDT",
-      "entry_price": 1.431,
-      "sl": 1.38807,
-      "tp1": 1.47393,
-      "tp2": 1.51686,
-      "tp3": 1.5741,
-      "score": 56,
-      "entry_time": "2026-08-19T15:52:04.702880+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 6,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "LTCUSDT-2026-08-19T20:58:01.999015+00:00",
       "symbol": "LTCUSDT",
       "entry_price": 46.61,
@@ -150,25 +131,6 @@
         "whale": 20,
         "momentum": 12,
         "breakout": 0
-      }
-    },
-    {
-      "id": "NEARUSDT-2026-08-20T08:22:37.778511+00:00",
-      "symbol": "NEARUSDT",
-      "entry_price": 1.751,
-      "sl": 1.69847,
-      "tp1": 1.80353,
-      "tp2": 1.85606,
-      "tp3": 1.9261,
-      "score": 50,
-      "entry_time": "2026-08-20T08:22:37.778511+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
       }
     },
     {
@@ -19241,11 +19203,59 @@
       "exit_time": "2026-08-21T07:15:00+00:00",
       "pnl_pct": 10.0,
       "duration_minutes": 2056
+    },
+    {
+      "id": "ATOMUSDT-2026-08-19T15:52:04.702880+00:00",
+      "symbol": "ATOMUSDT",
+      "entry_price": 1.431,
+      "sl": 1.38807,
+      "tp1": 1.47393,
+      "tp2": 1.51686,
+      "tp3": 1.5741,
+      "score": 56,
+      "entry_time": "2026-08-19T15:52:04.702880+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 6,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "tp3_hit",
+      "exit_price": 1.5741,
+      "exit_time": "2026-08-21T08:00:00+00:00",
+      "pnl_pct": 10.0,
+      "duration_minutes": 2407
+    },
+    {
+      "id": "NEARUSDT-2026-08-20T08:22:37.778511+00:00",
+      "symbol": "NEARUSDT",
+      "entry_price": 1.751,
+      "sl": 1.69847,
+      "tp1": 1.80353,
+      "tp2": 1.85606,
+      "tp3": 1.9261,
+      "score": 50,
+      "entry_time": "2026-08-20T08:22:37.778511+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "tp3_hit",
+      "exit_price": 1.9261,
+      "exit_time": "2026-08-21T07:45:00+00:00",
+      "pnl_pct": 10.0,
+      "duration_minutes": 1402
     }
   ],
   "meta": {
-    "total_active": 40,
-    "total_closed": 770,
-    "last_updated": "2026-08-21T07:49:24.269079+00:00"
+    "total_active": 38,
+    "total_closed": 772,
+    "last_updated": "2026-08-21T08:06:02.898510+00:00"
   }
 }
