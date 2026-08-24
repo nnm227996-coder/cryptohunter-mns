@@ -1,83 +1,73 @@
 {
-  "last_scan_time": "2026-08-24T21:57:55.193183+00:00",
-  "last_scan_time_human": "2026-08-24 21:57:55 UTC",
-  "total_scans": 2729,
-  "total_signals_sent": 879,
+  "last_scan_time": "2026-08-24T21:59:59.826675+00:00",
+  "last_scan_time_human": "2026-08-24 21:59:59 UTC",
+  "total_scans": 2730,
+  "total_signals_sent": 880,
   "signals_today": 20,
   "signals_this_week": 20,
   "top_scoring_pairs": [
     {
-      "symbol": "BTCUSDT",
-      "score": 42,
-      "price": 78980.0,
-      "time": "2026-08-24T21:57:55.193124+00:00"
+      "symbol": "ETHUSDT",
+      "score": 50,
+      "price": 2483.56,
+      "time": "2026-08-24T21:59:59.637481+00:00"
     },
     {
       "symbol": "BNBUSDT",
       "score": 42,
-      "price": 703.82,
-      "time": "2026-08-24T21:57:55.193142+00:00"
-    },
-    {
-      "symbol": "ETHUSDT",
-      "score": 30,
-      "price": 2483.52,
-      "time": "2026-08-24T21:57:55.193139+00:00"
+      "price": 703.88,
+      "time": "2026-08-24T21:59:59.826612+00:00"
     },
     {
       "symbol": "AVAXUSDT",
+      "score": 42,
+      "price": 7.574,
+      "time": "2026-08-24T21:59:59.826625+00:00"
+    },
+    {
+      "symbol": "SOLUSDT",
       "score": 30,
-      "price": 7.567,
-      "time": "2026-08-24T21:57:55.193150+00:00"
+      "price": 97.47,
+      "time": "2026-08-24T21:59:59.826617+00:00"
     },
     {
       "symbol": "LINKUSDT",
       "score": 30,
-      "price": 11.63,
-      "time": "2026-08-24T21:57:55.193157+00:00"
+      "price": 11.642,
+      "time": "2026-08-24T21:59:59.826635+00:00"
     },
     {
-      "symbol": "SOLUSDT",
+      "symbol": "PEPEUSDT",
       "score": 28,
-      "price": 97.42,
-      "time": "2026-08-24T21:57:55.193144+00:00"
+      "price": 4.04e-06,
+      "time": "2026-08-24T21:59:59.826669+00:00"
     },
     {
-      "symbol": "WIFUSDT",
-      "score": 24,
-      "price": 0.2003,
-      "time": "2026-08-24T21:57:55.193181+00:00"
+      "symbol": "BTCUSDT",
+      "score": 22,
+      "price": 78984.23,
+      "time": "2026-08-24T21:59:59.637469+00:00"
     },
     {
       "symbol": "MATICUSDT",
       "score": 22,
       "price": 0.3794,
-      "time": "2026-08-24T21:57:55.193155+00:00"
+      "time": "2026-08-24T21:59:59.826633+00:00"
     },
     {
       "symbol": "APTUSDT",
       "score": 20,
       "price": 0.608,
-      "time": "2026-08-24T21:57:55.193166+00:00"
+      "time": "2026-08-24T21:59:59.826650+00:00"
     },
     {
       "symbol": "TIAUSDT",
       "score": 20,
-      "price": 0.3733,
-      "time": "2026-08-24T21:57:55.193175+00:00"
+      "price": 0.3737,
+      "time": "2026-08-24T21:59:59.826663+00:00"
     }
   ],
   "recent_signals": [
-    {
-      "symbol": "WIFUSDT",
-      "entry": 0.2014,
-      "sl": 0.195358,
-      "tp1": 0.207442,
-      "tp2": 0.213484,
-      "tp3": 0.22154,
-      "score": 54,
-      "timestamp": "2026-08-23T22:01:39.117671+00:00"
-    },
     {
       "symbol": "SUIUSDT",
       "entry": 0.8469,
@@ -267,25 +257,34 @@
       "tp3": 86913.2,
       "score": 50,
       "timestamp": "2026-08-24T21:03:54.271918+00:00"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "entry": 2483.56,
+      "sl": 2409.0532,
+      "tp1": 2558.0668,
+      "tp2": 2632.5736,
+      "tp3": 2731.916,
+      "score": 50,
+      "timestamp": "2026-08-24T21:59:59.826540+00:00"
     }
   ],
   "engine_performance": {
     "volume": 352,
-    "orderbook": 740,
+    "orderbook": 741,
     "whale": 365,
-    "momentum": 751,
-    "breakout": 820
+    "momentum": 752,
+    "breakout": 821
   },
   "bot_uptime": {
     "started_at": "2026-05-18T20:09:55.535316+00:00",
-    "scans_total": 2729
+    "scans_total": 2730
   },
   "last_error": null,
   "min_score": 50,
   "pairs_count": 25,
   "scan_interval_minutes": 5,
   "recent_max_scores": [
-    22,
     24,
     30,
     54,
@@ -334,9 +333,10 @@
     50,
     34,
     30,
-    42
+    42,
+    50
   ],
-  "avg_score_last_50_scans": 39.5,
-  "active_trades_count": 34,
+  "avg_score_last_50_scans": 40.0,
+  "active_trades_count": 35,
   "closed_trades_count": 845
 }
