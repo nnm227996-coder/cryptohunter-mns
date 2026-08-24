@@ -153,25 +153,6 @@
       }
     },
     {
-      "id": "TIAUSDT-2026-08-23T15:02:28.498965+00:00",
-      "symbol": "TIAUSDT",
-      "entry_price": 0.3851,
-      "sl": 0.373547,
-      "tp1": 0.396653,
-      "tp2": 0.408206,
-      "tp3": 0.42361,
-      "score": 50,
-      "entry_time": "2026-08-23T15:02:28.498965+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-08-23T15:08:24.872414+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 77298.01,
@@ -302,25 +283,6 @@
         "whale": 0,
         "momentum": 20,
         "breakout": 10
-      }
-    },
-    {
-      "id": "ORDIUSDT-2026-08-23T16:06:52.006030+00:00",
-      "symbol": "ORDIUSDT",
-      "entry_price": 4.239,
-      "sl": 4.11183,
-      "tp1": 4.36617,
-      "tp2": 4.49334,
-      "tp3": 4.6629,
-      "score": 60,
-      "entry_time": "2026-08-23T16:06:52.006030+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 0
       }
     },
     {
@@ -20558,11 +20520,59 @@
       "exit_time": "2026-08-24T00:00:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 505
+    },
+    {
+      "id": "TIAUSDT-2026-08-23T15:02:28.498965+00:00",
+      "symbol": "TIAUSDT",
+      "entry_price": 0.3851,
+      "sl": 0.373547,
+      "tp1": 0.396653,
+      "tp2": 0.408206,
+      "tp3": 0.42361,
+      "score": 50,
+      "entry_time": "2026-08-23T15:02:28.498965+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.373547,
+      "exit_time": "2026-08-24T00:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 552
+    },
+    {
+      "id": "ORDIUSDT-2026-08-23T16:06:52.006030+00:00",
+      "symbol": "ORDIUSDT",
+      "entry_price": 4.239,
+      "sl": 4.11183,
+      "tp1": 4.36617,
+      "tp2": 4.49334,
+      "tp3": 4.6629,
+      "score": 60,
+      "entry_time": "2026-08-23T16:06:52.006030+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 0
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 4.11183,
+      "exit_time": "2026-08-24T00:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 473
     }
   ],
   "meta": {
-    "total_active": 31,
-    "total_closed": 832,
-    "last_updated": "2026-08-24T00:01:21.865147+00:00"
+    "total_active": 29,
+    "total_closed": 834,
+    "last_updated": "2026-08-24T01:08:23.139456+00:00"
   }
 }
