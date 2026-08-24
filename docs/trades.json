@@ -115,25 +115,6 @@
       }
     },
     {
-      "id": "OPUSDT-2026-08-23T14:48:13.029058+00:00",
-      "symbol": "OPUSDT",
-      "entry_price": 0.1116,
-      "sl": 0.108252,
-      "tp1": 0.114948,
-      "tp2": 0.118296,
-      "tp3": 0.12276,
-      "score": 54,
-      "entry_time": "2026-08-23T14:48:13.029058+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 12,
-        "whale": 20,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "INJUSDT-2026-08-23T14:48:13.247814+00:00",
       "symbol": "INJUSDT",
       "entry_price": 5.134,
@@ -299,25 +280,6 @@
       "engines": {
         "volume": 12,
         "orderbook": 12,
-        "whale": 12,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "OPUSDT-2026-08-23T15:34:55.197893+00:00",
-      "symbol": "OPUSDT",
-      "entry_price": 0.113,
-      "sl": 0.10961,
-      "tp1": 0.11639,
-      "tp2": 0.11978,
-      "tp3": 0.1243,
-      "score": 54,
-      "entry_time": "2026-08-23T15:34:55.197893+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
         "whale": 12,
         "momentum": 12,
         "breakout": 10
@@ -20548,11 +20510,59 @@
       "exit_time": "2026-08-23T17:50:12.492843+00:00",
       "pnl_pct": 0.96,
       "duration_minutes": 2884
+    },
+    {
+      "id": "OPUSDT-2026-08-23T14:48:13.029058+00:00",
+      "symbol": "OPUSDT",
+      "entry_price": 0.1116,
+      "sl": 0.108252,
+      "tp1": 0.114948,
+      "tp2": 0.118296,
+      "tp3": 0.12276,
+      "score": 54,
+      "entry_time": "2026-08-23T14:48:13.029058+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "tp1_hit",
+      "exit_price": 0.114948,
+      "exit_time": "2026-08-23T16:00:00+00:00",
+      "pnl_pct": 3.0,
+      "duration_minutes": 71
+    },
+    {
+      "id": "OPUSDT-2026-08-23T15:34:55.197893+00:00",
+      "symbol": "OPUSDT",
+      "entry_price": 0.113,
+      "sl": 0.10961,
+      "tp1": 0.11639,
+      "tp2": 0.11978,
+      "tp3": 0.1243,
+      "score": 54,
+      "entry_time": "2026-08-23T15:34:55.197893+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 12,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.10961,
+      "exit_time": "2026-08-24T00:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 505
     }
   ],
   "meta": {
-    "total_active": 33,
-    "total_closed": 830,
-    "last_updated": "2026-08-23T23:57:52.763300+00:00"
+    "total_active": 31,
+    "total_closed": 832,
+    "last_updated": "2026-08-24T00:01:21.865147+00:00"
   }
 }
