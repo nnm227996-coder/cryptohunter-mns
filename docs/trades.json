@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "ETHUSDT-2026-08-23T20:38:28.758267+00:00",
-      "symbol": "ETHUSDT",
-      "entry_price": 2448.31,
-      "sl": 2374.8607,
-      "tp1": 2521.7593,
-      "tp2": 2595.2086,
-      "tp3": 2693.141,
-      "score": 50,
-      "entry_time": "2026-08-23T20:38:28.758267+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-08-23T22:01:38.268155+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 77692.68,
@@ -21207,11 +21188,35 @@
       "exit_time": "2026-08-25T18:58:30.342539+00:00",
       "pnl_pct": 2.29,
       "duration_minutes": 2901
+    },
+    {
+      "id": "ETHUSDT-2026-08-23T20:38:28.758267+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 2448.31,
+      "sl": 2374.8607,
+      "tp1": 2521.7593,
+      "tp2": 2595.2086,
+      "tp3": 2693.141,
+      "score": 50,
+      "entry_time": "2026-08-23T20:38:28.758267+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 2436.03,
+      "exit_time": "2026-08-25T20:50:10.317193+00:00",
+      "pnl_pct": -0.5,
+      "duration_minutes": 2891
     }
   ],
   "meta": {
-    "total_active": 26,
-    "total_closed": 863,
-    "last_updated": "2026-08-25T20:37:30.148724+00:00"
+    "total_active": 25,
+    "total_closed": 864,
+    "last_updated": "2026-08-25T20:50:18.858282+00:00"
   }
 }
