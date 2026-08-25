@@ -400,25 +400,6 @@
       }
     },
     {
-      "id": "LINKUSDT-2026-08-24T23:30:51.077785+00:00",
-      "symbol": "LINKUSDT",
-      "entry_price": 11.614,
-      "sl": 11.26558,
-      "tp1": 11.96242,
-      "tp2": 12.31084,
-      "tp3": 12.7754,
-      "score": 50,
-      "entry_time": "2026-08-24T23:30:51.077785+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 0,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-08-24T23:35:48.775722+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 78883.99,
@@ -21212,11 +21193,35 @@
       "exit_time": "2026-08-25T20:50:10.317193+00:00",
       "pnl_pct": -0.5,
       "duration_minutes": 2891
+    },
+    {
+      "id": "LINKUSDT-2026-08-24T23:30:51.077785+00:00",
+      "symbol": "LINKUSDT",
+      "entry_price": 11.614,
+      "sl": 11.26558,
+      "tp1": 11.96242,
+      "tp2": 12.31084,
+      "tp3": 12.7754,
+      "score": 50,
+      "entry_time": "2026-08-24T23:30:51.077785+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "tp1_hit",
+      "exit_price": 11.96242,
+      "exit_time": "2026-08-25T02:15:00+00:00",
+      "pnl_pct": 3.0,
+      "duration_minutes": 164
     }
   ],
   "meta": {
-    "total_active": 25,
-    "total_closed": 864,
-    "last_updated": "2026-08-25T20:50:18.858282+00:00"
+    "total_active": 24,
+    "total_closed": 865,
+    "last_updated": "2026-08-25T21:01:39.259469+00:00"
   }
 }
