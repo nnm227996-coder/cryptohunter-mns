@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "ETHUSDT-2026-08-24T09:08:33.517035+00:00",
-      "symbol": "ETHUSDT",
-      "entry_price": 2462.45,
-      "sl": 2388.5765,
-      "tp1": 2536.3235,
-      "tp2": 2610.197,
-      "tp3": 2708.695,
-      "score": 50,
-      "entry_time": "2026-08-24T09:08:33.517035+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "ETHUSDT-2026-08-24T09:59:38.852791+00:00",
       "symbol": "ETHUSDT",
       "entry_price": 2461.95,
@@ -264,6 +245,25 @@
         "whale": 0,
         "momentum": 12,
         "breakout": 0
+      }
+    },
+    {
+      "id": "ATOMUSDT-2026-08-26T09:26:36.133840+00:00",
+      "symbol": "ATOMUSDT",
+      "entry_price": 1.543,
+      "sl": 1.49671,
+      "tp1": 1.58929,
+      "tp2": 1.63558,
+      "tp3": 1.6973,
+      "score": 82,
+      "entry_time": "2026-08-26T09:26:36.133840+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 20,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
       }
     }
   ],
@@ -21315,11 +21315,35 @@
       "exit_time": "2026-08-26T05:54:14.710319+00:00",
       "pnl_pct": 0.58,
       "duration_minutes": 2884
+    },
+    {
+      "id": "ETHUSDT-2026-08-24T09:08:33.517035+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 2462.45,
+      "sl": 2388.5765,
+      "tp1": 2536.3235,
+      "tp2": 2610.197,
+      "tp3": 2708.695,
+      "score": 50,
+      "entry_time": "2026-08-24T09:08:33.517035+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 2450.95,
+      "exit_time": "2026-08-26T09:26:29.319282+00:00",
+      "pnl_pct": -0.47,
+      "duration_minutes": 2897
     }
   ],
   "meta": {
     "total_active": 14,
-    "total_closed": 877,
-    "last_updated": "2026-08-26T09:08:17.413830+00:00"
+    "total_closed": 878,
+    "last_updated": "2026-08-26T09:26:36.135686+00:00"
   }
 }
