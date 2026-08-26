@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "BNBUSDT-2026-08-24T13:04:52.939979+00:00",
-      "symbol": "BNBUSDT",
-      "entry_price": 704.27,
-      "sl": 683.1419,
-      "tp1": 725.3981,
-      "tp2": 746.5262,
-      "tp3": 774.697,
-      "score": 50,
-      "entry_time": "2026-08-24T13:04:52.939979+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-08-24T13:38:34.519872+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 78602.37,
@@ -21382,11 +21363,35 @@
       "exit_time": "2026-08-26T10:04:10.808006+00:00",
       "pnl_pct": -0.6,
       "duration_minutes": 2884
+    },
+    {
+      "id": "BNBUSDT-2026-08-24T13:04:52.939979+00:00",
+      "symbol": "BNBUSDT",
+      "entry_price": 704.27,
+      "sl": 683.1419,
+      "tp1": 725.3981,
+      "tp2": 746.5262,
+      "tp3": 774.697,
+      "score": 50,
+      "entry_time": "2026-08-24T13:04:52.939979+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 700.74,
+      "exit_time": "2026-08-26T13:06:50.110855+00:00",
+      "pnl_pct": -0.5,
+      "duration_minutes": 2881
     }
   ],
   "meta": {
-    "total_active": 15,
-    "total_closed": 879,
-    "last_updated": "2026-08-26T12:19:25.340760+00:00"
+    "total_active": 14,
+    "total_closed": 880,
+    "last_updated": "2026-08-26T13:06:57.070975+00:00"
   }
 }
