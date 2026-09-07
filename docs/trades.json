@@ -172,25 +172,6 @@
       }
     },
     {
-      "id": "ORDIUSDT-2026-09-06T18:16:00.163491+00:00",
-      "symbol": "ORDIUSDT",
-      "entry_price": 4.311,
-      "sl": 4.18167,
-      "tp1": 4.44033,
-      "tp2": 4.56966,
-      "tp3": 4.7421,
-      "score": 54,
-      "entry_time": "2026-09-06T18:16:00.163491+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 12,
-        "whale": 20,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "WIFUSDT-2026-09-06T18:16:00.307397+00:00",
       "symbol": "WIFUSDT",
       "entry_price": 0.2141,
@@ -22572,11 +22553,35 @@
       "exit_time": "2026-09-07T00:30:00+00:00",
       "pnl_pct": 10.0,
       "duration_minutes": 1625
+    },
+    {
+      "id": "ORDIUSDT-2026-09-06T18:16:00.163491+00:00",
+      "symbol": "ORDIUSDT",
+      "entry_price": 4.311,
+      "sl": 4.18167,
+      "tp1": 4.44033,
+      "tp2": 4.56966,
+      "tp3": 4.7421,
+      "score": 54,
+      "entry_time": "2026-09-06T18:16:00.163491+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 4.18167,
+      "exit_time": "2026-09-07T04:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 583
     }
   ],
   "meta": {
-    "total_active": 17,
-    "total_closed": 927,
-    "last_updated": "2026-09-07T01:20:07.722490+00:00"
+    "total_active": 16,
+    "total_closed": 928,
+    "last_updated": "2026-09-07T05:54:05.091852+00:00"
   }
 }
