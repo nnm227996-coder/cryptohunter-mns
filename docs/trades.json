@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "WIFUSDT-2026-09-06T18:16:00.307397+00:00",
-      "symbol": "WIFUSDT",
-      "entry_price": 0.2141,
-      "sl": 0.207677,
-      "tp1": 0.220523,
-      "tp2": 0.226946,
-      "tp3": 0.23551,
-      "score": 50,
-      "entry_time": "2026-09-06T18:16:00.307397+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 0,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-09-06T20:26:02.111926+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 79926.51,
@@ -22651,11 +22632,35 @@
       "exit_time": "2026-09-08T12:30:00+00:00",
       "pnl_pct": 10.0,
       "duration_minutes": 2403
+    },
+    {
+      "id": "WIFUSDT-2026-09-06T18:16:00.307397+00:00",
+      "symbol": "WIFUSDT",
+      "entry_price": 0.2141,
+      "sl": 0.207677,
+      "tp1": 0.220523,
+      "tp2": 0.226946,
+      "tp3": 0.23551,
+      "score": 50,
+      "entry_time": "2026-09-06T18:16:00.307397+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 0.2161,
+      "exit_time": "2026-09-08T20:11:26.473250+00:00",
+      "pnl_pct": 0.93,
+      "duration_minutes": 2995
     }
   ],
   "meta": {
-    "total_active": 6,
-    "total_closed": 939,
-    "last_updated": "2026-09-08T18:02:09.948116+00:00"
+    "total_active": 5,
+    "total_closed": 940,
+    "last_updated": "2026-09-08T20:11:31.846968+00:00"
   }
 }
