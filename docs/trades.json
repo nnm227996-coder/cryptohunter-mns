@@ -115,25 +115,6 @@
       }
     },
     {
-      "id": "DOGEUSDT-2026-09-14T06:54:30.652503+00:00",
-      "symbol": "DOGEUSDT",
-      "entry_price": 0.08436,
-      "sl": 0.0818292,
-      "tp1": 0.0868908,
-      "tp2": 0.0894216,
-      "tp3": 0.092796,
-      "score": 50,
-      "entry_time": "2026-09-14T06:54:30.652503+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "LINKUSDT-2026-09-14T06:54:30.877004+00:00",
       "symbol": "LINKUSDT",
       "entry_price": 11.421,
@@ -187,25 +168,6 @@
         "orderbook": 20,
         "whale": 12,
         "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "PEPEUSDT-2026-09-14T10:33:43.439136+00:00",
-      "symbol": "PEPEUSDT",
-      "entry_price": 3.45e-06,
-      "sl": 3.35e-06,
-      "tp1": 3.55e-06,
-      "tp2": 3.66e-06,
-      "tp3": 3.8e-06,
-      "score": 54,
-      "entry_time": "2026-09-14T10:33:43.439136+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 12,
-        "whale": 12,
-        "momentum": 20,
         "breakout": 10
       }
     }
@@ -23202,11 +23164,59 @@
       "exit_time": "2026-09-15T02:30:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 956
+    },
+    {
+      "id": "DOGEUSDT-2026-09-14T06:54:30.652503+00:00",
+      "symbol": "DOGEUSDT",
+      "entry_price": 0.08436,
+      "sl": 0.0818292,
+      "tp1": 0.0868908,
+      "tp2": 0.0894216,
+      "tp3": 0.092796,
+      "score": 50,
+      "entry_time": "2026-09-14T06:54:30.652503+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.0818292,
+      "exit_time": "2026-09-15T14:30:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1895
+    },
+    {
+      "id": "PEPEUSDT-2026-09-14T10:33:43.439136+00:00",
+      "symbol": "PEPEUSDT",
+      "entry_price": 3.45e-06,
+      "sl": 3.35e-06,
+      "tp1": 3.55e-06,
+      "tp2": 3.66e-06,
+      "tp3": 3.8e-06,
+      "score": 54,
+      "entry_time": "2026-09-14T10:33:43.439136+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 12,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "tp1_hit",
+      "exit_price": 3.55e-06,
+      "exit_time": "2026-09-14T18:15:00+00:00",
+      "pnl_pct": 3.0,
+      "duration_minutes": 461
     }
   ],
   "meta": {
-    "total_active": 11,
-    "total_closed": 958,
-    "last_updated": "2026-09-15T11:59:23.930256+00:00"
+    "total_active": 9,
+    "total_closed": 960,
+    "last_updated": "2026-09-15T14:50:46.029742+00:00"
   }
 }
