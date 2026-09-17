@@ -77,25 +77,6 @@
       }
     },
     {
-      "id": "UNIUSDT-2026-09-16T21:23:45.506281+00:00",
-      "symbol": "UNIUSDT",
-      "entry_price": 6.44,
-      "sl": 6.2468,
-      "tp1": 6.6332,
-      "tp2": 6.8264,
-      "tp3": 7.084,
-      "score": 50,
-      "entry_time": "2026-09-16T21:23:45.506281+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "APTUSDT-2026-09-16T23:41:11.640259+00:00",
       "symbol": "APTUSDT",
       "entry_price": 0.554,
@@ -205,6 +186,25 @@
         "volume": 0,
         "orderbook": 20,
         "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "WIFUSDT-2026-09-17T14:59:29.228975+00:00",
+      "symbol": "WIFUSDT",
+      "entry_price": 0.1849,
+      "sl": 0.179353,
+      "tp1": 0.190447,
+      "tp2": 0.195994,
+      "tp3": 0.20339,
+      "score": 50,
+      "entry_time": "2026-09-17T14:59:29.228975+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
         "momentum": 20,
         "breakout": 10
       }
@@ -23466,11 +23466,35 @@
       "exit_time": "2026-09-16T12:06:39.466595+00:00",
       "pnl_pct": -1.21,
       "duration_minutes": 2972
+    },
+    {
+      "id": "UNIUSDT-2026-09-16T21:23:45.506281+00:00",
+      "symbol": "UNIUSDT",
+      "entry_price": 6.44,
+      "sl": 6.2468,
+      "tp1": 6.6332,
+      "tp2": 6.8264,
+      "tp3": 7.084,
+      "score": 50,
+      "entry_time": "2026-09-16T21:23:45.506281+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "tp3_hit",
+      "exit_price": 7.084,
+      "exit_time": "2026-09-17T13:45:00+00:00",
+      "pnl_pct": 10.0,
+      "duration_minutes": 981
     }
   ],
   "meta": {
     "total_active": 11,
-    "total_closed": 969,
-    "last_updated": "2026-09-17T12:02:29.237351+00:00"
+    "total_closed": 970,
+    "last_updated": "2026-09-17T14:59:29.230800+00:00"
   }
 }
