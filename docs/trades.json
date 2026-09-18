@@ -20,25 +20,6 @@
       }
     },
     {
-      "id": "INJUSDT-2026-09-17T00:39:28.611472+00:00",
-      "symbol": "INJUSDT",
-      "entry_price": 5.478,
-      "sl": 5.31366,
-      "tp1": 5.64234,
-      "tp2": 5.80668,
-      "tp3": 6.0258,
-      "score": 50,
-      "entry_time": "2026-09-17T00:39:28.611472+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "ETHUSDT-2026-09-17T01:41:37.777711+00:00",
       "symbol": "ETHUSDT",
       "entry_price": 2430.47,
@@ -67,25 +48,6 @@
       "tp3": 1.43088,
       "score": 50,
       "entry_time": "2026-09-17T01:41:37.920812+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "SUIUSDT-2026-09-17T01:41:38.071670+00:00",
-      "symbol": "SUIUSDT",
-      "entry_price": 0.718,
-      "sl": 0.69646,
-      "tp1": 0.73954,
-      "tp2": 0.76108,
-      "tp3": 0.7898,
-      "score": 50,
-      "entry_time": "2026-09-17T01:41:38.071670+00:00",
       "status": "active",
       "engines": {
         "volume": 0,
@@ -129,6 +91,25 @@
         "volume": 0,
         "orderbook": 0,
         "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "WIFUSDT-2026-09-18T09:39:57.827449+00:00",
+      "symbol": "WIFUSDT",
+      "entry_price": 0.1932,
+      "sl": 0.187404,
+      "tp1": 0.198996,
+      "tp2": 0.204792,
+      "tp3": 0.21252,
+      "score": 50,
+      "entry_time": "2026-09-18T09:39:57.827449+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 8,
+        "orderbook": 0,
+        "whale": 12,
         "momentum": 20,
         "breakout": 10
       }
@@ -23534,11 +23515,59 @@
       "exit_time": "2026-09-18T04:45:00+00:00",
       "pnl_pct": 10.0,
       "duration_minutes": 248
+    },
+    {
+      "id": "INJUSDT-2026-09-17T00:39:28.611472+00:00",
+      "symbol": "INJUSDT",
+      "entry_price": 5.478,
+      "sl": 5.31366,
+      "tp1": 5.64234,
+      "tp2": 5.80668,
+      "tp3": 6.0258,
+      "score": 50,
+      "entry_time": "2026-09-17T00:39:28.611472+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "tp3_hit",
+      "exit_price": 6.0258,
+      "exit_time": "2026-09-18T07:00:00+00:00",
+      "pnl_pct": 10.0,
+      "duration_minutes": 1820
+    },
+    {
+      "id": "SUIUSDT-2026-09-17T01:41:38.071670+00:00",
+      "symbol": "SUIUSDT",
+      "entry_price": 0.718,
+      "sl": 0.69646,
+      "tp1": 0.73954,
+      "tp2": 0.76108,
+      "tp3": 0.7898,
+      "score": 50,
+      "entry_time": "2026-09-17T01:41:38.071670+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "tp3_hit",
+      "exit_price": 0.7898,
+      "exit_time": "2026-09-18T09:30:00+00:00",
+      "pnl_pct": 10.0,
+      "duration_minutes": 1908
     }
   ],
   "meta": {
-    "total_active": 7,
-    "total_closed": 975,
-    "last_updated": "2026-09-18T06:31:25.460293+00:00"
+    "total_active": 6,
+    "total_closed": 977,
+    "last_updated": "2026-09-18T09:39:57.829215+00:00"
   }
 }
