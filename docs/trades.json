@@ -18,63 +18,6 @@
         "momentum": 20,
         "breakout": 10
       }
-    },
-    {
-      "id": "ETHUSDT-2026-09-22T18:23:22.345833+00:00",
-      "symbol": "ETHUSDT",
-      "entry_price": 2753.07,
-      "sl": 2670.4779,
-      "tp1": 2835.6621,
-      "tp2": 2918.2542,
-      "tp3": 3028.377,
-      "score": 50,
-      "entry_time": "2026-09-22T18:23:22.345833+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "ETHUSDT-2026-09-22T19:04:02.010555+00:00",
-      "symbol": "ETHUSDT",
-      "entry_price": 2752.87,
-      "sl": 2670.2839,
-      "tp1": 2835.4561,
-      "tp2": 2918.0422,
-      "tp3": 3028.157,
-      "score": 50,
-      "entry_time": "2026-09-22T19:04:02.010555+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 8,
-        "orderbook": 12,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "BNBUSDT-2026-09-23T00:05:39.220540+00:00",
-      "symbol": "BNBUSDT",
-      "entry_price": 788.3,
-      "sl": 764.651,
-      "tp1": 811.949,
-      "tp2": 835.598,
-      "tp3": 867.13,
-      "score": 50,
-      "entry_time": "2026-09-23T00:05:39.220540+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 8,
-        "orderbook": 12,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
     }
   ],
   "closed": [
@@ -24053,11 +23996,83 @@
       "exit_time": "2026-09-23T11:15:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 397
+    },
+    {
+      "id": "ETHUSDT-2026-09-22T18:23:22.345833+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 2753.07,
+      "sl": 2670.4779,
+      "tp1": 2835.6621,
+      "tp2": 2918.2542,
+      "tp3": 3028.377,
+      "score": 50,
+      "entry_time": "2026-09-22T18:23:22.345833+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 2670.4779,
+      "exit_time": "2026-09-23T14:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1176
+    },
+    {
+      "id": "ETHUSDT-2026-09-22T19:04:02.010555+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 2752.87,
+      "sl": 2670.2839,
+      "tp1": 2835.4561,
+      "tp2": 2918.0422,
+      "tp3": 3028.157,
+      "score": 50,
+      "entry_time": "2026-09-22T19:04:02.010555+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 8,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 2670.2839,
+      "exit_time": "2026-09-23T14:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1135
+    },
+    {
+      "id": "BNBUSDT-2026-09-23T00:05:39.220540+00:00",
+      "symbol": "BNBUSDT",
+      "entry_price": 788.3,
+      "sl": 764.651,
+      "tp1": 811.949,
+      "tp2": 835.598,
+      "tp3": 867.13,
+      "score": 50,
+      "entry_time": "2026-09-23T00:05:39.220540+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 8,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 764.651,
+      "exit_time": "2026-09-23T14:00:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 834
     }
   ],
   "meta": {
-    "total_active": 4,
-    "total_closed": 999,
-    "last_updated": "2026-09-23T12:16:12.118197+00:00"
+    "total_active": 1,
+    "total_closed": 1002,
+    "last_updated": "2026-09-23T14:19:54.920000+00:00"
   }
 }
