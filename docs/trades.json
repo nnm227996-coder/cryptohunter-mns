@@ -39,20 +39,20 @@
       }
     },
     {
-      "id": "NEARUSDT-2026-09-24T19:31:16.240318+00:00",
-      "symbol": "NEARUSDT",
-      "entry_price": 4.788,
-      "sl": 4.64436,
-      "tp1": 4.93164,
-      "tp2": 5.07528,
-      "tp3": 5.2668,
+      "id": "ATOMUSDT-2026-09-24T20:45:18.169454+00:00",
+      "symbol": "ATOMUSDT",
+      "entry_price": 1.785,
+      "sl": 1.73145,
+      "tp1": 1.83855,
+      "tp2": 1.8921,
+      "tp3": 1.9635,
       "score": 54,
-      "entry_time": "2026-09-24T19:31:16.240318+00:00",
+      "entry_time": "2026-09-24T20:45:18.169454+00:00",
       "status": "active",
       "engines": {
-        "volume": 0,
-        "orderbook": 12,
-        "whale": 20,
+        "volume": 12,
+        "orderbook": 20,
+        "whale": 0,
         "momentum": 12,
         "breakout": 10
       }
@@ -24130,11 +24130,35 @@
       "exit_time": "2026-09-23T16:00:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 1466
+    },
+    {
+      "id": "NEARUSDT-2026-09-24T19:31:16.240318+00:00",
+      "symbol": "NEARUSDT",
+      "entry_price": 4.788,
+      "sl": 4.64436,
+      "tp1": 4.93164,
+      "tp2": 5.07528,
+      "tp3": 5.2668,
+      "score": 54,
+      "entry_time": "2026-09-24T19:31:16.240318+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 4.64436,
+      "exit_time": "2026-09-24T20:30:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 58
     }
   ],
   "meta": {
     "total_active": 3,
-    "total_closed": 1003,
-    "last_updated": "2026-09-24T19:31:16.242187+00:00"
+    "total_closed": 1004,
+    "last_updated": "2026-09-24T20:45:18.171420+00:00"
   }
 }
