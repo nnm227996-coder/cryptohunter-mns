@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "ATOMUSDT-2026-09-24T20:45:18.169454+00:00",
-      "symbol": "ATOMUSDT",
-      "entry_price": 1.785,
-      "sl": 1.73145,
-      "tp1": 1.83855,
-      "tp2": 1.8921,
-      "tp3": 1.9635,
-      "score": 54,
-      "entry_time": "2026-09-24T20:45:18.169454+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 12,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-09-25T00:49:51.399046+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 84652.0,
@@ -134,25 +115,6 @@
       }
     },
     {
-      "id": "UNIUSDT-2026-09-26T06:36:47.629291+00:00",
-      "symbol": "UNIUSDT",
-      "entry_price": 9.729,
-      "sl": 9.43713,
-      "tp1": 10.02087,
-      "tp2": 10.31274,
-      "tp3": 10.7019,
-      "score": 54,
-      "entry_time": "2026-09-26T06:36:47.629291+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 12,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "SOLUSDT-2026-09-26T11:43:58.139362+00:00",
       "symbol": "SOLUSDT",
       "entry_price": 121.16,
@@ -168,6 +130,25 @@
         "orderbook": 20,
         "whale": 20,
         "momentum": 12,
+        "breakout": 10
+      }
+    },
+    {
+      "id": "BTCUSDT-2026-09-26T21:25:27.188375+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 84159.59,
+      "sl": 81634.8023,
+      "tp1": 86684.3777,
+      "tp2": 89209.1654,
+      "tp3": 92575.549,
+      "score": 50,
+      "entry_time": "2026-09-26T21:25:27.188375+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
         "breakout": 10
       }
     }
@@ -24364,11 +24345,59 @@
       "exit_time": "2026-09-26T20:25:19.698173+00:00",
       "pnl_pct": 1.77,
       "duration_minutes": 2934
+    },
+    {
+      "id": "ATOMUSDT-2026-09-24T20:45:18.169454+00:00",
+      "symbol": "ATOMUSDT",
+      "entry_price": 1.785,
+      "sl": 1.73145,
+      "tp1": 1.83855,
+      "tp2": 1.8921,
+      "tp3": 1.9635,
+      "score": 54,
+      "entry_time": "2026-09-24T20:45:18.169454+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 12,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 1.86,
+      "exit_time": "2026-09-26T21:25:21.244859+00:00",
+      "pnl_pct": 4.2,
+      "duration_minutes": 2920
+    },
+    {
+      "id": "UNIUSDT-2026-09-26T06:36:47.629291+00:00",
+      "symbol": "UNIUSDT",
+      "entry_price": 9.729,
+      "sl": 9.43713,
+      "tp1": 10.02087,
+      "tp2": 10.31274,
+      "tp3": 10.7019,
+      "score": 54,
+      "entry_time": "2026-09-26T06:36:47.629291+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 12,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 9.43713,
+      "exit_time": "2026-09-26T20:30:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 833
     }
   ],
   "meta": {
-    "total_active": 9,
-    "total_closed": 1008,
-    "last_updated": "2026-09-26T20:25:25.533821+00:00"
+    "total_active": 8,
+    "total_closed": 1010,
+    "last_updated": "2026-09-26T21:25:27.190259+00:00"
   }
 }
