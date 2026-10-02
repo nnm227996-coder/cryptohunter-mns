@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "UNIUSDT-2026-10-01T14:41:49.384129+00:00",
-      "symbol": "UNIUSDT",
-      "entry_price": 9.116,
-      "sl": 8.84252,
-      "tp1": 9.38948,
-      "tp2": 9.66296,
-      "tp3": 10.0276,
-      "score": 56,
-      "entry_time": "2026-10-01T14:41:49.384129+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 6,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-10-01T14:45:59.239616+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 84055.59,
@@ -73,25 +54,6 @@
         "orderbook": 20,
         "whale": 0,
         "momentum": 0,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "SUIUSDT-2026-10-01T19:51:03.956681+00:00",
-      "symbol": "SUIUSDT",
-      "entry_price": 1.1857,
-      "sl": 1.150129,
-      "tp1": 1.221271,
-      "tp2": 1.256842,
-      "tp3": 1.30427,
-      "score": 50,
-      "entry_time": "2026-10-01T19:51:03.956681+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 0,
-        "whale": 0,
-        "momentum": 20,
         "breakout": 10
       }
     },
@@ -24921,11 +24883,59 @@
       "exit_time": "2026-10-02T15:01:49.477019+00:00",
       "pnl_pct": 1.7,
       "duration_minutes": 2960
+    },
+    {
+      "id": "UNIUSDT-2026-10-01T14:41:49.384129+00:00",
+      "symbol": "UNIUSDT",
+      "entry_price": 9.116,
+      "sl": 8.84252,
+      "tp1": 9.38948,
+      "tp2": 9.66296,
+      "tp3": 10.0276,
+      "score": 56,
+      "entry_time": "2026-10-01T14:41:49.384129+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 6,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 8.84252,
+      "exit_time": "2026-10-02T18:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1653
+    },
+    {
+      "id": "SUIUSDT-2026-10-01T19:51:03.956681+00:00",
+      "symbol": "SUIUSDT",
+      "entry_price": 1.1857,
+      "sl": 1.150129,
+      "tp1": 1.221271,
+      "tp2": 1.256842,
+      "tp3": 1.30427,
+      "score": 50,
+      "entry_time": "2026-10-01T19:51:03.956681+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 0,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 1.150129,
+      "exit_time": "2026-10-02T18:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 1343
     }
   ],
   "meta": {
-    "total_active": 8,
-    "total_closed": 1032,
-    "last_updated": "2026-10-02T15:06:04.433819+00:00"
+    "total_active": 6,
+    "total_closed": 1034,
+    "last_updated": "2026-10-02T19:51:30.766843+00:00"
   }
 }
