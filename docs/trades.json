@@ -134,21 +134,21 @@
       }
     },
     {
-      "id": "OPUSDT-2026-10-05T02:06:56.344454+00:00",
-      "symbol": "OPUSDT",
-      "entry_price": 0.1348,
-      "sl": 0.130756,
-      "tp1": 0.138844,
-      "tp2": 0.142888,
-      "tp3": 0.14828,
-      "score": 54,
-      "entry_time": "2026-10-05T02:06:56.344454+00:00",
+      "id": "NEARUSDT-2026-10-05T05:21:54.741758+00:00",
+      "symbol": "NEARUSDT",
+      "entry_price": 4.963,
+      "sl": 4.81411,
+      "tp1": 5.11189,
+      "tp2": 5.26078,
+      "tp3": 5.4593,
+      "score": 56,
+      "entry_time": "2026-10-05T05:21:54.741758+00:00",
       "status": "active",
       "engines": {
-        "volume": 12,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 12,
+        "volume": 0,
+        "orderbook": 6,
+        "whale": 20,
+        "momentum": 20,
         "breakout": 10
       }
     }
@@ -25113,11 +25113,35 @@
       "exit_time": "2026-10-04T07:25:55.739923+00:00",
       "pnl_pct": -0.64,
       "duration_minutes": 3180
+    },
+    {
+      "id": "OPUSDT-2026-10-05T02:06:56.344454+00:00",
+      "symbol": "OPUSDT",
+      "entry_price": 0.1348,
+      "sl": 0.130756,
+      "tp1": 0.138844,
+      "tp2": 0.142888,
+      "tp3": 0.14828,
+      "score": 54,
+      "entry_time": "2026-10-05T02:06:56.344454+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 12,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.130756,
+      "exit_time": "2026-10-05T04:30:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 143
     }
   ],
   "meta": {
     "total_active": 8,
-    "total_closed": 1040,
-    "last_updated": "2026-10-05T02:06:56.345765+00:00"
+    "total_closed": 1041,
+    "last_updated": "2026-10-05T05:21:54.743529+00:00"
   }
 }
