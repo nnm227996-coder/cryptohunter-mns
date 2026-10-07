@@ -1,25 +1,5 @@
 {
-  "active": [
-    {
-      "id": "NEARUSDT-2026-10-05T05:21:54.741758+00:00",
-      "symbol": "NEARUSDT",
-      "entry_price": 4.963,
-      "sl": 4.81411,
-      "tp1": 5.11189,
-      "tp2": 5.26078,
-      "tp3": 5.4593,
-      "score": 56,
-      "entry_time": "2026-10-05T05:21:54.741758+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 6,
-        "whale": 20,
-        "momentum": 20,
-        "breakout": 10
-      }
-    }
-  ],
+  "active": [],
   "closed": [
     {
       "id": "INJUSDT-2026-05-25T12:47:12.460126+00:00",
@@ -25172,11 +25152,35 @@
       "exit_time": "2026-10-06T14:27:45.233467+00:00",
       "pnl_pct": 0.09,
       "duration_minutes": 2896
+    },
+    {
+      "id": "NEARUSDT-2026-10-05T05:21:54.741758+00:00",
+      "symbol": "NEARUSDT",
+      "entry_price": 4.963,
+      "sl": 4.81411,
+      "tp1": 5.11189,
+      "tp2": 5.26078,
+      "tp3": 5.4593,
+      "score": 56,
+      "entry_time": "2026-10-05T05:21:54.741758+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 6,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 5.178,
+      "exit_time": "2026-10-07T06:29:02.913712+00:00",
+      "pnl_pct": 4.33,
+      "duration_minutes": 2947
     }
   ],
   "meta": {
-    "total_active": 1,
-    "total_closed": 1048,
-    "last_updated": "2026-10-07T02:26:53.283059+00:00"
+    "total_active": 0,
+    "total_closed": 1049,
+    "last_updated": "2026-10-07T06:29:07.975048+00:00"
   }
 }
