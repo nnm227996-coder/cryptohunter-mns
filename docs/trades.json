@@ -1,101 +1,6 @@
 {
   "active": [
     {
-      "id": "ETHUSDT-2026-10-10T14:31:36.092944+00:00",
-      "symbol": "ETHUSDT",
-      "entry_price": 2504.69,
-      "sl": 2429.5493,
-      "tp1": 2579.8307,
-      "tp2": 2654.9714,
-      "tp3": 2755.159,
-      "score": 54,
-      "entry_time": "2026-10-10T14:31:36.092944+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 12,
-        "whale": 20,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "BTCUSDT-2026-10-10T15:04:19.343181+00:00",
-      "symbol": "BTCUSDT",
-      "entry_price": 83017.98,
-      "sl": 80527.4406,
-      "tp1": 85508.5194,
-      "tp2": 87999.0588,
-      "tp3": 91319.778,
-      "score": 50,
-      "entry_time": "2026-10-10T15:04:19.343181+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "ETHUSDT-2026-10-10T15:04:19.505530+00:00",
-      "symbol": "ETHUSDT",
-      "entry_price": 2510.12,
-      "sl": 2434.8164,
-      "tp1": 2585.4236,
-      "tp2": 2660.7272,
-      "tp3": 2761.132,
-      "score": 54,
-      "entry_time": "2026-10-10T15:04:19.505530+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 12,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "LTCUSDT-2026-10-10T15:04:19.696518+00:00",
-      "symbol": "LTCUSDT",
-      "entry_price": 64.12,
-      "sl": 62.1964,
-      "tp1": 66.0436,
-      "tp2": 67.9672,
-      "tp3": 70.532,
-      "score": 50,
-      "entry_time": "2026-10-10T15:04:19.696518+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "UNIUSDT-2026-10-10T22:02:16.077157+00:00",
-      "symbol": "UNIUSDT",
-      "entry_price": 7.644,
-      "sl": 7.41468,
-      "tp1": 7.87332,
-      "tp2": 8.10264,
-      "tp3": 8.4084,
-      "score": 50,
-      "entry_time": "2026-10-10T22:02:16.077157+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 20,
-        "whale": 20,
-        "momentum": 0,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-10-10T22:32:44.309394+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 83050.04,
@@ -128,25 +33,6 @@
       "engines": {
         "volume": 0,
         "orderbook": 20,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "OPUSDT-2026-10-11T07:10:26.699608+00:00",
-      "symbol": "OPUSDT",
-      "entry_price": 0.142,
-      "sl": 0.13774,
-      "tp1": 0.14626,
-      "tp2": 0.15052,
-      "tp3": 0.1562,
-      "score": 56,
-      "entry_time": "2026-10-11T07:10:26.699608+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 6,
         "whale": 0,
         "momentum": 20,
         "breakout": 10
@@ -187,25 +73,6 @@
         "orderbook": 20,
         "whale": 0,
         "momentum": 20,
-        "breakout": 10
-      }
-    },
-    {
-      "id": "SEIUSDT-2026-10-12T01:31:59.632550+00:00",
-      "symbol": "SEIUSDT",
-      "entry_price": 0.07007,
-      "sl": 0.0679679,
-      "tp1": 0.0721721,
-      "tp2": 0.0742742,
-      "tp3": 0.077077,
-      "score": 54,
-      "entry_time": "2026-10-12T01:31:59.632550+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 12,
-        "whale": 0,
-        "momentum": 12,
         "breakout": 10
       }
     }
@@ -25506,11 +25373,179 @@
       "exit_time": "2026-10-12T06:38:12.953572+00:00",
       "pnl_pct": 5.96,
       "duration_minutes": 3158
+    },
+    {
+      "id": "ETHUSDT-2026-10-10T14:31:36.092944+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 2504.69,
+      "sl": 2429.5493,
+      "tp1": 2579.8307,
+      "tp2": 2654.9714,
+      "tp3": 2755.159,
+      "score": 54,
+      "entry_time": "2026-10-10T14:31:36.092944+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 2534.52,
+      "exit_time": "2026-10-12T16:06:38.050908+00:00",
+      "pnl_pct": 1.19,
+      "duration_minutes": 2975
+    },
+    {
+      "id": "BTCUSDT-2026-10-10T15:04:19.343181+00:00",
+      "symbol": "BTCUSDT",
+      "entry_price": 83017.98,
+      "sl": 80527.4406,
+      "tp1": 85508.5194,
+      "tp2": 87999.0588,
+      "tp3": 91319.778,
+      "score": 50,
+      "entry_time": "2026-10-10T15:04:19.343181+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 82942.01,
+      "exit_time": "2026-10-12T16:06:38.793525+00:00",
+      "pnl_pct": -0.09,
+      "duration_minutes": 2942
+    },
+    {
+      "id": "ETHUSDT-2026-10-10T15:04:19.505530+00:00",
+      "symbol": "ETHUSDT",
+      "entry_price": 2510.12,
+      "sl": 2434.8164,
+      "tp1": 2585.4236,
+      "tp2": 2660.7272,
+      "tp3": 2761.132,
+      "score": 54,
+      "entry_time": "2026-10-10T15:04:19.505530+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 12,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 2534.38,
+      "exit_time": "2026-10-12T16:06:39.092135+00:00",
+      "pnl_pct": 0.97,
+      "duration_minutes": 2942
+    },
+    {
+      "id": "LTCUSDT-2026-10-10T15:04:19.696518+00:00",
+      "symbol": "LTCUSDT",
+      "entry_price": 64.12,
+      "sl": 62.1964,
+      "tp1": 66.0436,
+      "tp2": 67.9672,
+      "tp3": 70.532,
+      "score": 50,
+      "entry_time": "2026-10-10T15:04:19.696518+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "timeout",
+      "exit_price": 63.28,
+      "exit_time": "2026-10-12T16:06:39.391213+00:00",
+      "pnl_pct": -1.31,
+      "duration_minutes": 2942
+    },
+    {
+      "id": "UNIUSDT-2026-10-10T22:02:16.077157+00:00",
+      "symbol": "UNIUSDT",
+      "entry_price": 7.644,
+      "sl": 7.41468,
+      "tp1": 7.87332,
+      "tp2": 8.10264,
+      "tp3": 8.4084,
+      "score": 50,
+      "entry_time": "2026-10-10T22:02:16.077157+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 20,
+        "whale": 20,
+        "momentum": 0,
+        "breakout": 10
+      },
+      "exit_type": "tp1_hit",
+      "exit_price": 7.87332,
+      "exit_time": "2026-10-11T16:45:00+00:00",
+      "pnl_pct": 3.0,
+      "duration_minutes": 1122
+    },
+    {
+      "id": "OPUSDT-2026-10-11T07:10:26.699608+00:00",
+      "symbol": "OPUSDT",
+      "entry_price": 0.142,
+      "sl": 0.13774,
+      "tp1": 0.14626,
+      "tp2": 0.15052,
+      "tp3": 0.1562,
+      "score": 56,
+      "entry_time": "2026-10-11T07:10:26.699608+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 6,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 10
+      },
+      "exit_type": "tp1_hit",
+      "exit_price": 0.14626,
+      "exit_time": "2026-10-11T20:30:00+00:00",
+      "pnl_pct": 3.0,
+      "duration_minutes": 799
+    },
+    {
+      "id": "SEIUSDT-2026-10-12T01:31:59.632550+00:00",
+      "symbol": "SEIUSDT",
+      "entry_price": 0.07007,
+      "sl": 0.0679679,
+      "tp1": 0.0721721,
+      "tp2": 0.0742742,
+      "tp3": 0.077077,
+      "score": 54,
+      "entry_time": "2026-10-12T01:31:59.632550+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "sl_hit",
+      "exit_price": 0.0679679,
+      "exit_time": "2026-10-12T14:15:00+00:00",
+      "pnl_pct": -3.0,
+      "duration_minutes": 763
     }
   ],
   "meta": {
-    "total_active": 11,
-    "total_closed": 1054,
-    "last_updated": "2026-10-12T07:55:14.063676+00:00"
+    "total_active": 4,
+    "total_closed": 1061,
+    "last_updated": "2026-10-12T16:06:44.174524+00:00"
   }
 }
