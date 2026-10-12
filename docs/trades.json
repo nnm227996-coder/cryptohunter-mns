@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "PEPEUSDT-2026-10-10T01:59:44.690241+00:00",
-      "symbol": "PEPEUSDT",
-      "entry_price": 4.03e-06,
-      "sl": 3.91e-06,
-      "tp1": 4.15e-06,
-      "tp2": 4.27e-06,
-      "tp3": 4.43e-06,
-      "score": 64,
-      "entry_time": "2026-10-10T01:59:44.690241+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 12,
-        "whale": 20,
-        "momentum": 12,
-        "breakout": 20
-      }
-    },
-    {
       "id": "ETHUSDT-2026-10-10T14:31:36.092944+00:00",
       "symbol": "ETHUSDT",
       "entry_price": 2504.69,
@@ -25501,11 +25482,35 @@
       "exit_time": "2026-10-11T16:45:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 202
+    },
+    {
+      "id": "PEPEUSDT-2026-10-10T01:59:44.690241+00:00",
+      "symbol": "PEPEUSDT",
+      "entry_price": 4.03e-06,
+      "sl": 3.91e-06,
+      "tp1": 4.15e-06,
+      "tp2": 4.27e-06,
+      "tp3": 4.43e-06,
+      "score": 64,
+      "entry_time": "2026-10-10T01:59:44.690241+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 20
+      },
+      "exit_type": "timeout",
+      "exit_price": 4.27e-06,
+      "exit_time": "2026-10-12T06:38:12.953572+00:00",
+      "pnl_pct": 5.96,
+      "duration_minutes": 3158
     }
   ],
   "meta": {
-    "total_active": 12,
-    "total_closed": 1053,
-    "last_updated": "2026-10-12T01:31:59.633872+00:00"
+    "total_active": 11,
+    "total_closed": 1054,
+    "last_updated": "2026-10-12T06:38:17.752285+00:00"
   }
 }
