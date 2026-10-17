@@ -56,25 +56,6 @@
         "momentum": 20,
         "breakout": 10
       }
-    },
-    {
-      "id": "DOTUSDT-2026-10-16T20:55:50.825223+00:00",
-      "symbol": "DOTUSDT",
-      "entry_price": 1.158,
-      "sl": 1.12326,
-      "tp1": 1.19274,
-      "tp2": 1.22748,
-      "tp3": 1.2738,
-      "score": 52,
-      "entry_time": "2026-10-16T20:55:50.825223+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 20,
-        "orderbook": 12,
-        "whale": 0,
-        "momentum": 20,
-        "breakout": 0
-      }
     }
   ],
   "closed": [
@@ -25709,11 +25690,35 @@
       "exit_time": "2026-10-16T16:30:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 135
+    },
+    {
+      "id": "DOTUSDT-2026-10-16T20:55:50.825223+00:00",
+      "symbol": "DOTUSDT",
+      "entry_price": 1.158,
+      "sl": 1.12326,
+      "tp1": 1.19274,
+      "tp2": 1.22748,
+      "tp3": 1.2738,
+      "score": 52,
+      "entry_time": "2026-10-16T20:55:50.825223+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 20,
+        "orderbook": 12,
+        "whale": 0,
+        "momentum": 20,
+        "breakout": 0
+      },
+      "exit_type": "tp1_hit",
+      "exit_price": 1.19274,
+      "exit_time": "2026-10-17T03:30:00+00:00",
+      "pnl_pct": 3.0,
+      "duration_minutes": 394
     }
   ],
   "meta": {
-    "total_active": 4,
-    "total_closed": 1068,
-    "last_updated": "2026-10-17T13:11:42.231501+00:00"
+    "total_active": 3,
+    "total_closed": 1069,
+    "last_updated": "2026-10-17T16:21:33.768579+00:00"
   }
 }
