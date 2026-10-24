@@ -1,5 +1,25 @@
 {
-  "active": [],
+  "active": [
+    {
+      "id": "LTCUSDT-2026-10-24T23:34:53.364846+00:00",
+      "symbol": "LTCUSDT",
+      "entry_price": 56.94,
+      "sl": 55.2318,
+      "tp1": 58.6482,
+      "tp2": 60.3564,
+      "tp3": 62.634,
+      "score": 56,
+      "entry_time": "2026-10-24T23:34:53.364846+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 6,
+        "whale": 20,
+        "momentum": 20,
+        "breakout": 10
+      }
+    }
+  ],
   "closed": [
     {
       "id": "INJUSDT-2026-05-25T12:47:12.460126+00:00",
@@ -26019,8 +26039,8 @@
     }
   ],
   "meta": {
-    "total_active": 0,
+    "total_active": 1,
     "total_closed": 1084,
-    "last_updated": "2026-10-24T23:30:37.534765+00:00"
+    "last_updated": "2026-10-24T23:34:53.595053+00:00"
   }
 }
