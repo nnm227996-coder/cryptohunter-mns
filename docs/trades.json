@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "INJUSDT-2026-11-03T09:41:01.546698+00:00",
-      "symbol": "INJUSDT",
-      "entry_price": 7.161,
-      "sl": 6.94617,
-      "tp1": 7.37583,
-      "tp2": 7.59066,
-      "tp3": 7.8771,
-      "score": 54,
-      "entry_time": "2026-11-03T09:41:01.546698+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 12,
-        "whale": 20,
-        "momentum": 12,
-        "breakout": 10
-      }
-    },
-    {
       "id": "BTCUSDT-2026-11-03T17:18:47.478888+00:00",
       "symbol": "BTCUSDT",
       "entry_price": 77665.84,
@@ -26439,11 +26420,35 @@
       "exit_time": "2026-11-03T09:40:57.274121+00:00",
       "pnl_pct": 0.09,
       "duration_minutes": 3305
+    },
+    {
+      "id": "INJUSDT-2026-11-03T09:41:01.546698+00:00",
+      "symbol": "INJUSDT",
+      "entry_price": 7.161,
+      "sl": 6.94617,
+      "tp1": 7.37583,
+      "tp2": 7.59066,
+      "tp3": 7.8771,
+      "score": 54,
+      "entry_time": "2026-11-03T09:41:01.546698+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 12,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 10
+      },
+      "exit_type": "tp3_hit",
+      "exit_price": 7.8771,
+      "exit_time": "2026-11-04T15:00:00+00:00",
+      "pnl_pct": 10.0,
+      "duration_minutes": 1758
     }
   ],
   "meta": {
-    "total_active": 2,
-    "total_closed": 1100,
-    "last_updated": "2026-11-04T09:35:51.397715+00:00"
+    "total_active": 1,
+    "total_closed": 1101,
+    "last_updated": "2026-11-04T17:28:11.745615+00:00"
   }
 }
