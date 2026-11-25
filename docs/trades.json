@@ -1,5 +1,25 @@
 {
-  "active": [],
+  "active": [
+    {
+      "id": "NEARUSDT-2026-11-25T20:28:04.107498+00:00",
+      "symbol": "NEARUSDT",
+      "entry_price": 3.005,
+      "sl": 2.91485,
+      "tp1": 3.09515,
+      "tp2": 3.1853,
+      "tp3": 3.3055,
+      "score": 52,
+      "entry_time": "2026-11-25T20:28:04.107498+00:00",
+      "status": "active",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 20
+      }
+    }
+  ],
   "closed": [
     {
       "id": "INJUSDT-2026-05-25T12:47:12.460126+00:00",
@@ -27123,8 +27143,8 @@
     }
   ],
   "meta": {
-    "total_active": 0,
+    "total_active": 1,
     "total_closed": 1130,
-    "last_updated": "2026-11-25T19:11:30.160638+00:00"
+    "last_updated": "2026-11-25T20:28:04.108952+00:00"
   }
 }
