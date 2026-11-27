@@ -1,25 +1,6 @@
 {
   "active": [
     {
-      "id": "NEARUSDT-2026-11-25T20:28:04.107498+00:00",
-      "symbol": "NEARUSDT",
-      "entry_price": 3.005,
-      "sl": 2.91485,
-      "tp1": 3.09515,
-      "tp2": 3.1853,
-      "tp3": 3.3055,
-      "score": 52,
-      "entry_time": "2026-11-25T20:28:04.107498+00:00",
-      "status": "active",
-      "engines": {
-        "volume": 0,
-        "orderbook": 0,
-        "whale": 20,
-        "momentum": 12,
-        "breakout": 20
-      }
-    },
-    {
       "id": "DOGEUSDT-2026-11-26T12:11:29.858293+00:00",
       "symbol": "DOGEUSDT",
       "entry_price": 0.05687,
@@ -27466,11 +27447,35 @@
       "exit_time": "2026-11-27T14:30:00+00:00",
       "pnl_pct": -3.0,
       "duration_minutes": 81
+    },
+    {
+      "id": "NEARUSDT-2026-11-25T20:28:04.107498+00:00",
+      "symbol": "NEARUSDT",
+      "entry_price": 3.005,
+      "sl": 2.91485,
+      "tp1": 3.09515,
+      "tp2": 3.1853,
+      "tp3": 3.3055,
+      "score": 52,
+      "entry_time": "2026-11-25T20:28:04.107498+00:00",
+      "status": "closed",
+      "engines": {
+        "volume": 0,
+        "orderbook": 0,
+        "whale": 20,
+        "momentum": 12,
+        "breakout": 20
+      },
+      "exit_type": "timeout",
+      "exit_price": 3.047,
+      "exit_time": "2026-11-27T21:56:42.837216+00:00",
+      "pnl_pct": 1.4,
+      "duration_minutes": 2968
     }
   ],
   "meta": {
-    "total_active": 3,
-    "total_closed": 1142,
-    "last_updated": "2026-11-27T19:54:46.003831+00:00"
+    "total_active": 2,
+    "total_closed": 1143,
+    "last_updated": "2026-11-27T21:56:46.564501+00:00"
   }
 }
